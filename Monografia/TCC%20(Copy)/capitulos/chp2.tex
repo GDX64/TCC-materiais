@@ -7,6 +7,8 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{bigints}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
 
 \begin{document}
 
@@ -538,5 +540,57 @@ w[n+1]=w[n]+\mu_2T_s e[n]cos(\phi(t))
 \end{equation}
 
 Desta forma obtemos o conjunto de equações discretas que utilizaremos para rastrear frequências no restante do trabalho.
+
+%=============Multitaxa================
+
+\section{Processamento Multitaxa}
+
+Em determinadas situações, é desejável alterar a taxa de amostragem de um sinal para realizar certos tipos de processamento. Por exemplo, veremos em alguns resultados nas próximas sessões que o algoritmo PLL descrito anteriormente é sensível a taxa de amostragem em relação a frequência rastreada, portanto é conveniente mantê-la mais ou menos constante. Também veremos que processar sinais na taxa necessária para abranger todo o espectro que se quer analisar é extremamente custoso computacionalmente e não é garantia de melhores resultados. Por isso deve-se considerar o uso de uma estrutura multitaxa que diminua a frequência base.
+
+\indent Analisaremos a seguir as implicações de um abaixamento na frequência de amostragem:
+
+\subsection{Downsampling}
+
+Uma estrutura downsampling tem a forma seguinte:
+
+\tikzstyle{int}=[draw, fill=blue!20, minimum size=2em]
+\tikzstyle{init} = [pin edge={to-,thin,black}]
+
+\begin{center}
+\begin{tikzpicture}[node distance=2.5cm,auto,>=latex']
+\node [int] (a) {$M_k \downarrow$};
+\node (b) [left of=a,node distance=2cm, coordinate] {a};
+%\node [int, pin={[init]above:$p_0$}] (c) [right of=a] {$\frac{1}{s}$};
+\node [coordinate] (end) [right of=b, node distance=4cm]{};
+\path[->] (b) edge node {$x(k)$} (a);
+\draw[->] (a) edge node {$y(k)$} (end) ;
+\end{tikzpicture}
+\end{center}
+
+
+Representamos a estrutura como um sistema que reproduz em sua saída apenas amostras onde $k$ é múltiplo de $M_k$. Podemos escrever $y[n]=x[nM_k] \; n=1,2,3...$ Considerando que $x[k]$ foi amostrado com a frequência de Nyquist $fs$, o efeito final é o mesmo que se tivéssemos amostrado $x$ com $fs/M_k$, podemos dizer que vamos observar aliasing em nosso resultado final. Haverá portanto sobreposição no espectro de frequência referente a $X(w)$ quando analisarmos $Y(w)$. Entretanto, é possível prever onde estarão localizadas as componentes espectrais presentes no sinal completo que estamos subamostrando, e embora não possamos saber exatamente qual é o valor correspondente as frequências originais, podemos saber no mínimo qual é sua soma.
+
+\indent Uma demonstração formal dos efeitos observados pode ser encontrada em[5], aqui faremos uma abordagem mais intuitiva. Imaginemos uma componente espectral de $x[k]$ referente a $w_0$. Imagine que fazemos uma subamostragem neste sinal, e agora sua frequência de amostragem que era $f_s$ se torna $f_s/M_k$. Agora, se $w_0<f_s/(2Mk)$ essa as componentes dessa frequência não saem do lugar, elas continuam onde estavam anteriormente. Isso não significa que seu espectro não seja alterado nas frequências mais baixas que a nova taxa de amostragem, somente quer dizer que elas sofrem interferência no mesmo lugar onde estavam antes. Agora, se a frequência de interesse é maior que a nova frequência de amostragem dividida por 2, então ela não poderá de forma alguma ser encontrada no mesmo local, pois simplesmente não há como visualizá-la com DFT ou DTFT. Mas então onde vão parar essas frequências? Bom, onde pararia qualquer uma que sofre aliasing. Ela dá voltas no círculo de frequências. O circulo de frequências sempre vai de 0 a $2\pi$, e as frequências sempre caminham nele no sentido anti-horário. Para cada vez que a frequência de interesse (a qual chamaremos $f_i$) for maior que $fs$, a frequência em questão dá uma volta no círculo. Um algoritmo simples será apresentado quando expusermos o método do PLL multitaxa, mas por hora podemos saber que o ângulo referente à nova frequência será o resto da divisão $f_i/f_s$ e multiplicamos por $2\pi$. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../figuras/downsample.png}
+	\caption{Downsampling para $f_s=160Hz$, $f_0=10Hz$, $M_k=5$}
+	\label{fig:f5}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{../figuras/downsample2.png}
+	\caption{Downsampling para $f_s=160Hz$, $f_0=10Hz$, $M_k=10$}
+	\label{fig:f5}
+\end{figure}
+
+No exemplo da figura XX, temos $fs=160Hz$ e $M_k=5$, nossa frequência de interesse é 10Hz, a frequência de amostragem depois da subamostragem seria ainda maior que $2f_i$, então ela não se move, como observado na figura. Entretanto, no caso de $M_k=10$ a coisa muda, calculando:
+
+\begin{equation}
+w_i=rest(f_i \: M_k, \: f_s)2\pi
+\end{equation} 
+
 
 \end{document}
