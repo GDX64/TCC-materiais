@@ -118,18 +118,18 @@ X[k]=\sum_{n=0}^{n=N-1} x[n]e^{(-2jnk\pi/N)}\;,\;k=0,1,2,...,N-1
 
 Podemos dizer que a sequência X[k] é a DFT de x[n]. As duas sequências tem o mesmo tamanho, e X[k] representa o mapeamento das frequências de x[n] supondo estas estacionárias e com período igual ao analisado. Sendo Ts o tempo de amostragem da sequência x[n], temos a seguinte relação:
 \begin{equation}
-Rs=\frac{1}{TsN}
+R_s=\frac{1}{T_sN}
 \end{equation}
 \indent Onde Rs é igual a resolução de X[k]. Temos o mapeamento dado como:
 \begin{equation}
-fk=Rsk\;,\;k=0, 1, 2,...,N/2
+f_k=R_s k\;,\;k=0, 1, 2,...,N/2
 \end{equation}
 \indent Percebemos que a DFT age como uma série de Fourier, onde valores absolutos de X[k] são vistos como a amplitude de uma determinada frequência múltipla da componente fundamental f1, que é igual a resolução Rs. Para um sinal contendo apenas harmônicos de f1, e eventualmente algum valor médio, podemos extrair perfeitamente seus valores de amplitude e fase. Entretanto, para um sinal que possui componentes inter-harmônicos, não é possível fazer o mesmo. Neste caso ocorre o chamado \textit{espalhamento}. Já se pode notar algumas deficiências da DFT. Também temos problemas caso não seja amostrado um período exato do sinal analisado, ou um múltiplo inteiro de um período, podendo a DFT levar a crer, por exemplo, que existe um valor médio no sinal, e outros conteúdos equivocados. Este fenômeno é denominado \textit{spectral leackage}[5]. 
 
 \indent Como a DFT pressupõe um sinal estacionário, ela não é adequada para análise de sinais variantes no tempo. Para tanto podemos utilizar de uma DFT de janela deslizante. Para uma janela de tamanho N, temos:
 
 \begin{equation}
-X[k,m]=\sum_{n=0}^{n=N-1} x[m-n]e^{(-2jnk\pi/N)}\;,\;k=0,1,2,...,N-1
+X[k,m]=\sum_{n=0}^{N-1} x[m-n]e^{(-2jnk\pi/N)}\;,\;k=0,1,2,...,N-1
 \end{equation}
 
 \indent Desta forma, para cada m>N, temos uma janela de tamanho N onde será analisado o sinal. Existem algoritmos mais eficazes para efetuar este tipo de cálculo de forma recursiva, sem precisar calcular toda a DFT como se estivéssemos diante de uma amostra completamente nova:
@@ -400,59 +400,47 @@ Em teoria, nosso algoritmo convergiria em apenas uma iteração. Resta apenas o 
 
 A este algoritmo chamamos LMS normalizado, ou NLMS. Há ainda o estudo de convergência para valores pequenos de $\mu$, que também pode ser encontrado em [6][9], tanto para o LMS quanto para o NLMS. Mas de modo geral o NLMS deve convergir respeirada todas as condições estabelecidas anteriormente e escolhendo valores de $\mu<1$.
 
-\section{RLS}
+\subsection{RLS}
 
-\indent O método RLS (\textit{Recursive Least Squares}), ou mínimos quadrados recursivo, é um método de adaptação que visa a minimização da soma dos quadrados da diferença entre o sinal de referência e o sinal de saída do filtro em questão (o erro). O RLS pode ser obtido apartir do LMS (\textit{Least Mean Squares}). O RLS é conhecido por possuir rápida convergência, tendo boa performance em sistemas variantes no tempo, como o caso de nosso interesse. Isto vem ao custo de certa complexidade computacional aliada a problemas de estabilidade[6].
+\indent O método RLS (\textit{Recursive Least Squares}), ou mínimos quadrados recursivo, é um método de adaptação que visa a minimização da soma dos quadrados da diferença entre o sinal de referência e o sinal de saída do filtro em questão (o erro), assim como os anteriormente mencionados. O RLS pode ser obtido a partir do LMS (\textit{Least Mean Squares}), e é conhecido por possuir rápida convergência, tendo boa performance em sistemas variantes no tempo, como o caso de nosso interesse. Isto vem ao custo de certa complexidade computacional aliada a problemas de estabilidade[6].
 
-\indent Voltando ao modelo do filtro adaptativo da seção anterior, vamos definir $\boldsymbol{x}(k)$ como o vetor contendo $N$ amostras atrasadas de nosso sinal de entrada, ou seja $x(k)$. Assim:
+\indent Voltando ao modelo do filtro adaptativo da seção anterior, havíamos feito uma estimação bastante simplória de $\boldsymbol{R}_{uu}$ para o LMS, e um pouco mais desenvolvida no NLMS, agora imaginemos uma outra: nos casos anteriores somente aproveitávamos as M últimas amostras de nosso sinal para cada iteração, mas se por exemplo fazemos uma média das $\boldsymbol{R}_{uu}^{(k)}$ nos aproximamos mais da matriz verdadeira de autocorrelação. Podemos escolher então um novo estimador para $\boldsymbol{R}_{uu}$:
 
 \begin{equation}
-\boldsymbol{x}(k)=
-\begin{bmatrix}
-x(k-1) & x(k-2) & \dots & x(k-N) \\
-\end{bmatrix}
+\boldsymbol{S}_{d}^{-1}=\boldsymbol{\hat{R}}_{uu}=\frac{1}{k+1}\sum_{i=0}^{k}\lambda^{k-i}\boldsymbol{U}_i\boldsymbol{U}_i^*
 \end{equation}
 
-\indent Sendo N a ordem do filtro. Da mesma maneira, podemos definir $\boldsymbol{w}(k)$ como o vetor contendo os coeficientes do filtro na $k$ ésima iteração. Assim:
-\begin{equation}
-\boldsymbol{w}(k)=
-\begin{bmatrix}
-w_{1}(k)  \\
-w_{2}(k)  \\
-\vdots  \\
-w_{N}(k) 
-\end{bmatrix}
-\end{equation}
+\indent Esta definição em realidade é uma média ponderada em uma série geométrica, e se $\lambda<1$ as últimas amostras contam mais que as primeiras. Reparemos que se $\lambda=1$ temos um estimador consistente da matriz. A $\lambda$ chamamos fator de esquecimento.
 
-\indent A função objetivo para o RLS é determinística e dada por:
 
-\Large
+\indent Outra forma de se chegar ao RLS é por sua função objetivo dada por:
+
 \begin{equation}
 \xi(k)=\sum_{i=0}^{k}\lambda^{k-i}\varepsilon^2(i)
-=\sum_{i=0}^{k}\lambda^{k-i}[d(i)-\boldsymbol{x}(k)*\boldsymbol{w}(k)]
+=\sum_{i=0}^{k}\lambda^{k-i}[d(i)-\boldsymbol{x}(k) \boldsymbol{w}(k)]
 \end{equation}
-\normalsize
 
-\indent Onde $\varepsilon$ é o erro a posteriori no instante $i$. O parâmetro $\lambda$ é um fator de peso exponencial que deve ser escolhido entre 0 e 1, de modo que $0 << \lambda < 1$. $\lambda$ representa o fator de esquecimento do erro, quanto menor seu valor, menor será a influência das amostras passadas sobre a atualização atual.
-
-\indent Após alguma álgebra que pode ser encntrada em [6], temos o seguinte:
+\indent Onde $\varepsilon$ é o erro a posteriori no instante $i$. Lembrando da equação XX deduzida anteriormente, podemos estimar a matriz $\boldsymbol{R}_{uu}$ de forma recursiva, para evitar cálculos desnecessários, e melhor que isso, sua inversa também pode ser calculada de maneira recursiva, o que é mais importante para nós. A inversa pode ser substituída na expressão obtida para o NLMS. A dedução no entanto não nos interessa tanto no trabalho, ela pode ser encontrada em [6] e [9]. Ficamos com o resultado final:
 
 \Large
 \begin{equation}
-\boldsymbol{w}(k)=\boldsymbol{S}_d(k)*\boldsymbol{p}_d(k)
-\end{equation}
-
-
-\begin{equation}
-\boldsymbol{S}_d=\lambda^{-1}\Bigg[\boldsymbol{S}_d(k-1)-\frac{\boldsymbol{S}_d(k-1)\boldsymbol{x}^T(k)\boldsymbol{x}(k)\boldsymbol{S}_d}{\lambda+\boldsymbol{x}(k)\boldsymbol{S}_d(k)\boldsymbol{x}^T(k)}\Bigg]
-\end{equation}
-
-\begin{equation}
-\boldsymbol{p}_d(k)=\lambda \boldsymbol{p}_d(k-1)+d(k)*\boldsymbol{x}(k)
+\boldsymbol{\phi}^{-1}_k=\lambda^{-1}\Bigg[\boldsymbol{\phi}_{k-1}-\frac{\boldsymbol{\phi}_{k-1}\boldsymbol{u}^T_k\boldsymbol{u}_k\boldsymbol{\phi}_{k-1}}{\lambda+\boldsymbol{u}_k\boldsymbol{\phi}_{k-1}\boldsymbol{u}^T_k}\Bigg]
 \end{equation}
 \normalsize
 
-\indent Boas recomendações de inicialização de $\boldsymbol{S}_d$ e $\boldsymbol{p}_d$ são $\boldsymbol{S}_d=\delta \boldsymbol{I}$ e $\boldsymbol{p}_d=[0\;0\;...\;0]^{T}$. Nas quais $\delta$ pode ser o inverso da potência estimada do sinal.
+\indent Os pesos então podem ser atualizados da seguinte maneira:
+
+\begin{equation}
+\boldsymbol{w}_{n}=\boldsymbol{w}_{n-1} +  \boldsymbol{\phi}_{n}^{-1}e[n] \boldsymbol{u}_{n}
+\end{equation}
+
+\indent Uma recomendação de inicialização de $\boldsymbol{\phi}_0$ é $\boldsymbol{\phi}_0=\delta \boldsymbol{I}$, sendo $\delta$ o inverso da potência estimada do sinal.
+
+
+
+%% ============== PLL ========================
+
+
 
 \section{PLL}
 
