@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.3)  14 OCT 2019 01:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.3)  27 OCT 2019 00:27
 entering extended mode
 **./chp2.tex
 (chp2.tex
@@ -639,8 +639,53 @@ Overfull \hbox (16.64162pt too wide) in paragraph at lines 413--414
 m uma serie geometrica,
  []
 
-[15] [16] [17]
-Overfull \hbox (11.09909pt too wide) in paragraph at lines 559--560
+[15] [16] (pll_basico.pdf_tex
+<pll_basico.pdf, id=85, page=1, 421.575pt x 316.18124pt>
+File: pll_basico.pdf Graphic file (type pdf)
+<use pll_basico.pdf, page 1>
+Package pdftex.def Info: pll_basico.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+<pll_basico.pdf, id=86, page=2, 421.575pt x 316.18124pt>
+File: pll_basico.pdf Graphic file (type pdf)
+<use pll_basico.pdf, page 2>
+Package pdftex.def Info: pll_basico.pdf , page2 used on input line 58.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+<pll_basico.pdf, id=87, page=3, 421.575pt x 316.18124pt>
+File: pll_basico.pdf Graphic file (type pdf)
+<use pll_basico.pdf, page 3>
+Package pdftex.def Info: pll_basico.pdf , page3 used on input line 70.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+<pll_basico.pdf, id=88, page=4, 421.575pt x 316.18124pt>
+File: pll_basico.pdf Graphic file (type pdf)
+<use pll_basico.pdf, page 4>
+Package pdftex.def Info: pll_basico.pdf , page4 used on input line 74.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+<pll_basico.pdf, id=89, page=5, 421.575pt x 316.18124pt>
+File: pll_basico.pdf Graphic file (type pdf)
+<use pll_basico.pdf, page 5>
+Package pdftex.def Info: pll_basico.pdf , page5 used on input line 76.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+<pll_basico.pdf, id=90, page=6, 421.575pt x 316.18124pt>
+File: pll_basico.pdf Graphic file (type pdf)
+<use pll_basico.pdf, page 6>
+Package pdftex.def Info: pll_basico.pdf , page6 used on input line 78.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+<pll_basico.pdf, id=91, page=7, 421.575pt x 316.18124pt>
+File: pll_basico.pdf Graphic file (type pdf)
+<use pll_basico.pdf, page 7>
+Package pdftex.def Info: pll_basico.pdf , page7 used on input line 90.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+<pll_basico.pdf, id=92, page=8, 421.575pt x 316.18124pt>
+File: pll_basico.pdf Graphic file (type pdf)
+<use pll_basico.pdf, page 8>
+Package pdftex.def Info: pll_basico.pdf , page8 used on input line 95.
+(pdftex.def)             Requested size: 390.0pt x 292.50648pt.
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17]
+Overfull \hbox (11.09909pt too wide) in paragraph at lines 567--568
 \OT1/cmr/m/n/12 ape-nas amos-tras onde $\OML/cmm/m/it/12 k$ \OT1/cmr/m/n/12 e 
 multiplo de $\OML/cmm/m/it/12 M[]$\OT1/cmr/m/n/12 . Po-de-mos es-cre-ver $\OML
 /cmm/m/it/12 y\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 ] = \OML/cmm/m
@@ -648,36 +693,66 @@ multiplo de $\OML/cmm/m/it/12 M[]$\OT1/cmr/m/n/12 . Po-de-mos es-cre-ver $\OML
 2 n \OT1/cmr/m/n/12 =
  []
 
-<../figuras/downsample.png, id=88, 421.575pt x 316.18124pt>
+[18 <./pll_basico.pdf> <./pll_basico.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pll_basico.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./pll_basico.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pll_basico.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./pll_basico.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pll_basico.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./pll_basico.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pll_basico.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./pll_basico.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pll_basico.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./pll_basico.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pll_basico.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./pll_basico.pdf
+
+pdfTeX warning: pdflatex.exe (file ./pll_basico.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+>]
+<../figuras/downsample.png, id=101, 421.575pt x 316.18124pt>
 File: ../figuras/downsample.png Graphic file (type png)
 <use ../figuras/downsample.png>
-Package pdftex.def Info: ../figuras/downsample.png  used on input line 565.
+Package pdftex.def Info: ../figuras/downsample.png  used on input line 573.
 (pdftex.def)             Requested size: 350.99762pt x 263.25536pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../figuras/downsample2.png, id=89, 421.575pt x 316.18124pt>
+<../figuras/downsample2.png, id=102, 421.575pt x 316.18124pt>
 File: ../figuras/downsample2.png Graphic file (type png)
 <use ../figuras/downsample2.png>
-Package pdftex.def Info: ../figuras/downsample2.png  used on input line 572.
+Package pdftex.def Info: ../figuras/downsample2.png  used on input line 580.
 (pdftex.def)             Requested size: 350.99762pt x 263.25536pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18] [19 <../figuras/downsample.png (PNG copy)>] [20 <../figuras/downsample2.pn
-g (PNG copy)>] (chp2.aux)
+[19] [20 <../figuras/downsample.png (PNG copy)> <../figuras/downsample2.png (PN
+G copy)>] (chp2.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15466 strings out of 492895
- 320934 string characters out of 3142328
- 404424 words of memory out of 3000000
- 19066 multiletter control sequences out of 15000+200000
+ 15501 strings out of 492895
+ 321882 string characters out of 3142328
+ 409432 words of memory out of 3000000
+ 19097 multiletter control sequences out of 15000+200000
  14102 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,9n,67p,1521b,848s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,15n,67p,1521b,848s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/LaTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/LaTex/fonts/type1/pub
 lic/amsfonts/cm/cmex10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 <D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/LaTex/fonts/type1/publi
@@ -690,9 +765,9 @@ x/fonts/type1/public/amsfonts/cm/cmsl12.pfb><D:/LaTex/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/LaTex/f
 onts/type1/public/amsfonts/cm/cmsy8.pfb><D:/LaTex/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on chp2.pdf (20 pages, 479793 bytes).
+Output written on chp2.pdf (20 pages, 490846 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
+ 163 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
