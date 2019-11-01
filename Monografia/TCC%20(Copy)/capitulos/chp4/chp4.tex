@@ -1,0 +1,82 @@
+\documentclass[a4paper, 12pt]{book}
+
+\usepackage[portuguese]{babel}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{calc}
+\usepackage{amsmath}
+\usepackage{bigints}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, shapes,arrows}
+\usepackage{xcolor}
+\usepackage{float}
+
+
+\begin{document}
+
+\section{Identificação de frequências}
+
+\indent Vimos na seção sobre o PLL-Multitaxa que este é um método com grande eficácia no rastreio de frequências, entretanto precisamos saber onde elas estão, e isto o método não nos diz. Seria possível por exemplo utilizá-lo como um filtro de partículas e largar PLLs aleatoriamente pelo espectro do sinal, entretanto temos algumas formas de obter boas ideias de onde estão as componentes mais relevantes do sinal. Uma delas é a DFT ou a STFT com janelamento para reduzir o espalhamento pelo espectro, desta forma podemos identificar regiões do espectro onde sabemos que temos energia relevante, sem saber no entanto a localização exata da componente, ou as componentes as quais pertence esta energia. Outro método visto na revisão foi o de Prony, do qual se fez uso no trabalho [3]. Neste trabalho utilizaram da otimização via RLS para resolver o problema da predição linear e calcularam as raízes do polinômio característico do modelo Auto-Regressivo do sinal, assim puderam obter as componentes relevantes com certa precisão.
+
+\indent Neste mesmo trabalho, posteriormente se faz uso do RLS novamente para estimar a amplitude e fase de cada uma das componentes, alimentando o RLS com sinais senoidais em quadratura de modo que o filtro estimado fosse a amplitude de senoides e cossenoides [obs: Vou colocar uma diagrama disso depois]. 
+
+\indent Nesta seção faremos a exposição de um método baseado no trabalho [3] com algumas modificações.
+
+\subsection{Solução em predição linear}
+
+O método planteado na seção de Análise de Prony visa encontrar os coeficientes $w_m$ tais que:
+
+\begin{equation}
+u[k]=\sum_{m=1}^{M}w_m u[k-m]
+\end{equation}
+
+Que ao final vimos que é o equivalente a encontrar a matrize de autocorrelação e o vetor de correlação cruzada do sinal $u[k]$ na forma:
+
+\begin{equation}
+\boldsymbol{w}_{opt}=\boldsymbol{R}_{uu}^{-1}\boldsymbol{r}_{du}
+\end{equation}
+
+Onde desta vez o sinal de referência $d[k]$ ganha um caráter especial uma vez que é $u[k+1]$. Estas equação pode ser resolvida utilizando o método de Levinson–Durbin, para um determinado conjunto de dados. Mas também pode ser resolvida com os filtros adaptativos a cada iteração, fazendo um rastreio online destes parâmetros.
+
+\subsection{Solução em RLS e NLMS}
+
+Como vimos anteriormente, o RLS faz uma estimação da matriz $\boldsymbol{R}_{uu}^{-1}$ a cada iteração e geralmente é o método que nos vai dar menor MSEe em menos tempo, entretanto ele tem algumas deficiências:
+
+\begin{itemize}
+	\item Se a matriz $\boldsymbol{R}_{uu}$ é singular ou não é bem ajustada, podemos ter problemas numéricos significativos, como a ordem dos elementos da matriz ser muito desbalanceada ou grande demais. Isso é bastante notável em nosso problema de estudo, pois em geral não sabemos a ordem do sistema que estamos analisando, se este sistema tem uma ordem pequena e o estimamos com um filtro grande, a matriz $\boldsymbol{R}_{uu}$ certamente será singular. Algo que podemos fazer para minimizar este problema é a adição de ruído.
+	\item Em geral é mais lento para reagir a variações no sistema que o LMS e NLMS.
+	\item Tem uma complexidade computacional consideravelmente maior.
+	\item Sua convergência é de certa forma caótica, perturbando o cálculo das raízes.
+\end{itemize}
+
+Devemos também destacar que tanto o RLS quanto o NLMS se beneficiam de ordens de filtro próximas a quantidade de amostras por ciclo da fundamental. Isto se deve ao fato de que quanto menor são as variações dos sinais dentro do buffer $\boldsymbol{U}$ mais singular é a matriz de autocorrelação. 
+
+\begin{figure}[h]
+	\centering    
+	\def\svgwidth{\columnwidth}
+	\input{convergencia_RLS_NLMS.pdf_tex}
+	\caption{Convergência dos coeficientes RLS e NLMS na presença dos harmônicos 1, 3, 5 e 7; M=16}
+	\label{fig:your image label}
+\end{figure}
+
+Fazendo uma simulação com os harmônicos de 1 até 7, com a amplitude igual ao inverso de sua ordem e ruído gaussiano com $\sigma=0.02$, comparamos os resultados da divisão do menor pelo maior autovalor da matriz de autocorrelação estimada do sinal com diferentes valores de amostragem e ordem da matriz:
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l|l|l}
+		   & M=16 & M=64 \\
+		\hline 
+		f0x16      & 1.3e-03 & 2.1e-04 \\
+		f0x64      & 2.7e-04  & 8.6e-05       
+	\end{tabular}
+\end{table}
+
+\begin{figure}[h]
+	\centering    
+	\def\svgwidth{\columnwidth}
+	\input{erro_RLS_NLMS.pdf_tex}
+	\caption{Convergência do RLS e NLMS na presença dos harmônicos 1, 3, 5 e 7; M=16}
+	\label{fig:your image label}
+\end{figure}
+
+\end{document}

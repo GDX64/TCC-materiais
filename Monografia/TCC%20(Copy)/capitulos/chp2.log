@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.3)  29 OCT 2019 00:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.3)  31 OCT 2019 13:35
 entering extended mode
 **./chp2.tex
 (chp2.tex
@@ -616,14 +616,14 @@ mm/m/it/12 m\OT1/cmr/m/n/12 ] [] [] = []
 <../figuras/fA.png, id=59, 457.71pt x 320.69812pt>
 File: ../figuras/fA.png Graphic file (type png)
 <use ../figuras/fA.png>
-Package pdftex.def Info: ../figuras/fA.png  used on input line 295.
+Package pdftex.def Info: ../figuras/fA.png  used on input line 294.
 (pdftex.def)             Requested size: 350.99762pt x 245.94003pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10 <../figuras/f1.png>]
-Overfull \hbox (4.06111pt too wide) in paragraph at lines 308--309
+Overfull \hbox (4.06111pt too wide) in paragraph at lines 307--308
 []\OT1/cmr/m/n/12 Consideremos um sis-tema dis-cri-mi-nado pela serie tem-po-r
 al $\OML/cmm/m/it/12 u\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 ]\OML/
 cmm/m/it/12 n \OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m
@@ -634,7 +634,7 @@ cmm/m/it/12 n \OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m
 Underfull \vbox (badness 3977) has occurred while \output is active []
 
  [11 <../figuras/fA.png>] [12] [13] [14]
-Overfull \hbox (16.64162pt too wide) in paragraph at lines 413--414
+Overfull \hbox (16.64162pt too wide) in paragraph at lines 412--413
 []\OT1/cmr/m/n/12 Esta de-finic~ao em re-a-li-dade e uma media pon-de-rada e
 m uma serie geometrica,
  []
@@ -685,7 +685,7 @@ Package pdftex.def Info: pll_basico.pdf , page8 used on input line 95.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [17]
-Overfull \hbox (11.09909pt too wide) in paragraph at lines 567--568
+Overfull \hbox (11.09909pt too wide) in paragraph at lines 566--567
 \OT1/cmr/m/n/12 ape-nas amos-tras onde $\OML/cmm/m/it/12 k$ \OT1/cmr/m/n/12 e 
 multiplo de $\OML/cmm/m/it/12 M[]$\OT1/cmr/m/n/12 . Po-de-mos es-cre-ver $\OML
 /cmm/m/it/12 y\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 ] = \OML/cmm/m
@@ -725,7 +725,7 @@ dfs with page group included in a single page
 <../figuras/downsample.png, id=101, 421.575pt x 316.18124pt>
 File: ../figuras/downsample.png Graphic file (type png)
 <use ../figuras/downsample.png>
-Package pdftex.def Info: ../figuras/downsample.png  used on input line 573.
+Package pdftex.def Info: ../figuras/downsample.png  used on input line 572.
 (pdftex.def)             Requested size: 350.99762pt x 263.25536pt.
 
 
@@ -734,7 +734,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <../figuras/downsample2.png, id=102, 421.575pt x 316.18124pt>
 File: ../figuras/downsample2.png Graphic file (type png)
 <use ../figuras/downsample2.png>
-Package pdftex.def Info: ../figuras/downsample2.png  used on input line 580.
+Package pdftex.def Info: ../figuras/downsample2.png  used on input line 579.
 (pdftex.def)             Requested size: 350.99762pt x 263.25536pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -748,7 +748,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  15501 strings out of 492895
  321882 string characters out of 3142328
- 409432 words of memory out of 3000000
+ 409434 words of memory out of 3000000
  19097 multiletter control sequences out of 15000+200000
  14102 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -765,7 +765,7 @@ x/fonts/type1/public/amsfonts/cm/cmsl12.pfb><D:/LaTex/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/LaTex/f
 onts/type1/public/amsfonts/cm/cmsy8.pfb><D:/LaTex/fonts/type1/public/amsfonts/c
 m/cmti12.pfb>
-Output written on chp2.pdf (20 pages, 490846 bytes).
+Output written on chp2.pdf (20 pages, 490841 bytes).
 PDF statistics:
  163 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

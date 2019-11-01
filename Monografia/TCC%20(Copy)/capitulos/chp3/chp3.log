@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.3)  29 OCT 2019 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.3)  30 OCT 2019 21:58
 entering extended mode
 **./chp3.tex
 (chp3.tex
@@ -1023,9 +1023,9 @@ Overfull \hbox (25.65941pt too wide) in paragraph at lines 180--195
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \vbox (badness 3375) has occurred while \output is active []
 
-
+ [9]
 Underfull \hbox (badness 10000) in paragraph at lines 203--203
 []\OT1/cmr/m/n/12 MSE em
  []
@@ -1035,71 +1035,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--203
 \OT1/cmr/m/n/12 frequ^encia
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 (harm15_ruido.pdf_tex
-<harm15_ruido.pdf, id=93, page=1, 421.575pt x 316.18124pt>
+<harm15_ruido.pdf, id=96, page=1, 421.575pt x 316.18124pt>
 File: harm15_ruido.pdf Graphic file (type pdf)
 <use harm15_ruido.pdf, page 1>
 Package pdftex.def Info: harm15_ruido.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_ruido.pdf, id=94, page=2, 421.575pt x 316.18124pt>
+<harm15_ruido.pdf, id=97, page=2, 421.575pt x 316.18124pt>
 File: harm15_ruido.pdf Graphic file (type pdf)
 <use harm15_ruido.pdf, page 2>
 Package pdftex.def Info: harm15_ruido.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_ruido.pdf, id=95, page=3, 421.575pt x 316.18124pt>
+<harm15_ruido.pdf, id=98, page=3, 421.575pt x 316.18124pt>
 File: harm15_ruido.pdf Graphic file (type pdf)
 <use harm15_ruido.pdf, page 3>
 Package pdftex.def Info: harm15_ruido.pdf , page3 used on input line 71.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_ruido.pdf, id=96, page=4, 421.575pt x 316.18124pt>
+<harm15_ruido.pdf, id=99, page=4, 421.575pt x 316.18124pt>
 File: harm15_ruido.pdf Graphic file (type pdf)
 <use harm15_ruido.pdf, page 4>
 Package pdftex.def Info: harm15_ruido.pdf , page4 used on input line 77.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_ruido.pdf, id=97, page=5, 421.575pt x 316.18124pt>
+<harm15_ruido.pdf, id=100, page=5, 421.575pt x 316.18124pt>
 File: harm15_ruido.pdf Graphic file (type pdf)
 <use harm15_ruido.pdf, page 5>
 Package pdftex.def Info: harm15_ruido.pdf , page5 used on input line 79.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_ruido.pdf, id=98, page=6, 421.575pt x 316.18124pt>
+<harm15_ruido.pdf, id=101, page=6, 421.575pt x 316.18124pt>
 File: harm15_ruido.pdf Graphic file (type pdf)
 <use harm15_ruido.pdf, page 6>
 Package pdftex.def Info: harm15_ruido.pdf , page6 used on input line 81.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_ruido.pdf, id=99, page=7, 421.575pt x 316.18124pt>
+<harm15_ruido.pdf, id=102, page=7, 421.575pt x 316.18124pt>
 File: harm15_ruido.pdf Graphic file (type pdf)
 <use harm15_ruido.pdf, page 7>
 Package pdftex.def Info: harm15_ruido.pdf , page7 used on input line 83.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_ruido.pdf, id=100, page=8, 421.575pt x 316.18124pt>
+<harm15_ruido.pdf, id=103, page=8, 421.575pt x 316.18124pt>
 File: harm15_ruido.pdf Graphic file (type pdf)
 <use harm15_ruido.pdf, page 8>
 Package pdftex.def Info: harm15_ruido.pdf , page8 used on input line 85.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_ruido.pdf, id=101, page=9, 421.575pt x 316.18124pt>
+<harm15_ruido.pdf, id=104, page=9, 421.575pt x 316.18124pt>
 File: harm15_ruido.pdf Graphic file (type pdf)
 <use harm15_ruido.pdf, page 9>
 Package pdftex.def Info: harm15_ruido.pdf , page9 used on input line 91.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_ruido.pdf, id=102, page=10, 421.575pt x 316.18124pt>
+<harm15_ruido.pdf, id=105, page=10, 421.575pt x 316.18124pt>
 File: harm15_ruido.pdf Graphic file (type pdf)
 <use harm15_ruido.pdf, page 10>
 Package pdftex.def Info: harm15_ruido.pdf , page10 used on input line 95.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_ruido.pdf, id=103, page=11, 421.575pt x 316.18124pt>
+<harm15_ruido.pdf, id=106, page=11, 421.575pt x 316.18124pt>
 File: harm15_ruido.pdf Graphic file (type pdf)
 <use harm15_ruido.pdf, page 11>
 Package pdftex.def Info: harm15_ruido.pdf , page11 used on input line 97.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_ruido.pdf, id=104, page=12, 421.575pt x 316.18124pt>
+<harm15_ruido.pdf, id=107, page=12, 421.575pt x 316.18124pt>
 File: harm15_ruido.pdf Graphic file (type pdf)
 <use harm15_ruido.pdf, page 12>
 Package pdftex.def Info: harm15_ruido.pdf , page12 used on input line 103.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_ruido.pdf, id=105, page=13, 421.575pt x 316.18124pt>
+<harm15_ruido.pdf, id=108, page=13, 421.575pt x 316.18124pt>
 File: harm15_ruido.pdf Graphic file (type pdf)
 <use harm15_ruido.pdf, page 13>
 Package pdftex.def Info: harm15_ruido.pdf , page13 used on input line 107.
@@ -1110,70 +1107,71 @@ Overfull \hbox (31.575pt too wide) in paragraph at lines 108--223
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [10]
 (harm15_deg.pdf_tex
-<harm15_deg.pdf, id=106, page=1, 421.575pt x 316.18124pt>
+<harm15_deg.pdf, id=112, page=1, 421.575pt x 316.18124pt>
 File: harm15_deg.pdf Graphic file (type pdf)
 <use harm15_deg.pdf, page 1>
 Package pdftex.def Info: harm15_deg.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_deg.pdf, id=107, page=2, 421.575pt x 316.18124pt>
+<harm15_deg.pdf, id=113, page=2, 421.575pt x 316.18124pt>
 File: harm15_deg.pdf Graphic file (type pdf)
 <use harm15_deg.pdf, page 2>
 Package pdftex.def Info: harm15_deg.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_deg.pdf, id=108, page=3, 421.575pt x 316.18124pt>
+<harm15_deg.pdf, id=114, page=3, 421.575pt x 316.18124pt>
 File: harm15_deg.pdf Graphic file (type pdf)
 <use harm15_deg.pdf, page 3>
 Package pdftex.def Info: harm15_deg.pdf , page3 used on input line 71.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_deg.pdf, id=109, page=4, 421.575pt x 316.18124pt>
+<harm15_deg.pdf, id=115, page=4, 421.575pt x 316.18124pt>
 File: harm15_deg.pdf Graphic file (type pdf)
 <use harm15_deg.pdf, page 4>
 Package pdftex.def Info: harm15_deg.pdf , page4 used on input line 77.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_deg.pdf, id=110, page=5, 421.575pt x 316.18124pt>
+<harm15_deg.pdf, id=116, page=5, 421.575pt x 316.18124pt>
 File: harm15_deg.pdf Graphic file (type pdf)
 <use harm15_deg.pdf, page 5>
 Package pdftex.def Info: harm15_deg.pdf , page5 used on input line 79.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_deg.pdf, id=111, page=6, 421.575pt x 316.18124pt>
+<harm15_deg.pdf, id=117, page=6, 421.575pt x 316.18124pt>
 File: harm15_deg.pdf Graphic file (type pdf)
 <use harm15_deg.pdf, page 6>
 Package pdftex.def Info: harm15_deg.pdf , page6 used on input line 81.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_deg.pdf, id=112, page=7, 421.575pt x 316.18124pt>
+<harm15_deg.pdf, id=118, page=7, 421.575pt x 316.18124pt>
 File: harm15_deg.pdf Graphic file (type pdf)
 <use harm15_deg.pdf, page 7>
 Package pdftex.def Info: harm15_deg.pdf , page7 used on input line 83.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_deg.pdf, id=113, page=8, 421.575pt x 316.18124pt>
+<harm15_deg.pdf, id=119, page=8, 421.575pt x 316.18124pt>
 File: harm15_deg.pdf Graphic file (type pdf)
 <use harm15_deg.pdf, page 8>
 Package pdftex.def Info: harm15_deg.pdf , page8 used on input line 85.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_deg.pdf, id=114, page=9, 421.575pt x 316.18124pt>
+<harm15_deg.pdf, id=120, page=9, 421.575pt x 316.18124pt>
 File: harm15_deg.pdf Graphic file (type pdf)
 <use harm15_deg.pdf, page 9>
 Package pdftex.def Info: harm15_deg.pdf , page9 used on input line 91.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_deg.pdf, id=115, page=10, 421.575pt x 316.18124pt>
+<harm15_deg.pdf, id=121, page=10, 421.575pt x 316.18124pt>
 File: harm15_deg.pdf Graphic file (type pdf)
 <use harm15_deg.pdf, page 10>
 Package pdftex.def Info: harm15_deg.pdf , page10 used on input line 95.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_deg.pdf, id=116, page=11, 421.575pt x 316.18124pt>
+<harm15_deg.pdf, id=122, page=11, 421.575pt x 316.18124pt>
 File: harm15_deg.pdf Graphic file (type pdf)
 <use harm15_deg.pdf, page 11>
 Package pdftex.def Info: harm15_deg.pdf , page11 used on input line 97.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_deg.pdf, id=117, page=12, 421.575pt x 316.18124pt>
+<harm15_deg.pdf, id=123, page=12, 421.575pt x 316.18124pt>
 File: harm15_deg.pdf Graphic file (type pdf)
 <use harm15_deg.pdf, page 12>
 Package pdftex.def Info: harm15_deg.pdf , page12 used on input line 103.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm15_deg.pdf, id=118, page=13, 421.575pt x 316.18124pt>
+<harm15_deg.pdf, id=124, page=13, 421.575pt x 316.18124pt>
 File: harm15_deg.pdf Graphic file (type pdf)
 <use harm15_deg.pdf, page 13>
 Package pdftex.def Info: harm15_deg.pdf , page13 used on input line 108.
@@ -1184,110 +1182,205 @@ Overfull \hbox (31.575pt too wide) in paragraph at lines 109--232
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(batimento.pdf_tex
-<batimento.pdf, id=119, page=1, 301.125pt x 168.27307pt>
+ [11 <./harm15_ruido.pdf> <./harm15_ruido.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./harm15_ruido.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./harm15_ruido.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./harm15_ruido.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./harm15_ruido.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./harm15_ruido.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./harm15_ruido.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./harm15_ruido.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./harm15_ruido.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./harm15_ruido.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./harm15_ruido.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./harm15_ruido.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+>] (batimento.pdf_tex
+<batimento.pdf, id=130, page=1, 301.125pt x 168.27307pt>
 File: batimento.pdf Graphic file (type pdf)
 <use batimento.pdf, page 1>
 Package pdftex.def Info: batimento.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 301.125pt x 168.28806pt.
-<batimento.pdf, id=120, page=2, 301.125pt x 168.27307pt>
+<batimento.pdf, id=131, page=2, 301.125pt x 168.27307pt>
 File: batimento.pdf Graphic file (type pdf)
 <use batimento.pdf, page 2>
 Package pdftex.def Info: batimento.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 301.125pt x 168.28806pt.
-<batimento.pdf, id=121, page=3, 301.125pt x 168.27307pt>
+<batimento.pdf, id=132, page=3, 301.125pt x 168.27307pt>
 File: batimento.pdf Graphic file (type pdf)
 <use batimento.pdf, page 3>
 Package pdftex.def Info: batimento.pdf , page3 used on input line 62.
 (pdftex.def)             Requested size: 301.125pt x 168.28806pt.
-<batimento.pdf, id=122, page=4, 301.125pt x 168.27307pt>
+<batimento.pdf, id=133, page=4, 301.125pt x 168.27307pt>
 File: batimento.pdf Graphic file (type pdf)
 <use batimento.pdf, page 4>
 Package pdftex.def Info: batimento.pdf , page4 used on input line 67.
 (pdftex.def)             Requested size: 301.125pt x 168.28806pt.
-<batimento.pdf, id=123, page=5, 301.125pt x 168.27307pt>
+<batimento.pdf, id=134, page=5, 301.125pt x 168.27307pt>
 File: batimento.pdf Graphic file (type pdf)
 <use batimento.pdf, page 5>
 Package pdftex.def Info: batimento.pdf , page5 used on input line 69.
 (pdftex.def)             Requested size: 301.125pt x 168.28806pt.
-<batimento.pdf, id=124, page=6, 301.125pt x 168.27307pt>
+<batimento.pdf, id=135, page=6, 301.125pt x 168.27307pt>
 File: batimento.pdf Graphic file (type pdf)
 <use batimento.pdf, page 6>
 Package pdftex.def Info: batimento.pdf , page6 used on input line 73.
 (pdftex.def)             Requested size: 301.125pt x 168.28806pt.
-<batimento.pdf, id=125, page=7, 301.125pt x 168.27307pt>
+<batimento.pdf, id=136, page=7, 301.125pt x 168.27307pt>
 File: batimento.pdf Graphic file (type pdf)
 <use batimento.pdf, page 7>
 Package pdftex.def Info: batimento.pdf , page7 used on input line 77.
 (pdftex.def)             Requested size: 301.125pt x 168.28806pt.
 )
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ [12 <./harm15_deg.pdf> <./harm15_deg.pdf
 
-(harm64.pdf_tex
-<harm64.pdf, id=126, page=1, 421.575pt x 316.18124pt>
+pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./harm15_deg.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./harm15_deg.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./harm15_deg.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./harm15_deg.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./harm15_deg.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./harm15_deg.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./harm15_deg.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./harm15_deg.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./harm15_deg.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./harm15_deg.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./harm15_deg.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+>] (harm64.pdf_tex
+<harm64.pdf, id=142, page=1, 421.575pt x 316.18124pt>
 File: harm64.pdf Graphic file (type pdf)
 <use harm64.pdf, page 1>
 Package pdftex.def Info: harm64.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm64.pdf, id=127, page=2, 421.575pt x 316.18124pt>
+<harm64.pdf, id=143, page=2, 421.575pt x 316.18124pt>
 File: harm64.pdf Graphic file (type pdf)
 <use harm64.pdf, page 2>
 Package pdftex.def Info: harm64.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm64.pdf, id=128, page=3, 421.575pt x 316.18124pt>
+<harm64.pdf, id=144, page=3, 421.575pt x 316.18124pt>
 File: harm64.pdf Graphic file (type pdf)
 <use harm64.pdf, page 3>
 Package pdftex.def Info: harm64.pdf , page3 used on input line 71.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm64.pdf, id=129, page=4, 421.575pt x 316.18124pt>
+<harm64.pdf, id=145, page=4, 421.575pt x 316.18124pt>
 File: harm64.pdf Graphic file (type pdf)
 <use harm64.pdf, page 4>
 Package pdftex.def Info: harm64.pdf , page4 used on input line 77.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm64.pdf, id=130, page=5, 421.575pt x 316.18124pt>
+<harm64.pdf, id=146, page=5, 421.575pt x 316.18124pt>
 File: harm64.pdf Graphic file (type pdf)
 <use harm64.pdf, page 5>
 Package pdftex.def Info: harm64.pdf , page5 used on input line 79.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm64.pdf, id=131, page=6, 421.575pt x 316.18124pt>
+<harm64.pdf, id=147, page=6, 421.575pt x 316.18124pt>
 File: harm64.pdf Graphic file (type pdf)
 <use harm64.pdf, page 6>
 Package pdftex.def Info: harm64.pdf , page6 used on input line 81.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm64.pdf, id=132, page=7, 421.575pt x 316.18124pt>
+<harm64.pdf, id=148, page=7, 421.575pt x 316.18124pt>
 File: harm64.pdf Graphic file (type pdf)
 <use harm64.pdf, page 7>
 Package pdftex.def Info: harm64.pdf , page7 used on input line 83.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm64.pdf, id=133, page=8, 421.575pt x 316.18124pt>
+<harm64.pdf, id=149, page=8, 421.575pt x 316.18124pt>
 File: harm64.pdf Graphic file (type pdf)
 <use harm64.pdf, page 8>
 Package pdftex.def Info: harm64.pdf , page8 used on input line 85.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm64.pdf, id=134, page=9, 421.575pt x 316.18124pt>
+<harm64.pdf, id=150, page=9, 421.575pt x 316.18124pt>
 File: harm64.pdf Graphic file (type pdf)
 <use harm64.pdf, page 9>
 Package pdftex.def Info: harm64.pdf , page9 used on input line 92.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm64.pdf, id=135, page=10, 421.575pt x 316.18124pt>
+<harm64.pdf, id=151, page=10, 421.575pt x 316.18124pt>
 File: harm64.pdf Graphic file (type pdf)
 <use harm64.pdf, page 10>
 Package pdftex.def Info: harm64.pdf , page10 used on input line 97.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm64.pdf, id=136, page=11, 421.575pt x 316.18124pt>
+<harm64.pdf, id=152, page=11, 421.575pt x 316.18124pt>
 File: harm64.pdf Graphic file (type pdf)
 <use harm64.pdf, page 11>
 Package pdftex.def Info: harm64.pdf , page11 used on input line 99.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm64.pdf, id=137, page=12, 421.575pt x 316.18124pt>
+<harm64.pdf, id=153, page=12, 421.575pt x 316.18124pt>
 File: harm64.pdf Graphic file (type pdf)
 <use harm64.pdf, page 12>
 Package pdftex.def Info: harm64.pdf , page12 used on input line 106.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
-<harm64.pdf, id=138, page=13, 421.575pt x 316.18124pt>
+<harm64.pdf, id=154, page=13, 421.575pt x 316.18124pt>
 File: harm64.pdf Graphic file (type pdf)
 <use harm64.pdf, page 13>
 Package pdftex.def Info: harm64.pdf , page13 used on input line 111.
@@ -1296,9 +1389,6 @@ Package pdftex.def Info: harm64.pdf , page13 used on input line 111.
 Overfull \hbox (31.575pt too wide) in paragraph at lines 112--254
  [][] 
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 262--262
@@ -1326,109 +1416,9 @@ Overfull \hbox (25.65941pt too wide) in paragraph at lines 260--270
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \vbox (badness 3000) has occurred while \output is active []
 
-[9]
-Underfull \vbox (badness 1259) has occurred while \output is active []
-
- [10]
-[11 <./harm15_ruido.pdf> <./harm15_ruido.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./harm15_ruido.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./harm15_ruido.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./harm15_ruido.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./harm15_ruido.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./harm15_ruido.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./harm15_ruido.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./harm15_ruido.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./harm15_ruido.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./harm15_ruido.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./harm15_ruido.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./harm15_ruido.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_ruido.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
->] [12 <./harm15_deg.pdf> <./harm15_deg.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./harm15_deg.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./harm15_deg.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./harm15_deg.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./harm15_deg.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./harm15_deg.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./harm15_deg.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./harm15_deg.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./harm15_deg.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./harm15_deg.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./harm15_deg.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./harm15_deg.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm15_deg.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
->] [13 <./batimento.pdf> <./batimento.pdf
+ [13 <./batimento.pdf> <./batimento.pdf
 
 pdfTeX warning: pdflatex.exe (file ./batimento.pdf): PDF inclusion: multiple pd
 fs with page group included in a single page
@@ -1452,10 +1442,6 @@ fs with page group included in a single page
 
 pdfTeX warning: pdflatex.exe (file ./batimento.pdf): PDF inclusion: multiple pd
 fs with page group included in a single page
->] [14 <./harm64.pdf> <./harm64.pdf
-
-pdfTeX warning: pdflatex.exe (file ./harm64.pdf): PDF inclusion: multiple pdfs 
-with page group included in a single page
 > <./harm64.pdf
 
 pdfTeX warning: pdflatex.exe (file ./harm64.pdf): PDF inclusion: multiple pdfs 
@@ -1500,16 +1486,24 @@ with page group included in a single page
 
 pdfTeX warning: pdflatex.exe (file ./harm64.pdf): PDF inclusion: multiple pdfs 
 with page group included in a single page
->] (chp3.aux)
+> <./harm64.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm64.pdf): PDF inclusion: multiple pdfs 
+with page group included in a single page
+> <./harm64.pdf
+
+pdfTeX warning: pdflatex.exe (file ./harm64.pdf): PDF inclusion: multiple pdfs 
+with page group included in a single page
+>] [14] [15] (chp3.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17474 strings out of 492895
- 352251 string characters out of 3142328
- 652212 words of memory out of 3000000
- 21023 multiletter control sequences out of 15000+200000
+ 17475 strings out of 492895
+ 352261 string characters out of 3142328
+ 625212 words of memory out of 3000000
+ 21024 multiletter control sequences out of 15000+200000
  9267 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,15n,67p,1025b,1396s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1520,9 +1514,9 @@ lic/amsfonts/cm/cmex10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 Tex/fonts/type1/public/amsfonts/cm/cmsl12.pfb><D:/LaTex/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/LaTex
 /fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on chp3.pdf (14 pages, 448985 bytes).
+Output written on chp3.pdf (15 pages, 449348 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
+ 203 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  438 words of extra memory for PDF output out of 10000 (max. 10000000)
 
