@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.3)  1 NOV 2019 00:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.3)  1 NOV 2019 21:11
 entering extended mode
 **./chp4.tex
 (chp4.tex
@@ -509,6 +509,12 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 
 LaTeX Warning: Label `fig:your image label' multiply defined.
 
+
+LaTeX Warning: Label `fig:your image label' multiply defined.
+
+
+LaTeX Warning: Label `fig:your image label' multiply defined.
+
 )
 \openout1 = `chp4.aux'.
 
@@ -649,63 +655,108 @@ Package pdftex.def Info: convergencia_RLS_NLMS.pdf , page8 used on input line 9
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+(conv_comparacao.pdf_tex
+<conv_comparacao.pdf, id=26, page=1, 409.53pt x 406.51875pt>
+File: conv_comparacao.pdf Graphic file (type pdf)
+<use conv_comparacao.pdf, page 1>
+Package pdftex.def Info: conv_comparacao.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 390.0pt x 387.15828pt.
+<conv_comparacao.pdf, id=27, page=2, 409.53pt x 406.51875pt>
+File: conv_comparacao.pdf Graphic file (type pdf)
+<use conv_comparacao.pdf, page 2>
+Package pdftex.def Info: conv_comparacao.pdf , page2 used on input line 58.
+(pdftex.def)             Requested size: 390.0pt x 387.15828pt.
+<conv_comparacao.pdf, id=28, page=3, 409.53pt x 406.51875pt>
+File: conv_comparacao.pdf Graphic file (type pdf)
+<use conv_comparacao.pdf, page 3>
+Package pdftex.def Info: conv_comparacao.pdf , page3 used on input line 71.
+(pdftex.def)             Requested size: 390.0pt x 387.15828pt.
+<conv_comparacao.pdf, id=29, page=4, 409.53pt x 406.51875pt>
+File: conv_comparacao.pdf Graphic file (type pdf)
+<use conv_comparacao.pdf, page 4>
+Package pdftex.def Info: conv_comparacao.pdf , page4 used on input line 78.
+(pdftex.def)             Requested size: 390.0pt x 387.15828pt.
+<conv_comparacao.pdf, id=30, page=5, 409.53pt x 406.51875pt>
+File: conv_comparacao.pdf Graphic file (type pdf)
+<use conv_comparacao.pdf, page 5>
+Package pdftex.def Info: conv_comparacao.pdf , page5 used on input line 80.
+(pdftex.def)             Requested size: 390.0pt x 387.15828pt.
+<conv_comparacao.pdf, id=31, page=6, 409.53pt x 406.51875pt>
+File: conv_comparacao.pdf Graphic file (type pdf)
+<use conv_comparacao.pdf, page 6>
+Package pdftex.def Info: conv_comparacao.pdf , page6 used on input line 82.
+(pdftex.def)             Requested size: 390.0pt x 387.15828pt.
+<conv_comparacao.pdf, id=32, page=7, 409.53pt x 406.51875pt>
+File: conv_comparacao.pdf Graphic file (type pdf)
+<use conv_comparacao.pdf, page 7>
+Package pdftex.def Info: conv_comparacao.pdf , page7 used on input line 95.
+(pdftex.def)             Requested size: 390.0pt x 387.15828pt.
+<conv_comparacao.pdf, id=33, page=8, 409.53pt x 406.51875pt>
+File: conv_comparacao.pdf Graphic file (type pdf)
+<use conv_comparacao.pdf, page 8>
+Package pdftex.def Info: conv_comparacao.pdf , page8 used on input line 102.
+(pdftex.def)             Requested size: 390.0pt x 387.15828pt.
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 (erro_RLS_NLMS.pdf_tex
-<erro_RLS_NLMS.pdf, id=26, page=1, 421.575pt x 316.18124pt>
+<erro_RLS_NLMS.pdf, id=34, page=1, 421.575pt x 316.18124pt>
 File: erro_RLS_NLMS.pdf Graphic file (type pdf)
 <use erro_RLS_NLMS.pdf, page 1>
 Package pdftex.def Info: erro_RLS_NLMS.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 390.0pt x 292.50648pt.
-<erro_RLS_NLMS.pdf, id=27, page=2, 421.575pt x 316.18124pt>
+<erro_RLS_NLMS.pdf, id=35, page=2, 421.575pt x 316.18124pt>
 File: erro_RLS_NLMS.pdf Graphic file (type pdf)
 <use erro_RLS_NLMS.pdf, page 2>
 Package pdftex.def Info: erro_RLS_NLMS.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 390.0pt x 292.50648pt.
-<erro_RLS_NLMS.pdf, id=28, page=3, 421.575pt x 316.18124pt>
+<erro_RLS_NLMS.pdf, id=36, page=3, 421.575pt x 316.18124pt>
 File: erro_RLS_NLMS.pdf Graphic file (type pdf)
 <use erro_RLS_NLMS.pdf, page 3>
 Package pdftex.def Info: erro_RLS_NLMS.pdf , page3 used on input line 67.
 (pdftex.def)             Requested size: 390.0pt x 292.50648pt.
-<erro_RLS_NLMS.pdf, id=29, page=4, 421.575pt x 316.18124pt>
+<erro_RLS_NLMS.pdf, id=37, page=4, 421.575pt x 316.18124pt>
 File: erro_RLS_NLMS.pdf Graphic file (type pdf)
 <use erro_RLS_NLMS.pdf, page 4>
 Package pdftex.def Info: erro_RLS_NLMS.pdf , page4 used on input line 73.
 (pdftex.def)             Requested size: 390.0pt x 292.50648pt.
-<erro_RLS_NLMS.pdf, id=30, page=5, 421.575pt x 316.18124pt>
+<erro_RLS_NLMS.pdf, id=38, page=5, 421.575pt x 316.18124pt>
 File: erro_RLS_NLMS.pdf Graphic file (type pdf)
 <use erro_RLS_NLMS.pdf, page 5>
 Package pdftex.def Info: erro_RLS_NLMS.pdf , page5 used on input line 75.
 (pdftex.def)             Requested size: 390.0pt x 292.50648pt.
-<erro_RLS_NLMS.pdf, id=31, page=6, 421.575pt x 316.18124pt>
+<erro_RLS_NLMS.pdf, id=39, page=6, 421.575pt x 316.18124pt>
 File: erro_RLS_NLMS.pdf Graphic file (type pdf)
 <use erro_RLS_NLMS.pdf, page 6>
 Package pdftex.def Info: erro_RLS_NLMS.pdf , page6 used on input line 77.
 (pdftex.def)             Requested size: 390.0pt x 292.50648pt.
-<erro_RLS_NLMS.pdf, id=32, page=7, 421.575pt x 316.18124pt>
+<erro_RLS_NLMS.pdf, id=40, page=7, 421.575pt x 316.18124pt>
 File: erro_RLS_NLMS.pdf Graphic file (type pdf)
 <use erro_RLS_NLMS.pdf, page 7>
 Package pdftex.def Info: erro_RLS_NLMS.pdf , page7 used on input line 86.
 (pdftex.def)             Requested size: 390.0pt x 292.50648pt.
-<erro_RLS_NLMS.pdf, id=33, page=8, 421.575pt x 316.18124pt>
+<erro_RLS_NLMS.pdf, id=41, page=8, 421.575pt x 316.18124pt>
 File: erro_RLS_NLMS.pdf Graphic file (type pdf)
 <use erro_RLS_NLMS.pdf, page 8>
 Package pdftex.def Info: erro_RLS_NLMS.pdf , page8 used on input line 92.
 (pdftex.def)             Requested size: 390.0pt x 292.50648pt.
-<erro_RLS_NLMS.pdf, id=34, page=9, 421.575pt x 316.18124pt>
+<erro_RLS_NLMS.pdf, id=42, page=9, 421.575pt x 316.18124pt>
 File: erro_RLS_NLMS.pdf Graphic file (type pdf)
 <use erro_RLS_NLMS.pdf, page 9>
 Package pdftex.def Info: erro_RLS_NLMS.pdf , page9 used on input line 94.
 (pdftex.def)             Requested size: 390.0pt x 292.50648pt.
-<erro_RLS_NLMS.pdf, id=35, page=10, 421.575pt x 316.18124pt>
+<erro_RLS_NLMS.pdf, id=43, page=10, 421.575pt x 316.18124pt>
 File: erro_RLS_NLMS.pdf Graphic file (type pdf)
 <use erro_RLS_NLMS.pdf, page 10>
 Package pdftex.def Info: erro_RLS_NLMS.pdf , page10 used on input line 96.
 (pdftex.def)             Requested size: 390.0pt x 292.50648pt.
-<erro_RLS_NLMS.pdf, id=36, page=11, 421.575pt x 316.18124pt>
+<erro_RLS_NLMS.pdf, id=44, page=11, 421.575pt x 316.18124pt>
 File: erro_RLS_NLMS.pdf Graphic file (type pdf)
 <use erro_RLS_NLMS.pdf, page 11>
 Package pdftex.def Info: erro_RLS_NLMS.pdf , page11 used on input line 98.
 (pdftex.def)             Requested size: 390.0pt x 292.50648pt.
-<erro_RLS_NLMS.pdf, id=37, page=12, 421.575pt x 316.18124pt>
+<erro_RLS_NLMS.pdf, id=45, page=12, 421.575pt x 316.18124pt>
 File: erro_RLS_NLMS.pdf Graphic file (type pdf)
 <use erro_RLS_NLMS.pdf, page 12>
 Package pdftex.def Info: erro_RLS_NLMS.pdf , page12 used on input line 100.
@@ -714,7 +765,10 @@ Package pdftex.def Info: erro_RLS_NLMS.pdf , page12 used on input line 100.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2] [3 <./convergencia_RLS_NLMS.pdf> <./convergencia_RLS_NLMS.pdf
+[2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./convergencia_RLS_NLMS.pdf> <./convergencia_RLS_NLMS.pdf
 
 pdfTeX warning: pdflatex.exe (file ./convergencia_RLS_NLMS.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
@@ -742,7 +796,87 @@ pdfTeX warning: pdflatex.exe (file ./convergencia_RLS_NLMS.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex.exe (file ./convergencia_RLS_NLMS.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] [4 <./erro_RLS_NLMS.pdf> <./erro_RLS_NLMS.pdf
+>] (zoom_harmonicos.pdf_tex
+<zoom_harmonicos.pdf, id=54, page=1, 459.96844pt x 258.21469pt>
+File: zoom_harmonicos.pdf Graphic file (type pdf)
+<use zoom_harmonicos.pdf, page 1>
+Package pdftex.def Info: zoom_harmonicos.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 390.0pt x 218.94766pt.
+<zoom_harmonicos.pdf, id=55, page=2, 459.96844pt x 258.21469pt>
+File: zoom_harmonicos.pdf Graphic file (type pdf)
+<use zoom_harmonicos.pdf, page 2>
+Package pdftex.def Info: zoom_harmonicos.pdf , page2 used on input line 65.
+(pdftex.def)             Requested size: 390.0pt x 218.94766pt.
+<zoom_harmonicos.pdf, id=56, page=3, 459.96844pt x 258.21469pt>
+File: zoom_harmonicos.pdf Graphic file (type pdf)
+<use zoom_harmonicos.pdf, page 3>
+Package pdftex.def Info: zoom_harmonicos.pdf , page3 used on input line 73.
+(pdftex.def)             Requested size: 390.0pt x 218.94766pt.
+<zoom_harmonicos.pdf, id=57, page=4, 459.96844pt x 258.21469pt>
+File: zoom_harmonicos.pdf Graphic file (type pdf)
+<use zoom_harmonicos.pdf, page 4>
+Package pdftex.def Info: zoom_harmonicos.pdf , page4 used on input line 75.
+(pdftex.def)             Requested size: 390.0pt x 218.94766pt.
+<zoom_harmonicos.pdf, id=58, page=5, 459.96844pt x 258.21469pt>
+File: zoom_harmonicos.pdf Graphic file (type pdf)
+<use zoom_harmonicos.pdf, page 5>
+Package pdftex.def Info: zoom_harmonicos.pdf , page5 used on input line 77.
+(pdftex.def)             Requested size: 390.0pt x 218.94766pt.
+<zoom_harmonicos.pdf, id=59, page=6, 459.96844pt x 258.21469pt>
+File: zoom_harmonicos.pdf Graphic file (type pdf)
+<use zoom_harmonicos.pdf, page 6>
+Package pdftex.def Info: zoom_harmonicos.pdf , page6 used on input line 79.
+(pdftex.def)             Requested size: 390.0pt x 218.94766pt.
+<zoom_harmonicos.pdf, id=60, page=7, 459.96844pt x 258.21469pt>
+File: zoom_harmonicos.pdf Graphic file (type pdf)
+<use zoom_harmonicos.pdf, page 7>
+Package pdftex.def Info: zoom_harmonicos.pdf , page7 used on input line 81.
+(pdftex.def)             Requested size: 390.0pt x 218.94766pt.
+<zoom_harmonicos.pdf, id=61, page=8, 459.96844pt x 258.21469pt>
+File: zoom_harmonicos.pdf Graphic file (type pdf)
+<use zoom_harmonicos.pdf, page 8>
+Package pdftex.def Info: zoom_harmonicos.pdf , page8 used on input line 83.
+(pdftex.def)             Requested size: 390.0pt x 218.94766pt.
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 2653) has occurred while \output is active []
+
+ [4]
+[5] [6 <./conv_comparacao.pdf> <./conv_comparacao.pdf
+
+pdfTeX warning: pdflatex.exe (file ./conv_comparacao.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./conv_comparacao.pdf
+
+pdfTeX warning: pdflatex.exe (file ./conv_comparacao.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./conv_comparacao.pdf
+
+pdfTeX warning: pdflatex.exe (file ./conv_comparacao.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./conv_comparacao.pdf
+
+pdfTeX warning: pdflatex.exe (file ./conv_comparacao.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./conv_comparacao.pdf
+
+pdfTeX warning: pdflatex.exe (file ./conv_comparacao.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./conv_comparacao.pdf
+
+pdfTeX warning: pdflatex.exe (file ./conv_comparacao.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./conv_comparacao.pdf
+
+pdfTeX warning: pdflatex.exe (file ./conv_comparacao.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>] [7 <./erro_RLS_NLMS.pdf> <./erro_RLS_NLMS.pdf
 
 pdfTeX warning: pdflatex.exe (file ./erro_RLS_NLMS.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -786,19 +920,51 @@ e pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex.exe (file ./erro_RLS_NLMS.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
+> <./zoom_harmonicos.pdf
+
+pdfTeX warning: pdflatex.exe (file ./zoom_harmonicos.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./zoom_harmonicos.pdf
+
+pdfTeX warning: pdflatex.exe (file ./zoom_harmonicos.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./zoom_harmonicos.pdf
+
+pdfTeX warning: pdflatex.exe (file ./zoom_harmonicos.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./zoom_harmonicos.pdf
+
+pdfTeX warning: pdflatex.exe (file ./zoom_harmonicos.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./zoom_harmonicos.pdf
+
+pdfTeX warning: pdflatex.exe (file ./zoom_harmonicos.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./zoom_harmonicos.pdf
+
+pdfTeX warning: pdflatex.exe (file ./zoom_harmonicos.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./zoom_harmonicos.pdf
+
+pdfTeX warning: pdflatex.exe (file ./zoom_harmonicos.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./zoom_harmonicos.pdf
+
+pdfTeX warning: pdflatex.exe (file ./zoom_harmonicos.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
 >] (chp4.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16860 strings out of 492895
- 341192 string characters out of 3142328
- 437551 words of memory out of 3000000
- 20442 multiletter control sequences out of 15000+200000
+ 16919 strings out of 492895
+ 343270 string characters out of 3142328
+ 446561 words of memory out of 3000000
+ 20495 multiletter control sequences out of 15000+200000
  11382 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,14n,67p,1079b,383s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,15n,67p,1079b,394s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/LaTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/LaTex/fonts/type1/pub
 lic/amsfonts/cm/cmex10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 <D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/LaTex/fonts/type1/public
@@ -806,9 +972,9 @@ lic/amsfonts/cm/cmex10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 /LaTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/LaTex/fonts/type1/public/ams
 fonts/cm/cmsl12.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/LaT
 ex/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on chp4.pdf (4 pages, 290184 bytes).
+Output written on chp4.pdf (7 pages, 394601 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
+ 115 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 193 words of extra memory for PDF output out of 10000 (max. 10000000)
 

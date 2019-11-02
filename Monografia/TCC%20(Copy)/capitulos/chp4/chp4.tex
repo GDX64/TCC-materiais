@@ -59,6 +59,14 @@ Devemos também destacar que tanto o RLS quanto o NLMS se beneficiam de ordens d
 	\label{fig:your image label}
 \end{figure}
 
+\begin{figure}[h]
+	\centering    
+	\def\svgwidth{\columnwidth}
+	\input{conv_comparacao.pdf_tex}
+	\caption{Convergência do RLS e NLMS vista na estimação das frequências, com um degrau de 10 Hz em 500 amostras}
+	\label{fig:your image label}
+\end{figure}
+
 Fazendo uma simulação com os harmônicos de 1 até 7, com a amplitude igual ao inverso de sua ordem e ruído gaussiano com $\sigma=0.02$, comparamos os resultados da divisão do menor pelo maior autovalor da matriz de autocorrelação estimada do sinal com diferentes valores de amostragem e ordem da matriz:
 
 \begin{table}[H]
@@ -71,6 +79,8 @@ Fazendo uma simulação com os harmônicos de 1 até 7, com a amplitude igual ao
 	\end{tabular}
 \end{table}
 
+A tabela mostra o que já esperávamos, e o que pode ser confirmado com outras simulações mais adiante, obtemos resultados melhores com uma ordem de modelo menor e com menores taxas de amostragem.
+
 \begin{figure}[h]
 	\centering    
 	\def\svgwidth{\columnwidth}
@@ -78,5 +88,78 @@ Fazendo uma simulação com os harmônicos de 1 até 7, com a amplitude igual ao
 	\caption{Convergência do RLS e NLMS na presença dos harmônicos 1, 3, 5 e 7; M=16}
 	\label{fig:your image label}
 \end{figure}
+
+\subsection{Simulações }
+
+\indent Foram realizadas simulações com os seguintes parâmetros: $f_s=32f0$, $M=32$, harmônicos de 1 a 15, pares e ímpares todos com amplitude unitária. E é considerada uma variação aleatória nestas frequências somando-lhes um valor aleatório de uma V.A gaussiana com determinada amplitude. Apresentamos na tabela abaixo os resultados de porcentagem de erro para o RLS e NLMS. Também foi agregado ao sinal um ruído gaussiano com $\sigma=0.02$. Depois de 15 ciclos do sinal é tomado o resultado:
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l|l|l}
+	              & NLMS & RLS \\
+		\hline 
+		G(0, 0.1)  & 0     & 0 \\
+		G(0, 0.25) & 1.9   & 2.3  \\
+		G(0, 0.5)  & 18.4  & 3.4  \\
+		G(0, 0.7)  & 22.8  & 6.8  \\
+		G(0, 1)    & 28.3  & 10.2 \\ 
+	\end{tabular}
+	\caption{resultados em \%}
+\end{table}
+
+\indent É considerado um erro quando não se encontra dentre os valores estimados nenhum correspondente com distância menor que 0.1 entre os valores corretos, de maneira também que uma vez pareada uma estimação com um valor real, este valor real não mais pode ser pareado com outra estimação. Assim podemos ter uma boa ideia da capacidade do algoritmo de classificar frequências diferentes, mas que estão bastante próximas.
+
+\indent Também foram realizadas simulações para o caso de amplitude variável dos harmônicos, como uma V.A uniforme de 0 a 1.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l|l|l}
+		& NLMS & RLS \\
+		\hline 
+		G(0, 0.1)  & 3.4    & 0.6 \\
+		G(0, 0.25) & 14.6   & 2.0  \\
+		G(0, 0.5)  & 28.4  & 8.5  \\
+		G(0, 0.7)  & 31.3  & 12.9  \\
+		G(0, 1)    & 34.5  & 16.6 \\ 
+	\end{tabular}
+\caption{Simulação com amplitude variável, resultados em \%}
+\end{table}
+
+\subsubsection{frequências próximas}
+
+\begin{figure}[h]
+	\centering    
+	\def\svgwidth{\columnwidth}
+	\input{zoom_harmonicos.pdf_tex}
+	\caption{Efeito de batimento em frequências muito próximas}
+	\label{fig:your image label}
+\end{figure}
+
+\indent Frequências próximas em geral são um problema e o algoritmo tem bastante dificuldade em identificá-las. Muitas vezes estas são classificadas como sendo apenas uma. Uma maneira de resolver este problema é fazendo subamostragem do sinal e dividindo-o em partes por faixa de frequência, analisando posteriormente.
+
+\indent O teste realizado seguiu este procedimento: foram sorteados harmônicos entre 0 e 15 com uma V.A uniforme, desta frequência foram geradas outras duas, $f_1=f_0+U_{0,1}$ e $f_2=f_0+U_{0,1}+\delta$, sendo $U_{0,1}$ uma V.A uniforme com amplitude 0.1. Os resultados podem ser vistos na tabela \ref{tab:tab_freq}.
+
+\begin{table}[h]
+	\centering
+\begin{tabular}{|l|l|l|}
+	\hline
+	& RLS   & LMS        \\ \hline
+	$\delta$ & erros(\%) & erros (\%) \\ \hline
+	0.05  & 36,8  & 51,0       \\ \hline
+	0.1   & 25,8  & 50,3       \\ \hline
+	0.2   & 7,3   & 43,5       \\ \hline
+	0.4   & 1,5   & 25,8       \\ \hline
+	0.6   & 0,5   & 14,8       \\ \hline
+	\end{tabular}
+\caption{Tabela com os erros para classificação de frequências próximas}
+\label{tab:tab_freq}
+\end{table}
+
+\subsection{complexidade computacional}
+
+A complexidade computacional do RLS é de cerca de $3M^2 + 4M$ somas e multiplicações por iteração[14], enquanto que a do NLMS é de cerca de $4M$ somas e multiplicações. Apesar de a ordem de complexidade do NLMS ser bem menor, entre as operações do RLS há uma série de multiplicações e somas de matrizes, que podem ser otimizadas com computação em paralelo para determinados dispositivos. Então é de se rever onde vai ser aplicado o algoritmo, dependendo do hardware usado, o custo do RLS pode não ser tão mais alto que o do NLMS.
+
+\subsection{Conclusões}
+O algoritmo apresentado tem grande capacidade de estimação para determinados contextos. Por exemplo, com os harmônicos relativamente separados e com amplitude parecida, praticamente não há erros na estimação tanto no NLMS quanto no RLS. Claro que este contexto não é o que se vai encontrar muitas das vezes, mas pode-se fazer ajustes de taxa de amostragem e eliminação de algumas componentes caso seja necessário, tudo depende da natureza do problema. Em situações mais críticas, com grande desnível dos harmônicos e proximidade dos mesmos, o RLS acaba levando grande vantagem. Escolher um método ou o outro depende do hardware disponível e também da proposta desenvolvida. Mostramos que o NLMS faz uma estimação mais estável dos coeficientes e consequentemente das raízes e harmônicos, para uma implementação online.
 
 \end{document}
