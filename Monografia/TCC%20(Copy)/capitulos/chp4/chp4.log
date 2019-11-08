@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.3)  6 NOV 2019 01:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.3)  8 NOV 2019 11:40
 entering extended mode
 **./chp4.tex
 (chp4.tex
@@ -1123,7 +1123,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  16984 strings out of 492895
  345298 string characters out of 3142328
- 449593 words of memory out of 3000000
+ 449594 words of memory out of 3000000
  20548 multiletter control sequences out of 15000+200000
  11382 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191

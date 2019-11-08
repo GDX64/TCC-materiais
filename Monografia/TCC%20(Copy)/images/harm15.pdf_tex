@@ -1,0 +1,111 @@
+%% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'harm15.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{420bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.75)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{harm15.pdf}}%
+    \put(0.44553607,0.36666661){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}tempo (seg)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{harm15.pdf}}%
+    \put(0.12321429,0.40297625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.19089286,0.40297625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.2\end{tabular}}}}%
+    \put(0.26839286,0.40297625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
+    \put(0.34589286,0.40297625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.6\end{tabular}}}}%
+    \put(0.42339286,0.40297625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.8\end{tabular}}}}%
+    \put(0.51071429,0.40297625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.57839286,0.40297625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.2\end{tabular}}}}%
+    \put(0.65589286,0.40297625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.4\end{tabular}}}}%
+    \put(0.73339286,0.40297625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.6\end{tabular}}}}%
+    \put(0.81089286,0.40297625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.8\end{tabular}}}}%
+    \put(0.89821429,0.40297625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.07261911,0.47232161){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}amplitude (p.u.)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{harm15.pdf}}%
+    \put(0.08690482,0.42767857){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-20\end{tabular}}}}%
+    \put(0.08690482,0.49196429){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-10\end{tabular}}}}%
+    \put(0.10654768,0.55625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.09404768,0.62053571){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0.09404768,0.68482143){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}20\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{harm15.pdf}}%
+    \put(0.72678571,0.64333625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}entrada do PLL\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{harm15.pdf}}%
+    \put(0.72678571,0.61339286){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}saída do PLL\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{harm15.pdf}}%
+    \put(0.72678571,0.58344946){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}erro do PLL\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{harm15.pdf}}%
+    \put(0.22500018,0.01130946){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}tempo (seg)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{harm15.pdf}}%
+    \put(0.12321429,0.04761911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.19688036,0.04761911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.5\end{tabular}}}}%
+    \put(0.29018946,0.04761911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.36385554,0.04761911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.5\end{tabular}}}}%
+    \put(0.06726196,0.05982161){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}frequência estimada (Hz)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{harm15.pdf}}%
+    \put(0.08154768,0.1290675){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}850\end{tabular}}}}%
+    \put(0.08154768,0.2){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}900\end{tabular}}}}%
+    \put(0.08154768,0.2709325){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}950\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{harm15.pdf}}%
+    \put(0.66517875,0.01130946){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}tempo (seg)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{harm15.pdf}}%
+    \put(0.5625,0.04761911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.63661268,0.04761911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.5\end{tabular}}}}%
+    \put(0.73036804,0.04761911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.80448071,0.04761911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.5\end{tabular}}}}%
+    \put(0.51190482,0.05803589){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}amplitude estimada (p.u.)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{harm15.pdf}}%
+    \put(0.52619054,0.07232143){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.8\end{tabular}}}}%
+    \put(0.52619054,0.13616071){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.9\end{tabular}}}}%
+    \put(0.54583339,0.2){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.52619054,0.26383929){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.1\end{tabular}}}}%
+    \put(0.52619054,0.32767857){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{harm15.pdf}}%
+  \end{picture}%
+\endgroup%

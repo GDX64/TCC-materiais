@@ -1,23 +1,5 @@
 % para incluir imagens:
 % inkscape -D -z --file=simple_pll_harmonicos.svg --export-pdf=simple_pll_harmonicos.pdf --export-latex
-
-
-\documentclass[a4paper, 12pt]{book}
-
-\usepackage[portuguese]{babel}
-\usepackage{listings}
-\usepackage{graphicx}
-\usepackage{calc}
-\usepackage{amsmath}
-\usepackage{bigints}
-\usepackage{tikz}
-\usetikzlibrary{shapes.geometric, shapes,arrows}
-\usepackage{xcolor}
-\usepackage{float}
-
-
-
-\begin{document}
 	
 \section{Estrutura PLL Multitaxa}
 	
@@ -28,7 +10,7 @@ Como vimos na seção referente ao PLL, esse método é capaz de minimizar o err
 \begin{figure}[h]
 	\centering    
 	\def\svgwidth{\columnwidth}
-	\input{simple_pll_harmonicos.pdf_tex}
+	\input{images/simple_pll_harmonicos.pdf_tex}
 	\caption{Convergência na presença do 3º e 5º harmônicos; SNR=10 dB}
 	\label{fig:your image label}
 \end{figure}
@@ -36,7 +18,7 @@ Como vimos na seção referente ao PLL, esse método é capaz de minimizar o err
 \begin{figure}[h]
 	\centering    
 	\def\svgwidth{\columnwidth}
-	\input{pll_ruido.pdf_tex}
+	\input{images/pll_ruido.pdf_tex}
 	\caption{Convergência na presença de ruído; SNR=10 dB}
 	\label{fig:your image label}
 \end{figure}
@@ -66,7 +48,7 @@ H_{bp}(z)=\frac{1-\alpha}{2}\frac{1-z^{-2}}{1-\beta (1-\alpha) z^{-1} + \alpha z
 \begin{figure}[h]
 	\centering    
 	\def\svgwidth{\columnwidth}
-	\input{banco_de_filtros.pdf_tex}
+	\input{images/banco_de_filtros.pdf_tex}
 	\caption{Características do filtro com $w_0$=0.25}
 	\label{fig:your image label}
 \end{figure}
@@ -77,14 +59,14 @@ H_{bp}(z)=\frac{1-\alpha}{2}\frac{1-z^{-2}}{1-\beta (1-\alpha) z^{-1} + \alpha z
 
 Depois de passado pelo filtro passa-banda, podemos realizar a subamostragem do sinal, uma vez que em tese eliminamos os harmônicos mais distantes quase que completamente, e estes não interferirão em nossa estimação. Na revisão bibliográfica foi discutido o perfil desta interferência e também como encontrar a posição de uma frequência depois de esta sofrer aliasing. Agora faremos a exposição do algoritmo em C de uma função simples capaz de calcular esta frequência, que pode ser até mais explicativo que o texto anterior:
 
-\lstinputlisting[language=c]{algoritmo.c}
+\lstinputlisting[language=c]{capitulos/chp3/algoritmo.c}
 
 A função recebe como argumentos a frequência de amostragem Fs, a frequência rastreada \text{f\_init}, e o ponteiro para a variável flag, que indica se a frequência encontrada estava no semicírculo positivo, quando vale 1, ou negativo, quando vale -1 ($\theta<\pi$ ou $\theta>\pi$). É importante guardar esta informação porque necessitamos dela para recuperar a frequência original estimada. 
 
 \begin{figure}[h]
 	\centering    
 	\def\svgwidth{\columnwidth}
-	\input{circulo_freq.pdf_tex}
+	\input{images/circulo_freq.pdf_tex}
 	\caption{círculo de frequências}
 	\label{fig:freq_circ}
 \end{figure}
@@ -105,7 +87,7 @@ A função recebe como argumentos a frequência de amostragem Fs, a frequência 
 	\centering    
 %	\def\svgwidth{\columnwidth}
 	\def\svgscale{0.7}
-	\input{esquema_pll.pdf_tex}
+	\input{images/esquema_pll.pdf_tex}
 	\caption{esquema multitaxa PLL}
 	\label{fig:esquema_pll}
 \end{figure}
@@ -129,7 +111,7 @@ w_0[k]=(1-\lambda) w_{rec}[k]
 	\centering    
 	%	\def\svgwidth{\columnwidth}
 	\def\svgscale{1}
-	\input{media_direto.pdf_tex}
+	\input{images/media_direto.pdf_tex}
 	\caption{Comparação entre o método de média (com 24 amostras) e o de alimentação direta}
 	\label{fig:esquema_pll}
 \end{figure}
@@ -138,7 +120,7 @@ w_0[k]=(1-\lambda) w_{rec}[k]
 	\centering    
 	%	\def\svgwidth{\columnwidth}
 	\def\svgscale{1}
-	\input{geometrico_media.pdf_tex}
+	\input{images/geometrico_media.pdf_tex}
 	\caption{Comparação entre o método de média (com 24 amostras) e o geométrico ($\lambda=0.9$)}
 	\label{fig:esquema_pll}
 \end{figure}
@@ -219,7 +201,7 @@ Os parâmetros da simulação são $f0=60Hz$, 128 pontos por ciclo de $f0$, $Fs=
 	\centering    
 	%	\def\svgwidth{\columnwidth}
 	\def\svgscale{1}
-	\input{harm15_ruido.pdf_tex}
+	\input{images/harm15_ruido.pdf_tex}
 	\caption{convergência do 15º harmônico na presença de ruído}
 	\label{fig:esquema_pll}
 \end{figure}
@@ -228,7 +210,7 @@ Os parâmetros da simulação são $f0=60Hz$, 128 pontos por ciclo de $f0$, $Fs=
 	\centering    
 	%	\def\svgwidth{\columnwidth}
 	\def\svgscale{1}
-	\input{harm15_deg.pdf_tex}
+	\input{images/harm15_deg.pdf_tex}
 	\caption{convergência do 15º harmônico com degrau em frequência}
 	\label{fig:esquema_pll}
 \end{figure}
@@ -241,7 +223,7 @@ Foram simuladas estimações com inter-harmônicos, seguindo as mesmas prescriç
 	\centering    
 	%	\def\svgwidth{\columnwidth}
 	\def\svgscale{1}
-	\input{batimento.pdf_tex}
+	\input{images/batimento.pdf_tex}
 	\caption{batimento observado na fundamental}
 	\label{fig:esquema_pll}
 \end{figure}
@@ -250,7 +232,7 @@ Foram simuladas estimações com inter-harmônicos, seguindo as mesmas prescriç
 	\centering    
 	%	\def\svgwidth{\columnwidth}
 	\def\svgscale{1}
-	\input{harm64.pdf_tex}
+	\input{images/harm64.pdf_tex}
 	\caption{convergência do inter-harmônico 6.4}
 	\label{fig:esquema_pll}
 \end{figure}
@@ -303,5 +285,3 @@ Abaixo temos uma tabela com todos os cálculos necessários para 1 segundo de si
 		Total       & 64320 & 83040         & 2400           
 	\end{tabular}
 \end{table}
-
-\end{document}

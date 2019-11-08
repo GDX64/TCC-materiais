@@ -1,18 +1,3 @@
-\documentclass[a4paper, 12pt]{book}
-
-\usepackage[portuguese]{babel}
-\usepackage{listings}
-\usepackage{graphicx}
-\usepackage{calc}
-\usepackage{amsmath}
-\usepackage{bigints}
-\usepackage{tikz}
-\usetikzlibrary{shapes.geometric, shapes,arrows}
-\usepackage{xcolor}
-\usepackage{float}
-
-
-\begin{document}
 
 \section{Identificação de frequências}
 
@@ -54,7 +39,7 @@ Devemos também destacar que tanto o RLS quanto o NLMS se beneficiam de ordens d
 \begin{figure}[h]
 	\centering    
 	\def\svgwidth{\columnwidth}
-	\input{convergencia_RLS_NLMS.pdf_tex}
+	\input{images/convergencia_RLS_NLMS.pdf_tex}
 	\caption{Convergência dos coeficientes RLS e NLMS na presença dos harmônicos 1, 3, 5 e 7; M=16}
 	\label{fig:your image label}
 \end{figure}
@@ -62,7 +47,7 @@ Devemos também destacar que tanto o RLS quanto o NLMS se beneficiam de ordens d
 \begin{figure}[h]
 	\centering    
 	\def\svgwidth{\columnwidth}
-	\input{conv_comparacao.pdf_tex}
+	\input{images/conv_comparacao.pdf_tex}
 	\caption{Convergência do RLS e NLMS vista na estimação das frequências, com um degrau de 10 Hz em 500 amostras}
 	\label{fig:your image label}
 \end{figure}
@@ -84,7 +69,7 @@ A tabela mostra o que já esperávamos, e o que pode ser confirmado com outras s
 \begin{figure}[h]
 	\centering    
 	\def\svgwidth{\columnwidth}
-	\input{erro_RLS_NLMS.pdf_tex}
+	\input{images/erro_RLS_NLMS.pdf_tex}
 	\caption{Convergência do RLS e NLMS na presença dos harmônicos 1, 3, 5 e 7; M=16}
 	\label{fig:your image label}
 \end{figure}
@@ -130,7 +115,7 @@ A tabela mostra o que já esperávamos, e o que pode ser confirmado com outras s
 \begin{figure}[h]
 	\centering    
 	\def\svgwidth{\columnwidth}
-	\input{zoom_harmonicos.pdf_tex}
+	\input{images/zoom_harmonicos.pdf_tex}
 	\caption{Efeito de batimento em frequências muito próximas}
 	\label{fig:your image label}
 \end{figure}
@@ -162,7 +147,7 @@ Recuperando alguma equações do capítulo de referências, vimos que o modelo e
 \begin{figure}[H]
 	\centering    
 	\def\svgwidth{\columnwidth}
-	\input{RLS_image.pdf_tex}
+	\input{images/RLS_image.pdf_tex}
 	\caption{Imagem com estimação de amplitudes e frequências no tempo usando RLS}
 	\label{fig:im_RLS}
 \end{figure}
@@ -190,7 +175,7 @@ Podemos ver nas imagens \ref{fig:im_RLS} e \ref{fig:im_NLMS} que a estimação f
 \begin{figure}[H]
 	\centering    
 	\def\svgwidth{\columnwidth}
-	\input{NLMS_image.pdf_tex}
+	\input{images/NLMS_image.pdf_tex}
 	\caption{Imagem com estimação de amplitudes e frequências no tempo usando NLMS}
 	\label{fig:im_NLMS}
 \end{figure}
@@ -219,7 +204,7 @@ Os resultados podem ser vistos na figura abaixo:
 \begin{figure}[H]
 	\centering    
 	\def\svgwidth{\columnwidth}
-	\input{rastreio_final.pdf_tex}
+	\input{images/rastreio_final.pdf_tex}
 	\caption{Rastreio com teste do artigo utilizando RLS}
 	\label{fig:rastreio_final}
 \end{figure}
@@ -234,7 +219,7 @@ Para o cálculo das raízes foi utilizada a função roots do MATLAB. Esta funç
 \begin{figure}[H]
 	\centering    
 	\def\svgwidth{\columnwidth}
-	\input{rastreio_60Hz.pdf_tex}
+	\input{images/rastreio_60Hz.pdf_tex}
 	\caption{Rastreio com teste do artigo utilizando RLS, componente fundamental}
 	\label{fig:rastreio_final}
 \end{figure}
@@ -245,5 +230,3 @@ A complexidade computacional do RLS é de cerca de $3M^2 + 4M$ somas e multiplic
 
 \subsection{Conclusões}
 O algoritmo apresentado tem grande capacidade de estimação para determinados contextos. Por exemplo, com os harmônicos relativamente separados e com amplitude parecida, praticamente não há erros na estimação tanto no NLMS quanto no RLS. Claro que este contexto não é o que se vai encontrar muitas das vezes, mas pode-se fazer ajustes de taxa de amostragem e eliminação de algumas componentes caso seja necessário, tudo depende da natureza do problema. Em situações mais críticas, com grande desnível dos harmônicos e proximidade dos mesmos, o RLS acaba levando grande vantagem. Escolher um método ou o outro depende do hardware disponível e também da proposta desenvolvida. Mostramos que o NLMS faz uma estimação mais estável dos coeficientes e consequentemente das raízes e harmônicos, para uma implementação online.
-
-\end{document}

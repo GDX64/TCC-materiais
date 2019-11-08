@@ -1,0 +1,105 @@
+%% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'conv_comparacao.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{408bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.99264706)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{conv_comparacao.pdf}}%
+    \put(0.46047831,0.50612739){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}amostras\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{conv_comparacao.pdf}}%
+    \put(0.12316176,0.54350496){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.18768382,0.54350496){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}100\end{tabular}}}}%
+    \put(0.26507353,0.54350496){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200\end{tabular}}}}%
+    \put(0.34246324,0.54350496){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300\end{tabular}}}}%
+    \put(0.41985294,0.54350496){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}400\end{tabular}}}}%
+    \put(0.49724265,0.54350496){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}500\end{tabular}}}}%
+    \put(0.57463235,0.54350496){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}600\end{tabular}}}}%
+    \put(0.65202206,0.54350496){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}700\end{tabular}}}}%
+    \put(0.72941176,0.54350496){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}800\end{tabular}}}}%
+    \put(0.80680147,0.54350496){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}900\end{tabular}}}}%
+    \put(0.87775735,0.54350496){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1000\end{tabular}}}}%
+    \put(0.06556379,0.65441195){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}frequência (Hz)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{conv_comparacao.pdf}}%
+    \put(0.10600496,0.56893382){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.08026967,0.63694853){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}100\end{tabular}}}}%
+    \put(0.08026967,0.70496324){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200\end{tabular}}}}%
+    \put(0.08026967,0.77297794){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300\end{tabular}}}}%
+    \put(0.08026967,0.84099265){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}400\end{tabular}}}}%
+    \put(0.08026967,0.90900735){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}500\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{conv_comparacao.pdf}}%
+    \put(0.47794173,0.93152574){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{NLMS}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{conv_comparacao.pdf}}%
+    \put(0.46047831,0.03553915){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}amostras\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{conv_comparacao.pdf}}%
+    \put(0.12316176,0.07291673){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.18768382,0.07291673){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}100\end{tabular}}}}%
+    \put(0.26507353,0.07291673){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200\end{tabular}}}}%
+    \put(0.34246324,0.07291673){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300\end{tabular}}}}%
+    \put(0.41985294,0.07291673){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}400\end{tabular}}}}%
+    \put(0.49724265,0.07291673){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}500\end{tabular}}}}%
+    \put(0.57463235,0.07291673){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}600\end{tabular}}}}%
+    \put(0.65202206,0.07291673){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}700\end{tabular}}}}%
+    \put(0.72941176,0.07291673){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}800\end{tabular}}}}%
+    \put(0.80680147,0.07291673){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}900\end{tabular}}}}%
+    \put(0.87775735,0.07291673){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1000\end{tabular}}}}%
+    \put(0.06556379,0.18382371){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}frequência (Hz)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{conv_comparacao.pdf}}%
+    \put(0.10600496,0.09834559){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.08026967,0.16636029){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}100\end{tabular}}}}%
+    \put(0.08026967,0.234375){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200\end{tabular}}}}%
+    \put(0.08026967,0.30238971){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300\end{tabular}}}}%
+    \put(0.08026967,0.37040441){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}400\end{tabular}}}}%
+    \put(0.08026967,0.43841912){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}500\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{conv_comparacao.pdf}}%
+    \put(0.48989026,0.4609375){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{RLS}\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
