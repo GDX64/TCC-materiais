@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.3)  8 NOV 2019 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.3)  8 NOV 2019 17:14
 entering extended mode
 **./main.tex
 (main.tex
@@ -747,10 +747,20 @@ Package biblatex Info: ... file 'blx-compat.def' found.
 (D:\LaTex\tex/latex/biblatex\blx-compat.def
 File: blx-compat.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
 )
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+
+(D:\LaTex\tex/latex/biblatex\blx-bibtex.def
+File: blx-bibtex.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
-
-(D:\LaTex\tex/latex/biblatex\biblatex.def
+ (D:\LaTex\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
 \c@textcitecount=\count319
 \c@textcitetotal=\count320
@@ -950,24 +960,22 @@ ABD: EveryShipout initializing macros
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `main.bcf'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+\openout4 = `main-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
 Package biblatex Info: Reference section=0 on input line 37.
 Package biblatex Info: Reference segment=0 on input line 37.
-
-
-LaTeX Warning: Citation 'einstein' on page 1 undefined on input line 46.
-
-[1
+ [1
 
 
 {C:/Users/gadum/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
-]
-[3
+] [3
 
 ] [4
 
@@ -2995,50 +3003,41 @@ pdfTeX warning: pdflatex.exe (file ./images/amp_grande.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
 >] [51]
 Ap\^endice A.
-(capitulos/appendix.tex)
+(capitulos/appendix.tex) [52
 
-LaTeX Warning: Empty bibliography on input line 77.
-
-[52
+] [53
 
 ] (main.aux)
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25544 strings out of 492895
- 513232 string characters out of 3142328
- 971731 words of memory out of 3000000
- 28930 multiletter control sequences out of 15000+200000
- 14356 words of font info for 50 fonts, out of 3000000 for 9000
+ 25619 strings out of 492895
+ 514634 string characters out of 3142328
+ 940114 words of memory out of 3000000
+ 28999 multiletter control sequences out of 15000+200000
+ 14826 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,67p,1553b,1811s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/LaTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/LaTex/fonts/type1/pub
-lic/amsfonts/cm/cmex10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-<D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/LaTex/fonts/type1/publi
-c/amsfonts/cm/cmmi6.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/
-LaTex/fonts/type1/public/amsfonts/cm/cmmib10.pfb><D:/LaTex/fonts/type1/public/a
-msfonts/cmextra/cmmib8.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-D:/LaTex/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/LaTex/fonts/type1/public/
-amsfonts/cm/cmr6.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/LaTe
-x/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/LaTex/fonts/type1/public/amsfon
-ts/cm/cmsy6.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/LaTex/fo
-nts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (52 pages, 1942570 bytes).
+lic/amsfonts/cm/cmcsc10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmex10.pfb
+><D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/LaTex/fonts/type1/publ
+ic/amsfonts/cm/cmmi12.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D
+:/LaTex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/LaTex/fonts/type1/public/a
+msfonts/cm/cmmib10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb
+><D:/LaTex/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/LaTex/fonts/type1/publi
+c/amsfonts/cm/cmr17.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/L
+aTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/LaTex/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/LaTex/
+fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/LaTex/fonts/type1/public/amsfonts/
+cm/cmti12.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (53 pages, 1958262 bytes).
 PDF statistics:
- 505 PDF objects out of 1000 (max. 8388607)
+ 516 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  963 words of extra memory for PDF output out of 10000 (max. 10000000)
 
