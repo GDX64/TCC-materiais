@@ -1,0 +1,27 @@
+\BOOKMARK [0][]{chapter*.5}{Lista de Figuras}{}% 1
+\BOOKMARK [0][]{chapter*.6}{Lista de Tabelas}{}% 2
+\BOOKMARK [0][]{chapter*.7}{Lista de Abrevia\347\365es}{}% 3
+\BOOKMARK [0][]{chapter.1}{INTRODU\307\303O}{}% 4
+\BOOKMARK [1][]{section.1.1}{Estado da Arte}{chapter.1}% 5
+\BOOKMARK [1][]{section.1.2}{Estrutura do documento}{chapter.1}% 6
+\BOOKMARK [0][]{chapter.2}{AN\301LISE DE COMPONENTES INDEPENDENTES}{}% 7
+\BOOKMARK [1][]{section.2.1}{Branqueamento}{chapter.2}% 8
+\BOOKMARK [1][]{section.2.2}{Hip\363tese de covari\342ncias diferentes}{chapter.2}% 9
+\BOOKMARK [2][]{subsection.2.2.1}{AMUSE}{section.2.2}% 10
+\BOOKMARK [2][]{subsection.2.2.2}{SOBI}{section.2.2}% 11
+\BOOKMARK [0][]{chapter.3}{METODOLOGIA PROPOSTA}{}% 12
+\BOOKMARK [1][]{section.3.1}{Bloco Atrasador}{chapter.3}% 13
+\BOOKMARK [1][]{section.3.2}{Bloco Estimador do n\372mero de harm\364nicos/inter-harm\364nicos}{chapter.3}% 14
+\BOOKMARK [1][]{section.3.3}{Bloco ICA }{chapter.3}% 15
+\BOOKMARK [1][]{section.3.4}{Bloco Recupera\347\343o de Amplitude}{chapter.3}% 16
+\BOOKMARK [1][]{section.3.5}{Bloco Agrupador e Bloco Ordenador por frequ\352ncia}{chapter.3}% 17
+\BOOKMARK [0][]{chapter.4}{SIMULA\307\303O E RESULTADOS}{}% 18
+\BOOKMARK [1][]{section.4.1}{Testes Sucessivos}{chapter.4}% 19
+\BOOKMARK [1][]{section.4.2}{Sensibilidade ao N\372mero de Atrasos}{chapter.4}% 20
+\BOOKMARK [1][]{section.4.3}{Sensibilidade ao Ru\355do}{chapter.4}% 21
+\BOOKMARK [1][]{section.4.4}{An\341lise de um sinal n\343o estacion\341rio}{chapter.4}% 22
+\BOOKMARK [0][]{chapter.5}{CONCLUS\303O}{}% 23
+\BOOKMARK [0][]{appendix.A}{Resultados adicionais}{}% 24
+\BOOKMARK [1][]{section.A.1}{Testes Sucessivos}{appendix.A}% 25
+\BOOKMARK [1][]{section.A.2}{Sensibilidade ao N\372mero de Atrasos}{appendix.A}% 26
+\BOOKMARK [1][]{section.A.3}{Sensibilidade ao Ru\355do}{appendix.A}% 27

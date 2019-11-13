@@ -1,18 +1,17 @@
 % para incluir imagens:
 % inkscape -D -z --file=simple_pll_harmonicos.svg --export-pdf=simple_pll_harmonicos.pdf --export-latex
 	
-\section{Estrutura PLL Multitaxa}
-	
-Como vimos na seção referente ao PLL, esse método é capaz de minimizar o erro quadrático médio entre um sinal $y(t)$ e uma componente senoidal para ao menos um mínimo local. Nas figuras seguintes podemos ver como converge o algoritmo em diferentes situações, todas foram simuladas para um sinal de 180 V de amplitude e constantes 300, 500, e 6, com frequência de amostragem igual a 7680 Hz, partindo de condições inicias $f_i=60 Hz$ e $A=0$. Podemos perceber pela simulação que o algoritmo converge rapidamente mesmo com ruído, entretanto, na presença de harmônicos com a mesma quantidade de energia, a convergência já é bastante comprometida. Ainda assim, em valor médio, a estimação se mostra correta. Podemos concluir que é possível estimar harmônicos diretamente com o algoritmo PLL obtido, entretanto é conveniente aliá-lo a outras técnicas para que se diminua o erro da estimação.
+Como visto na seção referente ao PLL, esse método é capaz de minimizar o erro quadrático médio entre um sinal $y(t)$ e uma componente senoidal para ao menos um mínimo local. Neste capítulo ganhará forma uma estrutura reunindo o PLL e o processamento multitaxa com o objetivo de reduzir a complexidade computacional e conseguir um algoritmo mais versátil. 
 
-\subsection{banco de filtros}
+\section{Desenpenho do PLL}
+Nas figuras seguintes pode-se observar como converge o algoritmo em diferentes situações, todas foram simuladas para um sinal de 180 V de amplitude e constantes 300, 500, e 6, com frequência de amostragem igual a 7680 Hz, partindo de condições inicias $f_i=60 Hz$ e $A=0$. Percebe-se pela simulação que o algoritmo converge rapidamente mesmo com ruído, entretanto, na presença de harmônicos com a mesma quantidade de energia, a convergência já é bastante comprometida. Ainda assim, em valor médio, a estimação se mostra correta. Conclui-se que é possível estimar harmônicos diretamente com o algoritmo PLL obtido, entretanto é conveniente aliá-lo a outras técnicas para que se diminua o erro da estimação. Os resultados das simulações podem ser vistos nas figuras \ref{fig:PLL_conv1} e \ref{fig:PLL_conv2}.
 
 \begin{figure}[h]
 	\centering    
 	\def\svgwidth{\columnwidth}
 	\input{images/simple_pll_harmonicos.pdf_tex}
 	\caption{Convergência na presença do 3º e 5º harmônicos; SNR=10 dB}
-	\label{fig:your image label}
+	\label{fig:PLL_conv1}
 \end{figure}
 
 \begin{figure}[h]
@@ -20,10 +19,12 @@ Como vimos na seção referente ao PLL, esse método é capaz de minimizar o err
 	\def\svgwidth{\columnwidth}
 	\input{images/pll_ruido.pdf_tex}
 	\caption{Convergência na presença de ruído; SNR=10 dB}
-	\label{fig:your image label}
+	\label{fig:PLL_conv2}
 \end{figure}
 
-\indent A solução encontrada em [2] é o uso de um preprocessamento com filtros passa-banda, para melhorar a relação sinal ruído, e posteriormente subamostragem, para diminuir a complexidade computacional, de modo também que não seja necessário mudar as constantes do algoritmo.
+\section{banco de filtros}
+
+\indent A solução encontrada em \cite{de2009pll} para parte dos problemas anteriormente citados é o uso de um preprocessamento com filtros passa-banda, para melhorar a relação sinal ruído, e posteriormente subamostragem, para diminuir a complexidade computacional, de modo também que não seja necessário mudar as constantes do algoritmo.
 
 \indent O conjunto de filtros utilizado é uma cascata de dois filtros IIR com a seguinte função de transferência:
 
@@ -53,11 +54,11 @@ H_{bp}(z)=\frac{1-\alpha}{2}\frac{1-z^{-2}}{1-\beta (1-\alpha) z^{-1} + \alpha z
 	\label{fig:your image label}
 \end{figure}
 
-\indent Temos talvez como única desvantagem o atraso de grupo que é máximo para a frequência central, e quanto mais seletivo é o filtro, maior é esse atraso. Devemos também ter atenção com a frequência de amostragem, pois quanto maior, menos seletivo um mesmo $\alpha$ seria. Se por exemplo, mantemos um $\alpha$ e aumentamos $f_s$, frequências que antes estavam normalizadas mais longe de nossa frequência central anterior, agora estariam mais próximas, por assim dizer. Dessa forma quanto maior é $f_s$ mais seletivo deve ser o filtro para a separação das mesmas frequências. Isso acaba se tornando um jogo de balanceamento destes parâmetros, pois como vimos anteriormente, um $\alpha$ maior também eleva o atraso de grupo, entretanto temos mais amostras em menos tempo devido ao aumento em $f_s$. Todos estes efeitos estão muito bem descritos por J. Rodrigues em seu trabalho [13]. Ao final utilizaremos $\alpha = 0.975$ e dois filtros em cascata para o restante das simulações.
+\indent Tem-se talvez como única desvantagem o atraso de grupo que é máximo para a frequência central, e quanto mais seletivo é o filtro, maior é esse atraso. Deve-se também ter atenção com a frequência de amostragem, pois quanto maior, menos seletivo um mesmo $\alpha$ seria. Se por exemplo, se mantém $\alpha$ e aumenta $f_s$, frequências que antes estavam normalizadas mais longe de nossa frequência central anterior, agora estariam mais próximas, por assim dizer. Dessa forma quanto maior é $f_s$ mais seletivo deve ser o filtro para a separação das mesmas frequências. Isso acaba se tornando um jogo de balanceamento destes parâmetros, pois como vimos anteriormente, um $\alpha$ maior também eleva o atraso de grupo, entretanto se tem mais amostras em menos tempo devido ao aumento em $f_s$. Todos estes efeitos estão muito bem descritos por J. Rodrigues em seu trabalho \cite{carvalho2008estimaccao}. Ao final utilizaremos $\alpha = 0.975$ e dois filtros em cascata para o restante das simulações.
 
-\subsection{Uso da estrutura multitaxa}
+\section{Uso da estrutura multitaxa}
 
-Depois de passado pelo filtro passa-banda, podemos realizar a subamostragem do sinal, uma vez que em tese eliminamos os harmônicos mais distantes quase que completamente, e estes não interferirão em nossa estimação. Na revisão bibliográfica foi discutido o perfil desta interferência e também como encontrar a posição de uma frequência depois de esta sofrer aliasing. Agora faremos a exposição do algoritmo em C de uma função simples capaz de calcular esta frequência, que pode ser até mais explicativo que o texto anterior:
+Depois de passado pelo filtro passa-banda, pode-se realizar a subamostragem do sinal, uma vez que em tese eliminamos os harmônicos mais distantes quase que completamente, e estes não interferirão na estimação. Dentro revisão bibliográfica foi discutido o perfil desta interferência e também como encontrar a posição de uma frequência depois de esta sofrer aliasing. Agora é feita a exposição do algoritmo em C de uma função simples capaz de calcular esta frequência, que pode ser até mais explicativo que o texto anterior:
 
 \lstinputlisting[language=c]{capitulos/chp3/algoritmo.c}
 
@@ -71,17 +72,17 @@ A função recebe como argumentos a frequência de amostragem Fs, a frequência 
 	\label{fig:freq_circ}
 \end{figure}
 
-\indent Podemos observar na figura \ref{fig:freq_circ} a localização de duas frequências f1 e f2 no círculo. Suponhamos que a frequência de amostragem é $f_s=240 \:Hz$, $f_2=\frac{240}{2} \frac{3}{4} \: Hz = 90 \: Hz$ e $f_2=\frac{240}{2} \frac{4}{3} \: Hz = 160 \: Hz$, encontramos facilmente suas colocações no círculo utilizando o algoritmo citado. Agora reparemos que diferentes frequências serão mapeadas nas mesmas posições do círculo, por exemplo $f_1=\frac{240}{2} \frac{11}{4} \: Hz = 330 \: Hz$ também é mapeada no mesmo ângulo, então não temos uma função inversa que devolva as frequências mapeadas para seus valores reais. 
+\indent É possível observar na figura \ref{fig:freq_circ} a localização de duas frequências f1 e f2 no círculo. Suponhamos que a frequência de amostragem é $f_s=240 \:Hz$, $f_2=\frac{240}{2} \frac{3}{4} \: Hz = 90 \: Hz$ e $f_2=\frac{240}{2} \frac{4}{3} \: Hz = 160 \: Hz$, encontramos facilmente suas colocações no círculo utilizando o algoritmo citado. Agora reparemos que diferentes frequências serão mapeadas nas mesmas posições do círculo, por exemplo $f_1=\frac{240}{2} \frac{11}{4} \: Hz = 330 \: Hz$ também é mapeada no mesmo ângulo, então não existe uma função inversa que devolva as frequências mapeadas para seus valores reais. 
 
-\indent Também nos atentemos para o fato de que se aumentamos $f_1$ levemente, estaremos aumentando sua frequência aparente, mas se fazemos o mesmo com $f_2$ estaremos diminuindo sua frequência aparente. Por isso é importante guardar a variável 'flag', ela nos diz se acréscimos positivos em frequência aparente condizem à acréscimos ou decréscimos na frequência real, e uma vez que não temos uma função inversa que nos devolva a frequência real dada a aparente, temos que utilizar da variação na estimação aparente e o valor inicial que mapeamos para recuperar a estimação real.
+\indent Também é importante se atentar ao fato de que quando se aumenta $f_1$ levemente, se está aumentando sua frequência aparente, mas quando se faz o mesmo com $f_2$ se está diminuindo sua frequência aparente. Por isso é importante guardar a variável 'flag', ela diz se acréscimos positivos em frequência aparente condizem à acréscimos ou decréscimos na frequência real, e uma vez que não existe uma função inversa que nos devolva a frequência real dada a aparente, deve-se utilizar da variação na estimação aparente e o valor inicial mapeado para recuperar a estimação real.
 
-\indent Uma coisa que devemos ter em mente é que algumas frequências se localizarão muito próximas a zero, terão frequência aparente muito menor que realmente tem. E isso dificulta muito a análise, é desejável testar a localização antes de iniciar o algoritmo e fazer uma mudança no valor de subamostragem caso necessário.
+\indent Uma coisa que se deve ter em mente é que algumas frequências se localizarão muito próximas a zero, e terão frequência aparente muito pequena. Isso dificulta muito a análise, é desejável testar a localização antes de iniciar o algoritmo e fazer uma mudança no valor de subamostragem caso necessário.
 
 \begin{equation}
 \hat{f}=f_{init}+\Delta f_{aparente}\, flag
 \end{equation}
 
-\subsection{variação da frequência central do banco de filtros}
+\section{variação da frequência central do banco de filtros}
 
 \begin{figure}[h]
 	\centering    
@@ -92,20 +93,20 @@ A função recebe como argumentos a frequência de amostragem Fs, a frequência 
 	\label{fig:esquema_pll}
 \end{figure}
 
-\indent A estrutura multitaxa consiste em passar o sinal de entrada $x(t)$ pelo banco de filtros, sub-amostrar e passar este sinal para os respectivos PLLs. Como o filtro utilizado é bastante seletivo, a frequência estimada deve controlar o banco de filtros centrando a frequência corretamente. A maneira mais básica de realizar este controle seria alimentar o banco diretamente com as frequências obtida no PLL, entretanto este método é inviável. Vimos na seção sobre o algoritmo PLL utilizado que este é altamente não linear, e complexo de se analisar a convergência. Fazer uma realimentação deste tipo muda o sistema e pode torná-lo instável, ou prejudicar sua convergência. A alternativa encontrada por J. Rodrigues [13]  é utilizar a média das últimas $L$ estimações, assim o filtro passa-banda se move de maneira mais suave e não prejudica tanto o PLL. Desta maneira:
+\indent A estrutura multitaxa consiste em passar o sinal de entrada $x(t)$ pelo banco de filtros, sub-amostrar e passar este sinal para os respectivos PLLs. Como o filtro utilizado é bastante seletivo, a frequência estimada deve controlar o banco de filtros centrando a frequência corretamente. A maneira mais básica de realizar este controle seria alimentar o banco diretamente com as frequências obtida no PLL, entretanto este método é inviável. Vimos na seção sobre o algoritmo PLL utilizado que este é altamente não linear, e complexo de se analisar a convergência. Fazer uma realimentação deste tipo muda o sistema e pode torná-lo instável, ou prejudicar sua convergência. A alternativa encontrada por J. Rodrigues \cite{carvalho2008estimaccao}  é utilizar a média das últimas $L$ estimações, assim o filtro passa-banda se move de maneira mais suave e não prejudica tanto o PLL. Desta maneira:
    
 \begin{equation}
 w_0[k]=\frac{1}{L} \sum_{i=k-L+1}^{k}\hat{w}[i]
 \end{equation}
 
-\indent Uma outra opção é fazer a estimação com uma série geométrica, que pode ser calculada de forma recursiva:
+\indent Uma outra opção é fazer a estimação com uma série geométrica, ou soma convexa, que pode ser calculada de forma recursiva:
  
 \begin{equation}
-w_{rec}[k]=w_{rec}[k-1]\lambda + \hat{w}[k]
+w_{0}[k]=w_{0}[k-1](1-\lambda) + \lambda \hat{w}[k]
+\label{eq:w0 filtro}
 \end{equation}
-\begin{equation}
-w_0[k]=(1-\lambda) w_{rec}[k]
-\end{equation}
+
+Onde $\lambda$ é uma constante entre 0 e 1. \\
 
 \begin{figure}[h]
 	\centering    
@@ -127,7 +128,7 @@ w_0[k]=(1-\lambda) w_{rec}[k]
 
 \indent Simulando as três opções, a alimentação direta da estimação realmente se mostra mais instável, e com maior tempo de convergência, enquanto que o método geométrico em geral é levemente mais estável e de mais rápida convergência que o de média, além de ser mais fácil de computar. Todos foram testados para as mesmas constantes do exemplo anterior, amplitude de 180 V e 60 Hz iniciais, a constante de subamostragem escolhida foi $M_k=16$. Depois de 1 segundo de simulação, é aplicado um degrau na frequência de -2 Hz. Também é passado um filtro média móvel de 16 amostras nos resultados finais de $\hat{w}$ e $\hat{A}$.
 
-\subsection{Síntese da estrutura PLL Multitaxa}
+\section{Síntese da estrutura PLL Multitaxa}
 
 \begin{enumerate}
 	\item Passamos o sinal por um banco de filtros.
@@ -137,7 +138,7 @@ w_0[k]=(1-\lambda) w_{rec}[k]
 	\item Fazemos as estimações de $w$ e $A$, usamos a equação \ref{eq:w0 filtro} e utilizamos a série geométrica para realimentar o banco de filtros com a frequência calculada.
 \end{enumerate}
 
-\subsection{simulações}
+\section{simulações}
 
 Para as simulações computacionais foram seguidos determinados critérios:
 
@@ -149,7 +150,7 @@ Para as simulações computacionais foram seguidos determinados critérios:
 
 Os parâmetros da simulação são $f0=60Hz$, 128 pontos por ciclo de $f0$, $Fs=7380 \,Hz$, $\alpha=0.975$ e dois filtros em cascata no banco. A constante de subamostragem é 16, para todos os harmônicos e inter-harmônicos. A amplitude da fundamental é 180 V, e para todos os harmônicos suas amplitudes são a da fundamental dividido pela ordem do respectivo harmônico. Foi passado um filtro média móvel de ordem 16 em todas as estimações de modo a suavizar a visualização dos resultados.
 
-\subsubsection{harmônicos ímpares}
+\subsection{harmônicos ímpares}
 
 \indent Abaixo estão os resultados para a simulação com os harmônicos ímpares de 1 a 15. Verificamos algumas coisas:
 \begin{itemize}
@@ -215,7 +216,7 @@ Os parâmetros da simulação são $f0=60Hz$, 128 pontos por ciclo de $f0$, $Fs=
 	\label{fig:esquema_pll}
 \end{figure}
 
-\subsubsection{inter-harmônicos}
+\subsection{inter-harmônicos}
 
 Foram simuladas estimações com inter-harmônicos, seguindo as mesmas prescrições do caso anterior. Vemos que os tempos de convergência não são muito afetados, entretanto o erro quadrático médio para a fundamental aumenta um pouco. Isto se deve a um leve batimento que o harmônico 3.2 causa na fundamental, fazendo com que a estimação oscile um pouco. Entretanto se olhamos uma média grande o suficiente destas estimações, podemos nos livrar do batimento.
 
@@ -253,23 +254,23 @@ Foram simuladas estimações com inter-harmônicos, seguindo as mesmas prescriç
 \end{table}
 
 
-\subsection{esforço computacional}
+\section{esforço computacional}
 
-\indent Considerando um sinal amostrado em 7380  Hz e uma subamostragem de 16 amostras, realizaremos a estimativa do esforço computacional considerando operações realizadas a cada iteração de soma, multiplicação e funções trigonométricas, sem considerar deslocamentos de buffers e alocação de memória:
+\indent Considerando um sinal amostrado em 7380  Hz e uma subamostragem de 16 amostras, será feita a estimativa do esforço computacional considerando operações realizadas a cada iteração de soma, multiplicação e funções trigonométricas, sem considerar deslocamentos de buffers e alocação de memória:
 
-\subsubsection{Banco de filtros}
+\subsection{Banco de filtros}
 
 \indent Cada estrutura correspondente ao filtro apresentado na equação [\ref{eq:filtro}] representa 5 multiplicações e 4 somas. Sendo dois filtros, totaliza 10 multiplicações e 8 somas por cada amostra.
 
-\subsubsection{PLL}
+\subsection{PLL}
 
 \indent Cada estrutura PLL como apresentada na equação [só dá pra citar quando juntar os capítulos] representa 11 multiplicações, 5 somas e 4 trigonométricas, que são executadas a cada 16 amostras. 
 
-\subsubsection{Atualização de frequência}
+\subsection{Atualização de frequência}
 
 \indent Cada atualização de frequência custa 2 multiplicações, uma soma e uma trigonométrica.
 
-\subsubsection{Totais}
+\subsection{Totais}
 
 Abaixo temos uma tabela com todos os cálculos necessários para 1 segundo de sinal, por cada frequência rastreada. Percebemos que mais de 90\% dos cálculos são gastos pelo filtro digital.
 

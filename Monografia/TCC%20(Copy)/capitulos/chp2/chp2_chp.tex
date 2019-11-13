@@ -1,25 +1,25 @@
 
-Neste capítulo abordaremos as técnicas anteriormente mencionadas, que são o foco deste trabalho, PLL (Phase-Locked Loop), análise de prony, ADALINE e RLS (Recursive Least Mean Squares), bem como as convencionais DFT e STFT. Ressaltamos que esta será apenas uma abordagem superficial, não entraremos, portanto, com profundidade nos assuntos tratados.
+Neste capítulo serão abordadas as técnicas anteriormente mencionadas, que são o foco deste trabalho, PLL (Phase-Locked Loop), análise de prony, ADALINE e RLS (Recursive Least Mean Squares), bem como as convencionais DFT e STFT. É importante ressaltar que esta será apenas uma abordagem superficial, não entrando, portanto, com profundidade nos assuntos tratados.
 
 \section{Análise espectral}
-Análise espectral considera o problema de encontrar a energia de um sinal, finito, distribuída em função de frequência, o que pode ser feito com métodos paramétricos ou não paramétricos. Métodos paramétricos assumem conhecimento do modelo com o qual se gerou o sinal em análise. Por exemplo, em alguns capítulos, como o de análise de Prony, assumiremos que nosso sinal é composto unicamente por un número conhecido de exponenciais complexas amortecidas. Para solucionar um problema de estimação paramétrica, a única coisa que temos quer fazer (o que ainda não é fácil, na maioria dos casos) é encontrar os parâmetros supostos. Por outro lado, métodos não paramétricos se baseiam unicamente em transformações do domínio temporal para o domínio da frequência, utilizando filtros que nos dão a energia do sinal contida em uma determinada faixa do espectro, caso da DFT. Quando temos uma boa estimação de nosso modelo, os métodos paramétricos tendem a dar melhores resultados, enquanto que se pouco sabemos sobre o sinal analisado, ou se o mesmo não está bem modelado, os não paramétricos podem ser a melhor opção.
+Análise espectral considera o problema de encontrar a energia de um sinal, finito, distribuída em função de frequência, o que pode ser feito com métodos paramétricos ou não paramétricos. Métodos paramétricos assumem conhecimento do modelo com o qual se gerou o sinal em análise. Por exemplo, em alguns capítulos, como o de análise de Prony, é assumido que o sinal é composto unicamente por un número conhecido de exponenciais complexas amortecidas. Para solucionar um problema de estimação paramétrica, o que se deve fazer é encontrar os parâmetros supostos. Por outro lado, métodos não paramétricos se baseiam unicamente em transformações do domínio temporal para o domínio da frequência, utilizando filtros que nos dão a energia do sinal contida em uma determinada faixa do espectro, caso da DFT. Quando temos uma boa estimação de nosso modelo, os métodos paramétricos tendem a dar melhores resultados, enquanto que quando pouco se sabe sobre o sinal analisado, ou se o mesmo não está bem modelado, os não paramétricos podem ser a melhor opção.
 
-\indent Algumas vezes é conveniente tratar os sinais de maneira determinística, e o faremos neste trabalho, entretanto, como abordagem mais geral, se pode tratá-los com enfoque probabilístico, isto é: admitimos que não se pode de maneira alguma prever os valores assumidos por um sinal ao longo do tempo, mas se pode estimar suas características por meios estatísticos.
-\indent Lembramos também que embora sinais reais sejam o caso mais comum na maioria das aplicações e em nosso caso são praticamente regra, não necessariamente o tratamento de sinais complexos é muito mais complicado. Apenas por uma questão de praticidade e para deixar o trabalho mais conciso, não demonstraremos os teoremas utilizados para entradas complexas quando não for necessário.[11]
+\indent Algumas vezes é conveniente tratar os sinais de maneira determinística, e o será feito neste trabalho, entretanto, como abordagem mais geral, se pode tratá-los com enfoque probabilístico, isto é: admitir que não se pode de maneira alguma prever os valores assumidos por um sinal ao longo do tempo, mas se pode estimar suas características por meios estatísticos.
+\indent É de se notar também que embora sinais reais sejam o caso mais comum na maioria das aplicações e em nosso caso são praticamente regra, não necessariamente o tratamento de sinais complexos é muito mais complicado. Apenas por uma questão de praticidade e para deixar o trabalho mais conciso, não serão demonstrados os teoremas utilizados para entradas complexas quando não for necessário.\cite{stoica2005spectral}
 
 \section{Densidade espectral de energia de um sinal determinístico}
-Seja $y_c(t)$ um sinal contínuo no tempo e $y[n], \; n=0, \pm 1, \pm 2,...$  um sinal discreto tal que $y[n]=y_c(nT_s)$. Consideremos que $y[n]$ tem energia finita. Podemos dizer então que a DTFT de $y$ está definida como:
+Seja $y_c(t)$ um sinal contínuo no tempo e $y[n], \; n=0, \pm 1, \pm 2,...$  um sinal discreto tal que $y[n]=y_c(nT_s)$. Considerando que $y[n]$ tem energia finita. Pode-se dizer então que a DTFT de $y$ está definida como:
 
 \begin{equation}
 Y(w)=\sum_{n=-\infty}^{+\infty}y[n]e^{-jwn}
 \end{equation}
 
-Onde $w$ é denominada frequência angular medido em radianos/segundo, e pode ser relacionada com seu valor físico da seguinte maneira $\bar{w}=wT_s$. A densidade espectral de potência do sinal $y(t)$ pode ser dada então por:
+Onde $w$ é denominada frequência angular medido em radianos/segundo, e pode ser relacionada com seu valor físico da seguinte maneira $\bar{w}=wT_s$. A densidade espectral de energia do sinal $y(t)$ pode ser dada então por:
 \begin{equation}
 S(w)=|Y(w)|^2
 \end{equation}
 
-Podemos interpretar este resultado de algumas formas, mas uma bem simples é lembrar que a DTFT de uma cossenoide é igual a soma de duas deltas refletidas no espectro de frequência:
+Pode-se interpretar este resultado de algumas formas, mas uma bem simples é lembrar que a DTFT de uma cossenoide é igual a soma de duas deltas refletidas no espectro de frequência:
 
 \begin{equation}
 \sum_{n=-\infty}^{+\infty}cos(2\pi f \: n)e^{-jwn}= \pi \delta_{w}(2\pi f) + \pi \delta_{w}(-2\pi f) \;\; w \; \in [0,2 \pi]
@@ -30,11 +30,11 @@ Uma relação muito parecida se estabelece no caso de uma senoide. Desta maneira
 Uma outra relação importante se dá utilizando a autocorrelação de $y[n]$:
 
 \begin{equation}
-r_y[k]=\sum_{n=-\infty}^{+\infty}y[n]y^*[n-k]
+\rho_y[k]=\sum_{n=-\infty}^{+\infty}y[n]y^*[n-k]
 \end{equation}
 
 \begin{equation*}
-\sum_{k=-\infty}^{+\infty}r_y[k]e^{-jwk}=\sum_{n=-\infty}^{+\infty}\sum_{k=-\infty}^{+\infty}y[n]y^*[n-k]e^{-jwk}=
+\sum_{k=-\infty}^{+\infty}\rho_y[k]e^{-jwk}=\sum_{n=-\infty}^{+\infty}\sum_{k=-\infty}^{+\infty}y[n]y^*[n-k]e^{-jwk}=
 \end{equation*}
 \begin{equation}
 \begin{aligned}
@@ -42,13 +42,13 @@ r_y[k]=\sum_{n=-\infty}^{+\infty}y[n]y^*[n-k]
 \end{aligned}
 \end{equation}
 
-Vemos então que a DTFT da autocorrelação de um sinal é igual sua densidade espectral de energia.
+Vê-se então que a DTFT da autocorrelação de um sinal é igual sua densidade espectral de energia.
 
 \subsection{Densidade espectral de potência}
 
-Para a maioria dos sinais com os quais lidamos, não temos um modelo puramente determinístico que os reproduza, não sabemos o valor exato que tomarão no futuro, e tampouco podemos estender seu valor até o infinito, ou analisar infinitas amostras do mesmo. Para os casos reais, é mais conveniente lidar com sequencias aleatórias ao longo do tempo, em que cada realização da sequência tem associada uma distribuição de probabilidade (até o momento de sua ocorrência, quando esta colapsa em algum valor). Para a maioria dos casos, consideraremos que estamos lidando com processos estacionários em sentido amplo[12]. Para este trato aleatório, não é regra que nossos sinais tenham energia finita, mas é possível ao invés disso, estimar sua densidade de potência.
+A maioria dos sinais com os quais se trabalha não têm um modelo puramente determinístico que os reproduza, não se sabe o valor exato que tomarão no futuro, e tampouco se pode estender seu valor até o infinito, ou analisar infinitas amostras do mesmo. Para os casos reais, é mais conveniente lidar com sequencias aleatórias ao longo do tempo, em que cada realização da sequência tem associada uma distribuição de probabilidade (até o momento de sua ocorrência, quando esta colapsa em algum valor). Para a maioria dos casos, consideraremos os sinais como processos estacionários em sentido amplo \cite{haykin2005adaptive}. Para este trato aleatório, não é regra que nossos sinais tenham energia finita, mas é possível ao invés disso, estimar sua densidade de potência.
 
-\indent Assumamos agora que $y[n]$ é uma sequência de variáveis aleatórias, com o mesmo domínio da sequência anterior, e que $E[y[n]]=0$ para todo $n$. Tendo todas as variáveis aleatórias média nula. A função de correlação de $y[n]$ está definida como:
+\indent Assume-se agora que $y[n]$ é uma sequência de variáveis aleatórias, com o mesmo domínio da sequência anterior, e que $E[y[n]]=0$ para todo $n$. Tendo todas as variáveis aleatórias média nula. A função de correlação de $y[n]$ está definida como:
 
 \begin{equation}
 r_y[k]=E[ y[n] \: y[n-k]^*]
@@ -66,7 +66,7 @@ r_y[k]=E[ y[n] \: y[n-k]^*]
 \phi(w)=\lim_{N\rightarrow \infty}\frac{1}{N}\left|\sum_{k=0}^{N-1}y[k]e^{-jwk}  \right|^2
 \end{equation}
 
-\indent Ambas definições são equivalentes. Veremos mais adiante que uma das formas principais de se calcular a PSD é por meio de estimações da função de autocorrelação do sinal em questão.
+\indent Ambas definições são equivalentes. Será exposto mais adiante que uma das formas principais de se calcular a PSD é por meio de estimações da função de autocorrelação do sinal em questão.
 
 
 \subsection{Periodograma e correlograma}
@@ -77,13 +77,13 @@ Uma forma bastante simples de estimar a PSD seria:
 \hat{\phi_p}(w)=\frac{1}{N}  \left|\sum_{k=0}^{N-1}y[k]e^{-jwk}  \right|^2
 \end{equation}
 
-A qual chamamos periodograma. Outra forma poderia ser:
+A qual é chamada periodograma. Outra forma poderia ser:
 
 \begin{equation}
 \hat{\phi_c}(w)=\sum_{k=-(N-1)}^{N-1}r_y[k]e^{-jwk}
 \end{equation}
 
-A qual chamamos correlograma. Dois estimadores para a autocorrelação serão apresentados abaixo, considerando $n=0,1,2,..., N-1$:
+A qual é chamada correlograma. Dois estimadores para a autocorrelação serão apresentados abaixo, considerando $n=0,1,2,..., N-1$:
 
 \begin{equation}
 \hat{r}_y(k)=\frac{1}{N-k}\sum_{n=k}^{N-1}y[n] \: y^*[n-k]
@@ -93,9 +93,9 @@ A qual chamamos correlograma. Dois estimadores para a autocorrelação serão ap
 \hat{r}_y(k)=\frac{1}{N}\sum_{n=k}^{N-1}y[n] \: y^*[n-k]
 \end{equation}
 
-O primeiro estimador é chamado estimador padrão não viesado, e o segundo é um estimador viesado. Lembramos que é assim chamado (viesado) um estimador cuja esperança não é o que visa estimar. Fato é também que $\hat{\phi_p}$ é igual a $\hat{\phi_p}$ se $\hat{r_y}$ for estimada com estimador viesado.
+O primeiro estimador é chamado estimador padrão não viesado, e o segundo é um estimador viesado. Lembrando que é assim chamado (viesado) um estimador cuja esperança não é o que visa estimar. Fato é também que $\hat{\phi_p}$ é igual a $\hat{\phi_p}$ se $\hat{r_y}$ for estimada com estimador viesado.
 
-\indent Muitas vezes o estimador em XX é preterido ao de XX, porque para muitos sinais a autocorrelação para valores grandes de k (valores considerados longe do 0) é muito baixa, e portanto não ajudaria fazer a correção do fator de normalização. Entretanto esse pode não ser bem o nosso caso, porque estaremos considerando nossos sinais muitas vezes como senoides puras, as quais apresentam correlação em trechos periódicos. Em realidade, não iremos sequer adentrar muito em estimadores de correlação. Partiremos logo para análise de métodos relacionados a DFT. As vantagens e desvantagens destes métodos todos podem ser vistos à luz de processos estocásticos, ou pela análise das características do método em si. Tentaremos mostrar um pouco de ambos, os utilizando da maneira que for mais conveniente. 
+\indent Muitas vezes o estimador em XX é preterido ao de XX, porque para muitos sinais a autocorrelação para valores grandes de k (valores considerados longe do 0) é muito baixa, e portanto não ajudaria fazer a correção do fator de normalização. Entretanto esse pode não ser bem o caso, porque os sinais muitas vezes são considerados senoides puras, as quais apresentam correlação em trechos periódicos. Em realidade, não serão discutidos estimadores de correlação. A seguir serão analisados métodos relacionados a DFT. As vantagens e desvantagens destes métodos todos podem ser vistos à luz de processos estocásticos, ou pela análise das características do método em si. Tentaremos mostrar um pouco de ambos, os utilizando da maneira que for mais conveniente. 
 %===================DFT==========================
 \section{DFT}
 A transformada discreta de Fourier (DFT) de uma sequência discreta {x[n]} de tamanho N é definida como[5]:
@@ -103,28 +103,29 @@ A transformada discreta de Fourier (DFT) de uma sequência discreta {x[n]} de ta
 X[k]=\sum_{n=0}^{n=N-1} x[n]e^{(-2jnk\pi/N)}\;,\;k=0,1,2,...,N-1
 \end{equation}
 
-Podemos dizer que a sequência X[k] é a DFT de x[n]. As duas sequências tem o mesmo tamanho, e X[k] representa o mapeamento das frequências de x[n] supondo estas estacionárias e com período igual ao analisado. Sendo Ts o tempo de amostragem da sequência x[n], temos a seguinte relação:
+Pode-se dizer que a sequência X[k] é a DFT de x[n]. As duas sequências tem o mesmo tamanho, e X[k] representa o mapeamento das frequências de x[n] supondo estas estacionárias e com período igual ao analisado. Sendo Ts o tempo de amostragem da sequência x[n], temos a seguinte relação:
 \begin{equation}
 R_s=\frac{1}{T_sN}
 \end{equation}
-\indent Onde Rs é igual a resolução de X[k]. Temos o mapeamento dado como:
+\indent Onde Rs é igual a resolução de X[k]. O mapeamento é dado como:
 \begin{equation}
 f_k=R_s k\;,\;k=0, 1, 2,...,N/2
 \end{equation}
-\indent Percebemos que a DFT age como uma série de Fourier, onde valores absolutos de X[k] são vistos como a amplitude de uma determinada frequência múltipla da componente fundamental f1, que é igual a resolução Rs. Para um sinal contendo apenas harmônicos de f1, e eventualmente algum valor médio, podemos extrair perfeitamente seus valores de amplitude e fase. Entretanto, para um sinal que possui componentes inter-harmônicos, não é possível fazer o mesmo. Neste caso ocorre o chamado \textit{espalhamento}. Já se pode notar algumas deficiências da DFT. Também temos problemas caso não seja amostrado um período exato do sinal analisado, ou um múltiplo inteiro de um período, podendo a DFT levar a crer, por exemplo, que existe um valor médio no sinal, e outros conteúdos equivocados. Este fenômeno é denominado \textit{spectral leackage}[5]. 
+\indent Percebe-se que a DFT age como uma série de Fourier, onde valores absolutos de X[k] são vistos como a amplitude de uma determinada frequência múltipla da componente fundamental f1, que é igual a resolução Rs. Para um sinal contendo apenas harmônicos de f1, e eventualmente algum valor médio, é possível extrair perfeitamente seus valores de amplitude e fase. Entretanto, para um sinal que possui componentes inter-harmônicos, não é se pode fazer o mesmo. Neste caso ocorre o chamado \textit{espalhamento}. Já se pode notar algumas deficiências da DFT. Esta também apresenta problemas caso não seja amostrado um período exato do sinal analisado, ou um múltiplo inteiro de um período, podendo a DFT levar a crer, por exemplo, que existe um valor médio no sinal, e outros conteúdos equivocados. Este fenômeno é denominado \textit{spectral leackage}[5]. 
 
-\indent Como a DFT pressupõe um sinal estacionário, ela não é adequada para análise de sinais variantes no tempo. Para tanto podemos utilizar de uma DFT de janela deslizante. Para uma janela de tamanho N, temos:
+\indent Como a DFT pressupõe um sinal estacionário, ela não é adequada para análise de sinais variantes no tempo. Para tanto é possível utilizar de uma DFT de janela deslizante. Para uma janela de tamanho N:
 
 \begin{equation}
 X[k,m]=\sum_{n=0}^{N-1} x[m-n]e^{(-2jnk\pi/N)}\;,\;k=0,1,2,...,N-1
 \end{equation}
 
-\indent Desta forma, para cada m>N, temos uma janela de tamanho N onde será analisado o sinal. Existem algoritmos mais eficazes para efetuar este tipo de cálculo de forma recursiva, sem precisar calcular toda a DFT como se estivéssemos diante de uma amostra completamente nova:
+\indent Desta forma, para cada m>N, tem-se uma janela de tamanho N onde será analisado o sinal. Existem algoritmos mais eficazes para efetuar este tipo de cálculo de forma recursiva, sem precisar calcular toda a DFT como se estivéssemos diante de uma janela completamente nova:
 \begin{equation}
 X[k,m]=C\{X[k,m-1]e^{j2\pi k/N}+(x[m]-x[m-N])e^{j2\pi k/N}\}\;,\;k=1,2,...,N/2
+\label{eq:dft recursiva}
 \end{equation}
 
-\indent C=1/N para k=N/2 e igual a 2/N para os demais valores. O valor de k foi restringido levando-se em conta a simetria dos sinais reais.[Não sei de onde veio essa equação, vou ver depois]
+\indent C=1/N para k=N/2 e igual a 2/N para os demais valores. O valor de k foi restringido levando-se em conta a simetria dos sinais reais.
 
 \indent Pode-se usar diferentes tipos de janelas além da anterior, que é uma janela quadrada, onde todos os termos da sequência tem igual peso no cálculo da DFT. O uso de outras janelas ajuda na amenização do \textit{leackage}. Algumas janelas estão expostas abaixo.
 
@@ -138,17 +139,15 @@ Janela de Hamming:
 w_{hm}(n)=0.54-0.46cos(\frac{2\pi n}{N-1})\;,\;0\leq n \leq N-1
 \end{equation}
 
-\indent O uso deste tipo de janelamento atenua eventuais descontinuidades nas extremidades do sinal, auxiliando na medição dos parâmetros. Aplicar uma janela ao sinal significa deslizar a sequência formada por $w$ por x[n], multiplicando termo a termo. Desta forma poderíamos reescrever a equação XXX como:
+\indent O uso deste tipo de janelamento atenua eventuais descontinuidades nas extremidades do sinal, auxiliando na medição dos parâmetros. Aplicar uma janela ao sinal significa deslizar a sequência formada por $w$ por x[n], multiplicando termo a termo. Desta forma poderíamos reescrever a equação \ref{eq:dft recursiva} como:
 \begin{equation}
 X[k,m]=\sum_{n=0}^{n=N-1} x[m-n]*w(n)*e^{(-2jnk\pi/N)}\;,\;k=0,1,2,...,N-1
 \end{equation}
 
-\indent podemos ver nas figuras o efeito da aplicação do janelamento.
-
 \section{Análise de Prony}
 A análise de Prony foi desenvolvida em 1795 de modo a explicar a espanção de gases. Ela se assemelha em parte a DFT, entretanto se propõe a ajustar uma soma de exponenciais complexas amortecidas a uma sequência de dados igualmente espaçados, ao passo de que a DFT apenas estima as exponeciais complexas e em subdivisões predeterminadas da frequência de amostragem. A análise de prony não é somente uma técnica de análise de sinais, mas também de indentificação de sistemas amplamente utilizada em sistemas de potência, área biomédica, processamento de fala, decaimento radioativo entre outas. 
-A análise de Prony é conhecida por não se comportar muito bem quando um sinal contém ruído, a técnica não faz distinção entre sinal e ruído, e também ajusta as exponenciais ao ruído presente.
-Seguindo o proposto em [3], temos o seguinte para um sinal $y[k]$ imaginando M exponenciais para se ajustarem a 2M amostras, respeitando o teorema da amostragem:
+A análise de Prony é conhecida por não se comportar muito bem quando um sinal contém ruído, a técnica não faz distinção entre sinal e ruído, e também ajusta as exponenciais às pertubações presentes.
+Seguindo o proposto em [3], tem-se o seguinte para um sinal $y[k]$ imaginando M exponenciais para se ajustarem a 2M amostras, respeitando o teorema da amostragem:
 
 \Large
 \begin{equation}
@@ -156,38 +155,42 @@ y[k]=\sum_{m=1}^{M}A_me^{(\alpha_m+j2\pi f_m)(k-1)\Delta t +j\sigma_m}\;,\;k=1,2
 \end{equation}
 \normalsize
 
-\indent Onde $fm$ é a frequência das exponenciais, $\Delta t$ é o tempo de amostragem, $\alpha _m$ é o coeficiente de amortecimento, e $\sigma _m$ é o ângulo de defasagem. Para o método proposto, estamos apenas interessados em saber quais são as frequências presentes no sinal. Se imaginamos nosso sistema sendo auto regressivo (AR) de ordem M, temos que em qualquer instante de $k$ é possível prever o valor $y[k]$ considerando apenas as M amostras anteriores deste mesmo sinal. Podemos então montar uma equação de diferenças, que neste caso também é um modelo de predição linear[4]:
+\indent Onde $fm$ é a frequência das exponenciais, $\Delta t$ é o tempo de amostragem, $\alpha _m$ é o coeficiente de amortecimento, e $\sigma _m$ é o ângulo de defasagem. Para o método proposto, estamos apenas interessados em saber quais são as frequências presentes no sinal. Se imaginamos nosso sistema sendo auto regressivo (AR) de ordem M, em qualquer instante de $k$ é possível prever o valor $y[k]$ considerando apenas as M amostras anteriores deste mesmo sinal. Pode-se então montar uma equação de diferenças, que neste caso também é um modelo de predição linear \cite{huang2001spoken}:
 
 \begin{equation}
 y[k]=\sum_{m=1}^{M}a_m y[k-m]
 \end{equation}
 
-É sabido que exponenciais complexas são soluções para tal modelo. Se tivermos em mãos os valores dos coeficientes $a$ podemos montar o polinômio característico da equação e as raízes deste polinômio (exponenciais complexas) são soluções para nosso problema. De posse dos coeficientes $a$ devemos então encontrar as raízes do polinômio seguinte:
+É sabido que exponenciais complexas são soluções para tal modelo. Tendo em mãos os valores dos coeficientes $a$ é possível montar o polinômio característico da equação, e suas raízes (exponenciais complexas) são soluções para nosso problema. De posse dos coeficientes $a$ devemos então encontrar as raízes do polinômio seguinte:
 \begin{equation}
 P(z)=z^M-a_1z^{M-1}-...-a_Mz^0
 \end{equation}
 
-\indent Como os coeficientes $a$  são reais, as raízes complexas estão em pares complexos conjugados, desta maneira cada par complexo representa uma possível senóide já que $cos(wt)=\frac{e^{jwt}+e^{-jwt}}{2}$:
+\indent Como os coeficientes $a$  são reais, as raízes complexas estão em pares complexos conjugados, desta maneira cada par complexo representa uma possível senoide já que $cos(wt)=\frac{e^{jwt}+e^{-jwt}}{2}$:
 \begin{equation}
 f_m=atan(Im\{z_m\}/Re\{z_m\})2\pi fs
 \end{equation}
 
 \indent Onde $_zm$ é uma das raízes e $fs$ é a frequência de amostragem.
-\indent Reparemos que as frequências $f_m$ são frequências de possíveis soluções do sistema, não necessariamente elas estarão presentes. Qualquer combinação linear dessas senióides também é solução do sistema AR planteado. Para encontrar a forma da solução real, é  necessário fazer uso das condições iniciais conhecidas de nosso sistema. No caso, as próprias amostras $y[k]$ as quais temos acesso.
+\indent As frequências $f_m$ são possíveis soluções do sistema, não necessariamente elas estarão presentes. Qualquer combinação linear dessas senoides também é solução do sistema AR planteado. Para encontrar a forma da solução real, é  necessário fazer uso das condições iniciais conhecidas de nosso sistema. No caso, as próprias amostras $y[k]$.
 
-\indent Os coeficientes de amortecimento $\alpha_m$ são o módulo das raízes complexas que encontramos. E se alguma raíz não é complexa, isto somente significa que uma exponencial é solução para nossa equação.
+\indent Os coeficientes de amortecimento $\alpha_m$ são o módulo das raízes complexas que foram encontradas. E se alguma raíz não é complexa, isto somente significa que uma exponencial é solução para a equação.
 \begin{equation}
 \alpha_m=|zm|
 \end{equation}
 \subsection{Solução do modelo de predição linear}
 
-Existem diversas formas de solucionar um modelo deste tipo, apresentaremos algumas opções abaixo[9]:
+Existem diversas formas de solucionar um modelo deste tipo, são apresentadas algumas opções abaixo \cite{haykin2005adaptive}:
 
 \subsubsection{Sistema linear}
 
-Conhecendo os valores $y[k]$ que são amostras de nosso sistema analisado, podemos montar um sistema linear considerando a equação anterior:
+Conhecendo os valores $y[k]$ que são amostras de nosso sistema analisado, pode-se montar um sistema linear considerando a equação anterior:
 \begin{equation}
 y[k]=\sum_{m=1}^{M}a_m y[k-m]
+\end{equation}
+
+\begin{equation}
+\begin{split}
 \begin{bmatrix}
 y[k-1] & y[k-2] & \dots & y[k-M] \\
 y[k-2] & y[k-3] & \dots & y[k-M-1] \\
@@ -197,10 +200,12 @@ y[k-M] & y[k-M-1] & \dots & y[k-2M+1]
 \begin{bmatrix}
 a_1 \\ a_2 \\ \vdots \\ a_M
 \end{bmatrix}
-=
+&
+= 
 \begin{bmatrix}
 y[k] \\ y[k-1] \\ \vdots \\ y[k-M+1]
 \end{bmatrix}
+\end{split}
 \end{equation}
 
 Ou de forma simplificada:
@@ -215,12 +220,12 @@ A forma mais simples de resolver este sistema é inverter a matriz $\boldsymbol{
 \boldsymbol{a}=\boldsymbol{Y_k}^{-1}\boldsymbol{y_k}
 \end{equation}
 
-Um dos problemas com esta solução é que ela é computacionalmente custosa, já  que não está implementada de maneira recursiva, mas pior que isso é o fato de que normalmente temos ruído em nosso sistema, e desta maneira estamos ajustando os valores de $\boldsymbol{a}$ ao ruído também, o que em geral não é o desejado, e em nosso caso, certamente não é. Desta forma, cada vez que calculamos o vetor $\boldsymbol{a}$, ele pode sair completamente diferente do anterior, nos levando a estimações equivocadas. Modelando $y[k]$ como:
+Um dos problemas com esta solução é que ela é computacionalmente custosa, já  que não está implementada de maneira recursiva, mas pior que isso é o fato de que normalmente há ruído no sistema, e desta maneira se ajusta os valores de $\boldsymbol{a}$ ao ruído também, o que em geral não é o desejado, e neste caso específico, certamente não é. Desta forma, cada vez que calculamos o vetor $\boldsymbol{a}$, ele pode sair completamente diferente do anterior, levando à estimações equivocadas. Modelando $y[k]$ como:
 \begin{equation}
 y[k]=\sum_{m=1}^{M}a_m y[k-m]+\xi_k
 \end{equation}
 
-Em que $\xi_k$ é ruído branco, temos um modelo estocástico de nosso sinal, que nos possibilita pensar em soluções mais arrojadas. As equações que caracterizam a solução do modelo AR também são conhecidas como equações de Youle-Walker e têm como solução ótima o chamado algoritmo de Levinson-Durbin [15] o qual não vamos abordar neste trabalho.
+Em que $\xi_k$ é ruído branco, tem-se um modelo estocástico do sinal, que possibilita pensar em soluções mais arrojadas. As equações que caracterizam a solução do modelo AR também são conhecidas como equações de Youle-Walker e têm como solução ótima o chamado algoritmo de Levinson-Durbin [15] o qual não será abordado neste trabalho.
 
 \subsection{Filtros adaptativos}
 
@@ -256,16 +261,16 @@ w_{n}
 
 Uma das formas mais antigas e consagradas de otimizar uma função dentro dos métodos clássicos é seguir a direção do gradiente desta função, com relação as variáveis de interesse, para atualizar os valores destas variáveis de forma iterativa.
 
-Consideremos um sistema discriminado pela série temporal $u[n] \space n=0,1,2..$ e um filtro de resposta impulsiva real $w_0, w_1 ... w_{M-1}$:
+Seja um sistema descrito pela série temporal $u[n] \space n=0,1,2..$ e um filtro de resposta impulsiva real $w_0, w_1 ... w_{M-1}$:
 \begin{equation}
 y[n]=\sum_{k=0}^{M-1}u[n-k]w_k
 \end{equation}
-Todo este desenvolvimento pode ser feito de maneira bastante similar considerando entradas complexas e filtros com coeficientes complexos, mas por questões de simplicidade estaremos focando no caso em que ambos são reais. Imaginemos que desejamos que a saída deste filtro seja uma outra série temporal igualmente real $d[n]$, assim nosso erro seria:
+Todo este desenvolvimento pode ser feito de maneira bastante similar considerando entradas complexas e filtros com coeficientes complexos, mas por questões de simplicidade será focado o caso em que ambos são reais.Supondo que se deseja que a saída deste filtro seja uma outra série temporal igualmente real $d[n]$, assim o erro seria:
 \begin{equation}
 e[n]=d[n]-y[n]    
 \end{equation}
 
-Considerando o caso de $u$ estocástico, $e[n]$ é uma variável aleatória. Gostaríamos então de minimizar a esperança de $e^2[n]$, definimos então nossa função de custo:
+Considerando o caso de $u$ estocástico, $e[n]$ é uma variável aleatória. Deseja-se então de minimizar a esperança de $e^2[n]$. Seja a função de custo:
 \begin{equation}
 J=E[e^2[n]]=E[(d[n]-y[n])^2]   
 \end{equation}
@@ -275,9 +280,9 @@ Definindo nosso operador gradiente $\nabla_k$:
 \nabla_k J=-2 E[e[n]u[n-k]]   
 \end{equation}
 
-Se queremos encontrar o ótimo com relação a esta função de custo, $\nabla_k J$ deve ser igual a zero para todo $k$, como a esperança do produto de duas variáveis aleatórias é sua correlação, $u[n-k]$ e $e[n]$ devem estar descorrelacionadas para todo $k$. A este resultados chamamos princípio da ortogonalidade. Um corolário deste princípio é que $y$ também deve ser ortogonal, ou descorrelacionada com $e[n]$.
+Para encontrar o ótimo com relação a esta função de custo, $\nabla_k J$ deve ser igual a zero para todo $k$, como a esperança do produto de duas variáveis aleatórias é sua correlação, $u[n-k]$ e $e[n]$ devem estar descorrelacionadas para todo $k$. A este resultados chamamos princípio da ortogonalidade. Um corolário deste princípio é que $y$ também deve ser ortogonal, ou descorrelacionada com $e[n]$.
 
-\indent É mais conveniente para nó trabalhar com a notação matricial destes resultados. Ao vetor coluna que contém as variáveis aleatórias $u[n-k]$, de k=0 a K=M-1, lhe chamamos $\boldsymbol{u}_n$, ao vetor de coeficientes $w$, igualmente:
+\indent É mais conveniente trabalhar com a notação matricial destes resultados. Ao vetor coluna que contém as variáveis aleatórias $u[n-k]$, de k=0 a K=M-1, se chama $\boldsymbol{u}_n$ o vetor de coeficientes $w$, igualmente:
 
 \begin{equation*}
 \boldsymbol{u}_n=
@@ -291,25 +296,25 @@ u[n] & u[n-1] & \dots & u[n-M+1]
 w_0 & w_1 & \dots & w_{M-1}
 \end{bmatrix}^T
 \end{equation*}
-Desenvolvendo nossa equação anterior, podemos obter:
+Desenvolvendo a equação anterior, obtém-se:
 
 \begin{equation}
 \nabla J=-2 E[e[n]\boldsymbol{u}_n]=2E[\boldsymbol{u}_n\boldsymbol{U}^{T}_n\boldsymbol{W}-d[n]\boldsymbol{u}_n]   
 \end{equation}
 
-Desta última equação, destacamos que $E[d[n]\boldsymbol{U}_n]$ é o vetor de correlação cruzada entre $d[n]$, que chamaremos de $\boldsymbol{r_{du}}$ e as amostras atrasadas do sinal de entrada.Destacamos também que $E[\boldsymbol{U}_n\boldsymbol{U}^{T}_n]$, a qual chamaremos $\boldsymbol{R_{uu}}$, é a matriz MxM de autocorrelação do mesmo sinal. Sendo assim, escrevemos agora:
+Desta última equação $E[d[n]\boldsymbol{U}_n]$ é o vetor de correlação cruzada entre $d[n]$, ao qual se chama $\boldsymbol{r_{du}}$ e as amostras atrasadas do sinal de entrada. Destacamos também que $E[\boldsymbol{U}_n\boldsymbol{U}^{T}_n]$, a qual chamaremos $\boldsymbol{R_{uu}}$, é a matriz MxM de autocorrelação do mesmo sinal. Sendo assim:
 
 \begin{equation}
 \boldsymbol{R}_{uu}\boldsymbol{w}-\boldsymbol{r}_{du}=0
 \end{equation}
 
-De onde podemos concluir que o vetor coeficientes ótimos $\boldsymbol{w}_{opt}$ é:
+De onde se conclui que o vetor coeficientes ótimos $\boldsymbol{w}_{opt}$ é:
 
 \begin{equation}
 \boldsymbol{w}_{opt}=\boldsymbol{R}_{uu}^{-1}\boldsymbol{r}_{du}
 \end{equation}
 
-Se $u$ é um processo estacionário em sentido amplo, então podemos coletar amostras suficientes para fazer uma boa estimação das matrizes acima, encontrando assim um filtro muito mais apropriado para nossos propósitos. Desta maneira, é possível estimar o conteúdo espectral de $u$ com precisão. Reparemos que este método não é propriamente um gradiente escendente já que encontramos a solução em um passo apenas.
+Se $u$ é um processo estacionário em sentido amplo, então é possível coletar amostras suficientes para fazer uma boa estimação das matrizes acima, encontrando assim um filtro muito mais apropriado para os propósitos deste trabalho. Desta maneira, se estima o conteúdo espectral de $u$ com precisão. Reparemos que este método não é propriamente um gradiente descendente já que encontramos a solução em um passo apenas.
 
 \indent A solução acima tem sua utilidade, entretanto, se a natureza do sinal mudar, não teremos mais uma boa aproximação do mesmo, neste caso, é melhor resolver estas equações de forma recursiva, de modo que o filtro possa se adaptar constantemente à mudanças ocorridas.  
 
@@ -322,9 +327,10 @@ Para atualizar o vetor de pesos $\boldsymbol{w}_n$ na direção oposta a do grad
 \end{equation*}
 \begin{equation}
 \boldsymbol{w}_{n}=\boldsymbol{w}_{n-1} + \mu(\boldsymbol{r}_{du}-\boldsymbol{R}_{uu} \boldsymbol{w}_{n+1})
+\label{eq:w_lms}
 \end{equation}
 
-O que diferencia o LMS de outros métodos de gradiente descendente é a forma de estimar as matrizes $\boldsymbol{R}_{uu}$ e $\boldsymbol{r}_{du}$. Vamos estimâ-las da seguinte forma:
+O que diferencia o LMS de outros métodos de gradiente descendente é a forma de estimar as matrizes $\boldsymbol{R}_{uu}$ e $\boldsymbol{r}_{du}$. Estas serão estimadas da seguinte forma:
 
 \begin{equation}
 \boldsymbol{\hat{R}}_{uu}=\boldsymbol{u}_n \boldsymbol{u}_{n}^T
@@ -333,35 +339,35 @@ O que diferencia o LMS de outros métodos de gradiente descendente é a forma de
 \boldsymbol{\hat{r}}_{du}=\boldsymbol{u}_n d[n]
 \end{equation}
 
-O que pode soar uma heresia, mas faz sentido se pensarmos que apenas temos M amostras de sinal.
+O que pode soar uma heresia, mas faz sentido se lembra que apenas temos M amostras de sinal.
 
 \subsection{O algoritmo NLMS}
 
-Uma melhoria no algoritmo anterior pode ser proposta. Se multiplicamos a parte que está entre parênteses na equação XX:
+Uma melhoria no algoritmo anterior pode ser proposta. Multiplicando a parte que está entre parênteses na equação \ref{eq:w_lms}:
 
 \begin{equation}
 \boldsymbol{w}_{n}=\boldsymbol{w}_{n-1} + \mu \boldsymbol{R}_{uu}^{-1}(\boldsymbol{r}_{du}-\boldsymbol{R}_{uu} \boldsymbol{w}_{n+1}) = \boldsymbol{w}_{n-1} + \mu(\boldsymbol{w}_{opt} - I \boldsymbol{w}_{n-1}) = \boldsymbol{w}_{opt}
 \end{equation}
 
-Em teoria, nosso algoritmo convergiria em apenas uma iteração. Resta apenas o empecilho de que estimar tal matriz. Com estimador que tínhamos antes isto não é possível, porque a matriz estimada $\boldsymbol{\hat{R}}_{uu}$ não é inversível por ser o produto de dois vetores. Mas podemos fazer uma aproximação da forma $\boldsymbol{\hat{R}}_{uu} + \boldsymbol{I} \epsilon$. Que certamente é inversível e pode nos dar uma inversa útil, para valores pequenos de $\epsilon$. E após alguma álgebra[10], que pode ser encontrada em [9], chegamos ao seguinte:
+Em teoria, este algoritmo convergiria em apenas uma iteração. Resta o empecilho de estimar tal matriz. Com estimador anterior isto não é possível, porque a matriz estimada $\boldsymbol{\hat{R}}_{uu}$ não é inversível por ser o produto de dois vetores. Mas podemos fazer uma aproximação da forma $\boldsymbol{\hat{R}}_{uu} + \boldsymbol{I} \epsilon$. Que certamente é inversível e confere uma inversa útil, para valores pequenos de $\epsilon$. E após alguma álgebra \cite{bessegato2012line}, que pode ser encontrada em \cite{haykin2005adaptive}, chegamos ao seguinte:
 
 \begin{equation}
 \boldsymbol{w}_{n}=\boldsymbol{w}_{n-1} + \mu \frac{\boldsymbol{u}_{n}}{|\boldsymbol{u}_{n}|^2 + \epsilon }(d[n]-\boldsymbol{u}_{n} \boldsymbol{w}_{n-1}) =\boldsymbol{w}_{n-1} + \mu \frac{\boldsymbol{u}_{n}}{|\boldsymbol{u}_{n}|^2 + \epsilon }e[n]
 \end{equation}
 
-A este algoritmo chamamos LMS normalizado, ou NLMS. Há ainda o estudo de convergência para valores pequenos de $\mu$, que também pode ser encontrado em [6][9], tanto para o LMS quanto para o NLMS. Mas de modo geral o NLMS deve convergir respeirada todas as condições estabelecidas anteriormente e escolhendo valores de $\mu<1$.
+A este algoritmo se chama LMS normalizado, ou NLMS. Há ainda o estudo de convergência para valores pequenos de $\mu$, que também pode ser encontrado em \cite{diniz1997adaptive} e \cite{haykin2005adaptive}, tanto para o LMS quanto para o NLMS. Mas de modo geral o NLMS deve convergir respeitadas todas as condições estabelecidas anteriormente e escolhendo valores de $\mu<1$.
 
 \subsection{RLS}
 
-\indent O método RLS (\textit{Recursive Least Squares}), ou mínimos quadrados recursivo, é um método de adaptação que visa a minimização da soma dos quadrados da diferença entre o sinal de referência e o sinal de saída do filtro em questão (o erro), assim como os anteriormente mencionados. O RLS pode ser obtido a partir do LMS (\textit{Least Mean Squares}), e é conhecido por possuir rápida convergência, tendo boa performance em sistemas variantes no tempo, como o caso de nosso interesse. Isto vem ao custo de certa complexidade computacional aliada a problemas de estabilidade[6].
+\indent O método RLS (\textit{Recursive Least Squares}), ou mínimos quadrados recursivo, é um método de adaptação que visa a minimização da soma dos quadrados da diferença entre o sinal de referência e o sinal de saída do filtro em questão (o erro), assim como os anteriormente mencionados. O RLS pode ser obtido a partir do LMS (\textit{Least Mean Squares}), e é conhecido por possuir rápida convergência, tendo boa performance em sistemas variantes no tempo, como o caso de nosso interesse. Isto vem ao custo de certa complexidade computacional aliada a problemas de estabilidade \cite{diniz1997adaptive}.
 
-\indent Voltando ao modelo do filtro adaptativo da seção anterior, havíamos feito uma estimação bastante simplória de $\boldsymbol{R}_{uu}$ para o LMS, e um pouco mais desenvolvida no NLMS, agora imaginemos uma outra: nos casos anteriores somente aproveitávamos as M últimas amostras de nosso sinal para cada iteração, mas se por exemplo fazemos uma média das $\boldsymbol{R}_{uu}^{(k)}$ nos aproximamos mais da matriz verdadeira de autocorrelação. Podemos escolher então um novo estimador para $\boldsymbol{R}_{uu}$:
+\indent Voltando ao modelo do filtro adaptativo da seção anterior, havia sido feita uma estimação bastante simplória de $\boldsymbol{R}_{uu}$ para o LMS, e um pouco mais desenvolvida no NLMS, agora se pode imaginar uma outra: nos casos anteriores somente se aproveitava as M últimas amostras de nosso sinal para cada iteração, mas se por exemplo faz-se uma média das $\boldsymbol{R}_{uu}^{(k)}$ nos aproximamos mais da matriz verdadeira de autocorrelação. Podemos escolher então um novo estimador para $\boldsymbol{R}_{uu}$:
 
 \begin{equation}
 \boldsymbol{S}_{d}^{-1}=\boldsymbol{\hat{R}}_{uu}=\frac{1}{k+1}\sum_{i=0}^{k}\lambda^{k-i}\boldsymbol{U}_i\boldsymbol{U}_i^*
 \end{equation}
 
-\indent Esta definição em realidade é uma média ponderada em uma série geométrica, e se $\lambda<1$ as últimas amostras contam mais que as primeiras. Reparemos que se $\lambda=1$ temos um estimador consistente da matriz. A $\lambda$ chamamos fator de esquecimento.
+\indent Esta definição em realidade é uma média ponderada em uma série geométrica, e se $\lambda<1$ as últimas amostras contam mais que as primeiras. Reparemos que se $\lambda=1$ tem-se um estimador consistente da matriz. À $\lambda$ se chama fator de esquecimento.
 
 
 \indent Outra forma de se chegar ao RLS é por sua função objetivo dada por:
@@ -371,7 +377,7 @@ A este algoritmo chamamos LMS normalizado, ou NLMS. Há ainda o estudo de conver
 =\sum_{i=0}^{k}\lambda^{k-i}[d(i)-\boldsymbol{x}(k) \boldsymbol{w}(k)]
 \end{equation}
 
-\indent Onde $\varepsilon$ é o erro a posteriori no instante $i$. Lembrando da equação XX deduzida anteriormente, podemos estimar a matriz $\boldsymbol{R}_{uu}$ de forma recursiva, para evitar cálculos desnecessários, e melhor que isso, sua inversa também pode ser calculada de maneira recursiva, o que é mais importante para nós. A inversa pode ser substituída na expressão obtida para o NLMS. A dedução no entanto não nos interessa tanto no trabalho, ela pode ser encontrada em [6] e [9]. Ficamos com o resultado final:
+\indent Onde $\varepsilon$ é o erro a posteriori no instante $i$. É possível estimar a matriz $\boldsymbol{R}_{uu}$ de forma recursiva, para evitar cálculos desnecessários, e melhor que isso, sua inversa também pode ser calculada de maneira recursiva, o que é mais importante para nós. A inversa pode ser substituída na expressão obtida para o NLMS. A dedução no entanto não nos interessa tanto no trabalho, ela pode ser encontrada em \cite{haykin2005adaptive} e \cite{diniz1997adaptive}. Ficamos com o resultado final:
 
 \Large
 \begin{equation}
@@ -395,8 +401,8 @@ A este algoritmo chamamos LMS normalizado, ou NLMS. Há ainda o estudo de conver
 
 \section{PLL}
 
-\indent Um Phase Locked Loop digital, assim como sua versão analógica, visa determinar os parâmetros de um processo estocáscico como uma onda senoidal. Desta forma o PLL tenta extrair parâmetros de Amplitude, fase e frequência. Temos diversas variantes digitais e analógicas[7], a variante utilizada neste trabalho foi proposta por Ziarani em 2004[8]. Uma breve demostração será realizada abaixo.
-\indent Seja $u(t)$ uma função variante no tempo, e $y(t)=Asin\phi(t)$ um sinal periódico senoidal sendo A a amplitude do sinal e $\phi(t)$ sua fase, tendo este sinal uma frequência constante, podemos escrever $\phi(t)=wt+\delta$, sendo $w$ igual a frequência e $\delta$ um valor de fase constante. Podemos escrever de maneira mais geral:
+\indent Um Phase Locked Loop digital, assim como sua versão analógica, visa determinar os parâmetros de um processo estocástico como uma onda senoidal. Desta forma o PLL tenta estimar parâmetros de Amplitude, fase e frequência. Temos diversas variantes digitais e analógicas \cite{al2006digital}, a variante utilizada neste trabalho foi proposta por Ziarani em 2004 \cite{ziarani2004method}. Uma breve demostração será realizada abaixo.
+\indent Seja $u(t)$ uma função variante no tempo, e $y(t)=Asin\phi(t)$ um sinal periódico senoidal sendo $A$ a amplitude do sinal e $\phi(t)$ sua fase, tendo este sinal uma frequência constante, podemos escrever $\phi(t)=wt+\delta$, sendo $w$ igual a frequência e $\delta$ um valor de fase constante. Escrevendo de maneira mais geral:
 
 \begin{equation}
 u(t)=\sum_{i=0}^{\infty}A_i sin\phi_i(t)\space+\space n(t)
@@ -409,7 +415,7 @@ Definimos a função $d$:
 d^2(t,\Psi(t))=[u(t)-y(t,\Psi(t))]^2=e^2(t)
 \end{equation}
 
-Assim sendo o conjunto $\Psi(t)$ ótimo o que minimiza a função $d^2$ que adotaremos como função de custo $J(\Psi(t),t)$. Os parâmetros $\Psi(t)$ podem ser estimados por meio de gradiente descendente.
+Assim sendo o conjunto $\Psi(t)$ ótimo o que minimiza a função $d^2$ que será adotado como função de custo $J(\Psi(t),t)$. Os parâmetros $\Psi(t)$ podem ser estimados por meio de gradiente descendente.
 
 \begin{equation}
 \frac{d\Psi(t)}{dt}=-\boldsymbol{\mu}\frac{\partial J(\Psi(t),t)}{\partial \Psi(t)}
@@ -425,7 +431,7 @@ m_1 && 0 && 0 \\
 \end{bmatrix}
 \end{equation}
 
-Com $\frac{d\Psi(t)}{dt}$ denotando o vetor na dierção do qual são atualizados os valores de $\Psi(t)$ a cada iteração. E $\boldsymbol{\mu}$ a matriz diagonal contendo as constantes de atualização referentes a cada parâmetro. Como estaremos lidando com estimações agora, usaremos a notação $\hat{\Psi}(t)$:
+Com $\frac{d\Psi(t)}{dt}$ denotando o vetor na direção do qual são atualizados os valores de $\Psi(t)$ a cada iteração. E $\boldsymbol{\mu}$ a matriz diagonal contendo as constantes de atualização referentes a cada parâmetro. Como estaremos lidando com estimações agora, usaremos a notação $\hat{\Psi}(t)$:
 
 \begin{equation}
 \begin{bmatrix}
@@ -441,7 +447,7 @@ Com $\frac{d\Psi(t)}{dt}$ denotando o vetor na dierção do qual são atualizado
 \end{bmatrix}
 \end{equation}
 
-Podemos obter então o seguinte:
+Obtém-se então o seguinte:
 \begin{equation}
 \frac{d\hat{A}(t)}{dt}=2m_1e(t)sin(\int_{0}^{t}\hat{w}(\tau)d\tau\space+\space\hat{\delta}(t))
 \end{equation}
@@ -455,7 +461,7 @@ Podemos obter então o seguinte:
 \frac{d\hat{\phi}(t)}{dt}=\hat{w}(t)+\frac{\hat{\delta}(t)}{dt}
 \end{equation}
 
-Por conta do fator temporal $t$ que aparece solto na equação referente a $\hat{w}$, esse sistema é variante no tempo, o que o torna instável. No entanto uma solução heurística é substituir $t$ por uma constante $m4$, que pode ser absorvida pela constante $m2$, tornando o sistema invariante no tempo e fazendo com que este sistema de equações seja útil na prática. Desta maneira obtemos o seguinte:
+Por conta do fator temporal $t$ que aparece solto na equação referente a $\hat{w}$, esse sistema é variante no tempo, o que o torna instável. No entanto uma solução heurística é substituir $t$ por uma constante $m4$, que pode ser absorvida pela constante $m2$, tornando o sistema invariante no tempo e fazendo com que este sistema de equações seja útil na prática. Desta maneira tem-se o seguinte:
 \begin{equation}
 \frac{d\hat{A}(t)}{dt}=2\mu_1e(t)sin(\int_{0}^{t}\hat{w}(\tau)d\tau\space+\space\hat{\delta}(t))
 \end{equation}
@@ -478,7 +484,7 @@ w[n+1]=w[n]+\mu_2T_s e[n]cos(\phi(t))
 \phi[n+1]=\phi[n] + T_s w[n] + \mu_3T_s e[n]cos(\phi(t))
 \end{equation}
 
-Desta forma obtemos o conjunto de equações discretas que utilizaremos para rastrear frequências no restante do trabalho.
+Está definido o conjunto de equações discretas que serão utilizadas para rastrear frequências no restante do trabalho.
 
 \begin{figure}[h]
 	\centering    
@@ -494,7 +500,7 @@ Desta forma obtemos o conjunto de equações discretas que utilizaremos para ras
 
 Em determinadas situações, é desejável alterar a taxa de amostragem de um sinal para realizar certos tipos de processamento. Por exemplo, veremos em alguns resultados nas próximas sessões que o algoritmo PLL descrito anteriormente é sensível a taxa de amostragem em relação a frequência rastreada, portanto é conveniente mantê-la mais ou menos constante. Também veremos que processar sinais na taxa necessária para abranger todo o espectro que se quer analisar é extremamente custoso computacionalmente e não é garantia de melhores resultados. Por isso deve-se considerar o uso de uma estrutura multitaxa que diminua a frequência base.
 
-\indent Analisaremos a seguir as implicações de um abaixamento na frequência de amostragem:
+\indent Serão analisadas a seguir as implicações de um abaixamento na frequência de amostragem:
 
 \subsection{Downsampling}
 
@@ -517,24 +523,28 @@ Uma estrutura downsampling tem a forma seguinte:
 
 Representamos a estrutura como um sistema que reproduz em sua saída apenas amostras onde $k$ é múltiplo de $M_k$. Podemos escrever $y[n]=x[nM_k] \; n=1,2,3...$ Considerando que $x[k]$ foi amostrado com a frequência de Nyquist $fs$, o efeito final é o mesmo que se tivéssemos amostrado $x$ com $fs/M_k$, podemos dizer que vamos observar aliasing em nosso resultado final. Haverá portanto sobreposição no espectro de frequência referente a $X(w)$ quando analisarmos $Y(w)$. Entretanto, é possível prever onde estarão localizadas as componentes espectrais presentes no sinal completo que estamos subamostrando, e embora não possamos saber exatamente qual é o valor correspondente as frequências originais, podemos saber no mínimo qual é sua soma.
 
-\indent Uma demonstração formal dos efeitos observados pode ser encontrada em[5], aqui faremos uma abordagem mais intuitiva. Imaginemos uma componente espectral de $x[k]$ referente a $w_0$. Imagine que fazemos uma subamostragem neste sinal, e agora sua frequência de amostragem que era $f_s$ se torna $f_s/M_k$. Agora, se $w_0<f_s/(2Mk)$ essa as componentes dessa frequência não saem do lugar, elas continuam onde estavam anteriormente. Isso não significa que seu espectro não seja alterado nas frequências mais baixas que a nova taxa de amostragem, somente quer dizer que elas sofrem interferência no mesmo lugar onde estavam antes. Agora, se a frequência de interesse é maior que a nova frequência de amostragem dividida por 2, então ela não poderá de forma alguma ser encontrada no mesmo local, pois simplesmente não há como visualizá-la com DFT ou DTFT. Mas então onde vão parar essas frequências? Bom, onde pararia qualquer uma que sofre aliasing. Ela dá voltas no círculo de frequências. O circulo de frequências sempre vai de 0 a $2\pi$, e as frequências sempre caminham nele no sentido anti-horário. Para cada vez que a frequência de interesse (a qual chamaremos $f_i$) for maior que $fs$, a frequência em questão dá uma volta no círculo. Um algoritmo simples será apresentado quando expusermos o método do PLL multitaxa, mas por hora podemos saber que o ângulo referente à nova frequência será o resto da divisão $f_i/f_s$ e multiplicamos por $2\pi$. 
+\indent Uma demonstração formal dos efeitos observados pode ser encontrada em \cite{mitra2006digital}, aqui faremos uma abordagem mais intuitiva. Dada uma componente espectral de $x[k]$ referente a $w_0$. Supõe-se que é feita uma subamostragem neste sinal, e agora sua frequência de amostragem que era $f_s$ se torna $f_s/M_k$. Agora, se $w_0<f_s/(2Mk)$ essa as componentes dessa frequência não saem do lugar, elas continuam onde estavam anteriormente. Isso não significa que seu espectro não seja alterado nas frequências mais baixas que a nova taxa de amostragem, somente quer dizer que elas sofrem interferência no mesmo lugar onde estavam antes. Agora, se a frequência de interesse é maior que a nova frequência de amostragem dividida por 2, então ela não poderá de forma alguma ser encontrada no mesmo local, pois simplesmente não há como visualizá-la com DFT ou DTFT. Mas então onde vão parar essas frequências? Bom, onde pararia qualquer uma que sofre aliasing. Ela dá voltas no círculo de frequências. O circulo de frequências sempre vai de 0 a $2\pi$, e as frequências sempre caminham nele no sentido anti-horário. Para cada vez que a frequência de interesse (a qual chamaremos $f_i$) for maior que $fs$, a frequência em questão dá uma volta no círculo. Um algoritmo simples será apresentado quando expusermos o método do PLL multitaxa, mas por hora podemos saber que o ângulo referente à nova frequência será o resto da divisão $f_i/f_s$ e multiplicamos por $2\pi$. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\textwidth]{downsample.png}
+	\def\svgwidth{\columnwidth}
+	\input{images/no_aliasing.pdf_tex}
 	\caption{Downsampling para $f_s=160Hz$, $f_0=10Hz$, $M_k=5$}
-	\label{fig:f5}
+	\label{fig:no_aliasing}
 \end{figure}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.9\textwidth]{downsample2.png}
-	\caption{Downsampling para $f_s=160Hz$, $f_0=10Hz$, $M_k=10$}
-	\label{fig:f5}
-\end{figure}
-
-No exemplo da figura XX, temos $fs=160Hz$ e $M_k=5$, nossa frequência de interesse é 10Hz, a frequência de amostragem depois da subamostragem seria ainda maior que $2f_i$, então ela não se move, como observado na figura. Entretanto, no caso de $M_k=10$ a coisa muda, calculando:
+No exemplo da figura \ref{fig:no_aliasing}, temos $fs=160Hz$ e $M_k=5$, a frequência de interesse é 10Hz, a frequência de amostragem depois da subamostragem seria ainda maior que $2f_i$, então ela não se move, como observado na figura. Entretanto, no caso de $M_k=10$ a coisa muda, calculando:
 
 \begin{equation}
 w_i=rest(f_i \: M_k, \: f_s)2\pi
 \end{equation}
+
+\begin{figure}[H]
+	\centering
+	\def\svgwidth{\columnwidth}
+	\input{images/aliasing.pdf_tex}
+	\caption{Downsampling para $f_s=160Hz$, $f_0=10Hz$, $M_k=10$}
+	\label{fig:aliasing}
+\end{figure}
+
+Como resultado tem-se $\frac{5}{4}\pi$ que é maior que é ligeiramente maior que $\pi$ portanto já se pode saber que esta componente sofre aliasing, como se nota na figura \ref{fig:aliasing}.

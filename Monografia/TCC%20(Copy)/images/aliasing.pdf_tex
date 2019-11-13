@@ -1,0 +1,119 @@
+%% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'aliasing.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{420bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.75)%
+    \lineheight{1}%
+    \fontsize{9}{5}
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{aliasing.pdf}}%
+    \put(0.44553607,0.49880946){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Amostras(k)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{aliasing.pdf}}%
+    \put(0.12321429,0.53511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.21383929,0.53511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}20\end{tabular}}}}%
+    \put(0.31071429,0.53511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}40\end{tabular}}}}%
+    \put(0.40758929,0.53511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}60\end{tabular}}}}%
+    \put(0.50446429,0.53511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}80\end{tabular}}}}%
+    \put(0.59508929,0.53511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}100\end{tabular}}}}%
+    \put(0.69196429,0.53511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}120\end{tabular}}}}%
+    \put(0.78883929,0.53511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}140\end{tabular}}}}%
+    \put(0.88571429,0.53511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}160\end{tabular}}}}%
+    \put(0.08511911,0.57232143){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Amplitude\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{aliasing.pdf}}%
+    \put(0.09940482,0.55982143){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-1\end{tabular}}}}%
+    \put(0.10654768,0.62232143){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.10654768,0.68482143){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{aliasing.pdf}}%
+    \put(0.81071429,0.64345232){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x[k]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{aliasing.pdf}}%
+    \put(0.81071429,0.6125){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x[nM\end{tabular}}}}%
+    \put(0.85892857,0.60178571){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}k\end{tabular}}}}%
+    \put(0.86785714,0.6125){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{aliasing.pdf}}%
+    \put(0.48839321,0.27380946){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}f(Hz)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{aliasing.pdf}}%
+    \put(0.12321429,0.31011911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.21383929,0.31011911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0.31071429,0.31011911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}20\end{tabular}}}}%
+    \put(0.40758929,0.31011911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}30\end{tabular}}}}%
+    \put(0.50446429,0.31011911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}40\end{tabular}}}}%
+    \put(0.60133929,0.31011911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}50\end{tabular}}}}%
+    \put(0.69821429,0.31011911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}60\end{tabular}}}}%
+    \put(0.79508929,0.31011911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}70\end{tabular}}}}%
+    \put(0.89196429,0.31011911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}80\end{tabular}}}}%
+    \put(0.07261911,0.34732143){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Amplitude\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{aliasing.pdf}}%
+    \put(0.10654768,0.33482143){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.08690482,0.39732143){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.5\end{tabular}}}}%
+    \put(0.10654768,0.45982143){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{aliasing.pdf}}%
+    \put(0.83214286,0.41785714){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}X[w]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{aliasing.pdf}}%
+    \put(0.48839321,0.04880946){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}f(Hz)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{aliasing.pdf}}%
+    \put(0.12321429,0.08511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.23392857,0.08511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.34464286,0.08511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.45535714,0.08511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.56607143,0.08511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4\end{tabular}}}}%
+    \put(0.67678571,0.08511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}5\end{tabular}}}}%
+    \put(0.7875,0.08511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}6\end{tabular}}}}%
+    \put(0.89821429,0.08511911){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}7\end{tabular}}}}%
+    \put(0.07261911,0.12232143){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Amplitude\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{aliasing.pdf}}%
+    \put(0.10654768,0.10982143){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.08690482,0.17232143){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.5\end{tabular}}}}%
+    \put(0.10654768,0.23482143){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{aliasing.pdf}}%
+    \put(0.83214286,0.19285714){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Y[w]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{aliasing.pdf}}%
+  \end{picture}%
+\endgroup%

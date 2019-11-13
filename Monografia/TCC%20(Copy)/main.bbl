@@ -17,6 +17,231 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{al2006digital}{book}{}
+    \name{author}{3}{}{%
+      {{hash=AASR}{%
+         family={Al-Araji},
+         familyi={A\bibinithyphendelim A\bibinitperiod},
+         given={Saleh\bibnamedelima R},
+         giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=HZM}{%
+         family={Hussain},
+         familyi={H\bibinitperiod},
+         given={Zahir\bibnamedelima M},
+         giveni={Z\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=AQMA}{%
+         family={Al-Qutayri},
+         familyi={A\bibinithyphendelim Q\bibinitperiod},
+         given={Mahmoud\bibnamedelima A},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{AASRHZMAQMA1}
+    \strng{fullhash}{AASRHZMAQMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Digital Phase Lock Loops}
+    \field{year}{2006}
+  \endentry
+
+  \entry{bessegato2012line}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BLF}{%
+         family={Bessegato},
+         familyi={B\bibinitperiod},
+         given={Lup{\'e}rcio\bibnamedelima F},
+         giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=QRC}{%
+         family={Quinino},
+         familyi={Q\bibinitperiod},
+         given={Roberto\bibnamedelima C},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=DLH}{%
+         family={Duczmal},
+         familyi={D\bibinitperiod},
+         given={Luiz\bibnamedelima H},
+         giveni={L\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=LHL}{%
+         family={Lee\bibnamedelima Ho},
+         familyi={L\bibinitperiod\bibinitdelim H\bibinitperiod},
+         given={Linda},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{BLF+1}
+    \strng{fullhash}{BLFQRCDLHLHL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{10}
+    \field{pages}{1813\bibrangedash 1832}
+    \field{title}{On-Line Process Control using Attributes with
+  Misclassification Errors: An Economical Design for Short-Run Production}
+    \field{volume}{41}
+    \field{journaltitle}{Communications in Statistics-Theory and Methods}
+    \field{year}{2012}
+  \endentry
+
+  \entry{de2009pll}{article}{}
+    \name{author}{6}{}{%
+      {{hash=dCJR}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Carvalho},
+         familyi={C\bibinitperiod},
+         given={Janison\bibnamedelima Rodrigues},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=DCA}{%
+         family={Duque},
+         familyi={D\bibinitperiod},
+         given={Carlos\bibnamedelima A},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=RMV}{%
+         family={Ribeiro},
+         familyi={R\bibinitperiod},
+         given={Mois{\'e}s\bibnamedelima V},
+         giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=CAS}{%
+         family={Cerqueira},
+         familyi={C\bibinitperiod},
+         given={Augusto\bibnamedelima S},
+         giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=BTL}{%
+         family={Baldwin},
+         familyi={B\bibinitperiod},
+         given={Thomas\bibnamedelima L},
+         giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=RPF}{%
+         family={Ribeiro},
+         familyi={R\bibinitperiod},
+         given={Paulo\bibnamedelima F},
+         giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{CJRd+1}
+    \strng{fullhash}{CJRdDCARMVCASBTLRPF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{4}
+    \field{pages}{1789\bibrangedash 1800}
+    \field{title}{A PLL-based multirate structure for time-varying power
+  systems harmonic/interharmonic estimation}
+    \field{volume}{24}
+    \field{journaltitle}{IEEE Transactions on Power Delivery}
+    \field{year}{2009}
+  \endentry
+
+  \entry{carvalho2008estimaccao}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{1}{}{%
+      {{hash=CJRd}{%
+         family={Carvalho},
+         familyi={C\bibinitperiod},
+         given={Janison Rodrigues\bibnamedelima de},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  d\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Universidade Federal de Juiz de Fora (UFJF)}%
+    }
+    \strng{namehash}{CJRd+2}
+    \strng{fullhash}{CJRd+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Estima{\c{c}}{\~a}o de harm{\^o}nicos/interharm{\^o}nicos:
+  uma abordagem multitaxa}
+    \field{year}{2008}
+  \endentry
+
+  \entry{chang2009two}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CGW}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Gary\bibnamedelima W},
+         giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=CCI}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Cheng-I},
+         giveni={C\bibinithyphendelim I\bibinitperiod},
+      }}%
+      {{hash=LQW}{%
+         family={Liang},
+         familyi={L\bibinitperiod},
+         given={Quan-Wei},
+         giveni={Q\bibinithyphendelim W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{CGWCCILQW1}
+    \strng{fullhash}{CGWCCILQW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{6}
+    \field{pages}{2220\bibrangedash 2228}
+    \field{title}{A two-stage ADALINE for harmonics and interharmonics
+  measurement}
+    \field{volume}{56}
+    \field{journaltitle}{IEEE Transactions on Industrial Electronics}
+    \field{year}{2009}
+  \endentry
+
+  \entry{diniz1997adaptive}{book}{}
+    \name{author}{1}{}{%
+      {{hash=DPS}{%
+         family={Diniz},
+         familyi={D\bibinitperiod},
+         given={Paulo\bibnamedelima SR},
+         giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{DPS1}
+    \strng{fullhash}{DPS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Adaptive filtering}
+    \field{year}{1997}
+  \endentry
+
   \entry{einstein}{article}{}
     \name{author}{1}{}{%
       {{hash=EA}{%
@@ -43,6 +268,161 @@
     \field{volume}{322}
     \field{journaltitle}{Annalen der Physik}
     \field{year}{1905}
+  \endentry
+
+  \entry{haykin2005adaptive}{book}{}
+    \name{author}{1}{}{%
+      {{hash=HSS}{%
+         family={Haykin},
+         familyi={H\bibinitperiod},
+         given={Simon\bibnamedelima S},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pearson Education India}%
+    }
+    \strng{namehash}{HSS1}
+    \strng{fullhash}{HSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Adaptive filter theory}
+    \field{year}{2005}
+  \endentry
+
+  \entry{huang2001spoken}{book}{}
+    \name{author}{4}{}{%
+      {{hash=HX}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Xuedong},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Acero},
+         familyi={A\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HHW}{%
+         family={Hon},
+         familyi={H\bibinitperiod},
+         given={Hsiao-Wuen},
+         giveni={H\bibinithyphendelim W\bibinitperiod},
+      }}%
+      {{hash=FBRR}{%
+         family={Foreword By-Reddy},
+         familyi={F\bibinitperiod\bibinitdelim B\bibinithyphendelim
+  R\bibinitperiod},
+         given={Raj},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Prentice hall PTR}%
+    }
+    \strng{namehash}{HX+1}
+    \strng{fullhash}{HXAAHHWFBRR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Spoken language processing: A guide to theory, algorithm, and
+  system development}
+    \field{year}{2001}
+  \endentry
+
+  \entry{mitra2006digital}{book}{}
+    \name{author}{2}{}{%
+      {{hash=MSK}{%
+         family={Mitra},
+         familyi={M\bibinitperiod},
+         given={Sanjit\bibnamedelima Kumar},
+         giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=KY}{%
+         family={Kuo},
+         familyi={K\bibinitperiod},
+         given={Yonghong},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill New York}%
+    }
+    \strng{namehash}{MSKKY1}
+    \strng{fullhash}{MSKKY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Digital signal processing: a computer-based approach}
+    \field{volume}{2}
+    \field{year}{2006}
+  \endentry
+
+  \entry{stoica2005spectral}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{2}{}{%
+      {{hash=SP}{%
+         family={Stoica},
+         familyi={S\bibinitperiod},
+         given={Petre},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MRL}{%
+         family={Moses},
+         familyi={M\bibinitperiod},
+         given={Randolph\bibnamedelima L},
+         giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pearson Prentice Hall Upper Saddle River, NJ}%
+    }
+    \strng{namehash}{SPMRL+1}
+    \strng{fullhash}{SPMRL+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Spectral analysis of signals}
+    \field{year}{2005}
+  \endentry
+
+  \entry{ziarani2004method}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ZAK}{%
+         family={Ziarani},
+         familyi={Z\bibinitperiod},
+         given={Alireza\bibnamedelima K},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Konrad},
+         familyi={K\bibinitperiod},
+         given={Adalbert},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{ZAKKA1}
+    \strng{fullhash}{ZAKKA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{number}{8}
+    \field{pages}{1323\bibrangedash 1346}
+    \field{title}{A method of extraction of nonstationary sinusoids}
+    \field{volume}{84}
+    \field{journaltitle}{Signal Processing}
+    \field{year}{2004}
   \endentry
 \enddatalist
 \endinput
