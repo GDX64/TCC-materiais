@@ -12,6 +12,7 @@ Seja $y_c(t)$ um sinal contínuo no tempo e $y[n], \; n=0, \pm 1, \pm 2,...$  um
 
 \begin{equation}
 Y(w)=\sum_{n=-\infty}^{+\infty}y[n]e^{-jwn}
+\label{eq:DTFT}
 \end{equation}
 
 Onde $w$ é denominada frequência angular medido em radianos/segundo, e pode ser relacionada com seu valor físico da seguinte maneira $\bar{w}=wT_s$. A densidade espectral de energia do sinal $y(t)$ pode ser dada então por:
@@ -25,7 +26,7 @@ Pode-se interpretar este resultado de algumas formas, mas uma bem simples é lem
 \sum_{n=-\infty}^{+\infty}cos(2\pi f \: n)e^{-jwn}= \pi \delta_{w}(2\pi f) + \pi \delta_{w}(-2\pi f) \;\; w \; \in [0,2 \pi]
 \end{equation}
 
-Uma relação muito parecida se estabelece no caso de uma senoide. Desta maneira, se imaginamos $yc(t)$ composta unicamente de uma soma de senoides, seu espectro fica muito bem explicitado com a equação XX.
+Uma relação muito parecida se estabelece no caso de uma senoide. Desta maneira, quando se imagina $yc(t)$ composta unicamente de uma soma de senoides, seu espectro fica muito bem explicitado com a equação \ref{eq:DTFT}.
 
 Uma outra relação importante se dá utilizando a autocorrelação de $y[n]$:
 
@@ -87,18 +88,20 @@ A qual é chamada correlograma. Dois estimadores para a autocorrelação serão 
 
 \begin{equation}
 \hat{r}_y(k)=\frac{1}{N-k}\sum_{n=k}^{N-1}y[n] \: y^*[n-k]
+\label{eq:estimador_sesgado}
 \end{equation}
 
 \begin{equation}
 \hat{r}_y(k)=\frac{1}{N}\sum_{n=k}^{N-1}y[n] \: y^*[n-k]
+\label{eq:estimador_insesgado}
 \end{equation}
 
 O primeiro estimador é chamado estimador padrão não viesado, e o segundo é um estimador viesado. Lembrando que é assim chamado (viesado) um estimador cuja esperança não é o que visa estimar. Fato é também que $\hat{\phi_p}$ é igual a $\hat{\phi_p}$ se $\hat{r_y}$ for estimada com estimador viesado.
 
-\indent Muitas vezes o estimador em XX é preterido ao de XX, porque para muitos sinais a autocorrelação para valores grandes de k (valores considerados longe do 0) é muito baixa, e portanto não ajudaria fazer a correção do fator de normalização. Entretanto esse pode não ser bem o caso, porque os sinais muitas vezes são considerados senoides puras, as quais apresentam correlação em trechos periódicos. Em realidade, não serão discutidos estimadores de correlação. A seguir serão analisados métodos relacionados a DFT. As vantagens e desvantagens destes métodos todos podem ser vistos à luz de processos estocásticos, ou pela análise das características do método em si. Tentaremos mostrar um pouco de ambos, os utilizando da maneira que for mais conveniente. 
+\indent Muitas vezes o estimador em \ref{eq:estimador_insesgado} é preterido ao de \ref{eq:estimador_sesgado}, porque para muitos sinais a autocorrelação para valores grandes de k (valores considerados longe do 0) é muito baixa, e portanto não ajudaria fazer a correção do fator de normalização. Entretanto esse pode não ser bem o caso, porque os sinais muitas vezes são considerados senoides puras, as quais apresentam correlação em trechos periódicos. Em realidade, não serão discutidos com profundidade estimadores de correlação. A seguir serão analisados métodos relacionados a DFT. As vantagens e desvantagens destes métodos todos podem ser vistos à luz de processos estocásticos, ou pela análise das características do método em si. Tentaremos mostrar um pouco de ambos, os utilizando da maneira que for mais conveniente. 
 %===================DFT==========================
 \section{DFT}
-A transformada discreta de Fourier (DFT) de uma sequência discreta {x[n]} de tamanho N é definida como[5]:
+A transformada discreta de Fourier (DFT) de uma sequência discreta {x[n]} de tamanho N é definida como \cite{mitra2006digital}:
 \begin{equation}
 X[k]=\sum_{n=0}^{n=N-1} x[n]e^{(-2jnk\pi/N)}\;,\;k=0,1,2,...,N-1
 \end{equation}
@@ -225,7 +228,7 @@ Um dos problemas com esta solução é que ela é computacionalmente custosa, j�
 y[k]=\sum_{m=1}^{M}a_m y[k-m]+\xi_k
 \end{equation}
 
-Em que $\xi_k$ é ruído branco, tem-se um modelo estocástico do sinal, que possibilita pensar em soluções mais arrojadas. As equações que caracterizam a solução do modelo AR também são conhecidas como equações de Youle-Walker e têm como solução ótima o chamado algoritmo de Levinson-Durbin [15] o qual não será abordado neste trabalho.
+Em que $\xi_k$ é ruído branco, tem-se um modelo estocástico do sinal, que possibilita pensar em soluções mais arrojadas. As equações que caracterizam a solução do modelo AR também são conhecidas como equações de Youle-Walker e têm como solução ótima o chamado algoritmo de Levinson-Durbin \cite{huang2001spoken} o qual não será abordado neste trabalho. Entretanto, mesmo este modelo pode não representar corretamente o sinal. Se o sinal em questão é mais bem representado por $y(t)=\sum sin(w_it+\phi_i)+\xi(t)$, este modelo tem uma boa aproximação como AR para boas SNR. Caso contrário, ele pode não ser adequado.
 
 \subsection{Filtros adaptativos}
 
@@ -249,7 +252,7 @@ w_{n}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.9\textwidth]{fA.png}
-	\caption{legenda aqui}
+	\caption{Diagrama de blocos de um filtro adaptativo}
 	\label{fig:filtroAdaptativo}
 \end{figure}
 
@@ -261,7 +264,7 @@ w_{n}
 
 Uma das formas mais antigas e consagradas de otimizar uma função dentro dos métodos clássicos é seguir a direção do gradiente desta função, com relação as variáveis de interesse, para atualizar os valores destas variáveis de forma iterativa.
 
-Seja um sistema descrito pela série temporal $u[n] \space n=0,1,2..$ e um filtro de resposta impulsiva real $w_0, w_1 ... w_{M-1}$:
+Seja um sistema descrito pela série temporal $u[n] \; n=0,1,2..$ e um filtro de resposta impulsiva real $w_0, w_1 ... w_{M-1}$:
 \begin{equation}
 y[n]=\sum_{k=0}^{M-1}u[n-k]w_k
 \end{equation}

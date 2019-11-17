@@ -1,96 +1,132 @@
+\changetocdepth {4}
+\vspace {\cftbeforepartskip }
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {portuguese}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Revis\IeC {\~a}o bibliogr\IeC {\'a}fica}{9}% 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}An\IeC {\'a}lise espectral}{9}% 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Densidade espectral de energia de um sinal determin\IeC {\'\i }stico}{10}% 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Densidade espectral de pot\IeC {\^e}ncia}{10}% 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Periodograma e correlograma}{11}% 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}DFT}{12}% 
+\contentsline {chapter}{Conte\'udo}{4}{section*.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}An\IeC {\'a}lise de Prony}{13}% 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}Solu\IeC {\c c}\IeC {\~a}o do modelo de predi\IeC {\c c}\IeC {\~a}o linear}{14}% 
+\contentsline {chapter}{Lista de Figuras}{5}{section*.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Sistema linear}{15}% 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.2}Filtros adaptativos}{15}% 
+\contentsline {chapter}{Lista de Tabelas}{6}{section*.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.3}Adapta\IeC {\c c}\IeC {\~a}o via gradiente descendente}{16}% 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.4}O algoritmo LMS}{18}% 
+\contentsline {chapter}{\chapternumberline {1}Revis\IeC {\~a}o bibliogr\IeC {\'a}fica}{7}{chapter.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.5}O algoritmo NLMS}{18}% 
+\contentsline {section}{\numberline {1.1}An\IeC {\'a}lise espectral}{7}{section.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.6}RLS}{18}% 
+\contentsline {section}{\numberline {1.2}Densidade espectral de energia de um sinal determin\IeC {\'\i }stico}{8}{section.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}PLL}{19}% 
+\contentsline {subsection}{\numberline {1.2.1}Densidade espectral de pot\IeC {\^e}ncia}{8}{subsection.16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Processamento Multitaxa}{21}% 
+\contentsline {subsection}{\numberline {1.2.2}Periodograma e correlograma}{9}{subsection.20}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.6.1}Downsampling}{22}% 
+\contentsline {section}{\numberline {1.3}DFT}{10}{section.25}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Estrutura PLL-Multitaxa}{25}% 
+\contentsline {section}{\numberline {1.4}An\IeC {\'a}lise de Prony}{12}{section.34}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Desenpenho do PLL}{25}% 
+\contentsline {subsection}{\numberline {1.4.1}Solu\IeC {\c c}\IeC {\~a}o do modelo de predi\IeC {\c c}\IeC {\~a}o linear}{13}{subsection.40}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}banco de filtros}{25}% 
+\contentsline {subsubsection}{\numberline {1.4.1.1}Sistema linear}{13}{subsubsection.41}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Uso da estrutura multitaxa}{27}% 
+\contentsline {subsection}{\numberline {1.4.2}Filtros adaptativos}{14}{subsection.47}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}varia\IeC {\c c}\IeC {\~a}o da frequ\IeC {\^e}ncia central do banco de filtros}{29}% 
+\contentsline {subsection}{\numberline {1.4.3}Adapta\IeC {\c c}\IeC {\~a}o via gradiente descendente}{15}{subsection.51}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}S\IeC {\'\i }ntese da estrutura PLL Multitaxa}{30}% 
+\contentsline {subsection}{\numberline {1.4.4}O algoritmo LMS}{17}{subsection.59}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}simula\IeC {\c c}\IeC {\~o}es}{31}% 
+\contentsline {subsection}{\numberline {1.4.5}O algoritmo NLMS}{17}{subsection.63}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.1}harm\IeC {\^o}nicos \IeC {\'\i }mpares}{31}% 
+\contentsline {subsection}{\numberline {1.4.6}RLS}{18}{subsection.66}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.2}inter-harm\IeC {\^o}nicos}{34}% 
+\contentsline {section}{\numberline {1.5}PLL}{19}{section.71}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}esfor\IeC {\c c}o computacional}{35}% 
+\contentsline {section}{\numberline {1.6}Processamento Multitaxa}{21}{section.89}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.1}Banco de filtros}{35}% 
+\contentsline {subsection}{\numberline {1.6.1}Downsampling}{21}{subsection.90}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.2}PLL}{36}% 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.3}Atualiza\IeC {\c c}\IeC {\~a}o de frequ\IeC {\^e}ncia}{36}% 
+\contentsline {chapter}{\chapternumberline {2}Estrutura PLL-Multitaxa}{25}{chapter.96}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.4}Totais}{36}% 
+\contentsline {section}{\numberline {2.1}Desenpenho do PLL}{25}{section.97}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Estima\IeC {\c c}\IeC {\~a}o de frequ\IeC {\^e}ncias}{37}% 
+\contentsline {section}{\numberline {2.2}banco de filtros}{25}{section.102}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Solu\IeC {\c c}\IeC {\~a}o em predi\IeC {\c c}\IeC {\~a}o linear}{37}% 
+\contentsline {section}{\numberline {2.3}Uso da estrutura multitaxa}{27}{section.107}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Solu\IeC {\c c}\IeC {\~a}o em RLS e NLMS}{38}% 
+\contentsline {section}{\numberline {2.4}varia\IeC {\c c}\IeC {\~a}o da frequ\IeC {\^e}ncia central do banco de filtros}{30}{section.136}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Simula\IeC {\c c}\IeC {\~o}es}{38}% 
+\contentsline {section}{\numberline {2.5}S\IeC {\'\i }ntese da estrutura PLL Multitaxa}{31}{section.145}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}frequ\IeC {\^e}ncias pr\IeC {\'o}ximas}{40}% 
+\contentsline {section}{\numberline {2.6}simula\IeC {\c c}\IeC {\~o}es}{32}{section.151}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Filtragem de valores}{41}% 
+\contentsline {subsection}{\numberline {2.6.1}harm\IeC {\^o}nicos \IeC {\'\i }mpares}{33}{subsection.152}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}teste de rastreio de frequ\IeC {\^e}ncias}{44}% 
+\contentsline {subsection}{\numberline {2.6.2}inter-harm\IeC {\^o}nicos}{35}{subsection.161}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}complexidade computacional}{46}% 
+\contentsline {section}{\numberline {2.7}esfor\IeC {\c c}o computacional}{37}{section.168}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.8}Conclus\IeC {\~o}es}{46}% 
+\contentsline {subsection}{\numberline {2.7.1}Banco de filtros}{37}{subsection.169}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Estrutura final}{47}% 
+\contentsline {subsection}{\numberline {2.7.2}PLL}{37}{subsection.170}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}PLL-M em part\IeC {\'\i }culas}{47}% 
+\contentsline {subsection}{\numberline {2.7.3}Atualiza\IeC {\c c}\IeC {\~a}o de frequ\IeC {\^e}ncia}{37}{subsection.171}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Estima\IeC {\c c}\IeC {\~a}o de Frequ\IeC {\^e}ncias}{47}% 
+\contentsline {subsection}{\numberline {2.7.4}Totais}{37}{subsection.172}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}PLL-Multitaxa}{48}% 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}simula\IeC {\c c}\IeC {\~a}o e an\IeC {\'a}lise qualitativa}{48}% 
+\contentsline {chapter}{\chapternumberline {3}Estima\IeC {\c c}\IeC {\~a}o de frequ\IeC {\^e}ncias}{38}{chapter.173}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Conclus\IeC {\~o}es}{52}% 
+\contentsline {section}{\numberline {3.1}Solu\IeC {\c c}\IeC {\~a}o em predi\IeC {\c c}\IeC {\~a}o linear}{38}{section.174}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix Title}{54}% 
+\contentsline {section}{\numberline {3.2}Solu\IeC {\c c}\IeC {\~a}o em RLS e NLMS}{39}{section.177}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Simula\IeC {\c c}\IeC {\~o}es}{39}{section.184}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}frequ\IeC {\^e}ncias pr\IeC {\'o}ximas}{42}{section.189}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Filtragem de valores}{43}{section.194}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}teste de rastreio de frequ\IeC {\^e}ncias}{45}{section.202}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.7}complexidade computacional}{47}{section.209}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.8}Conclus\IeC {\~o}es}{47}{section.210}% 
+\defcounter {refsection}{0}\relax 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {4}Estrutura final}{49}{chapter.211}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}PLL-M em part\IeC {\'\i }culas}{49}{section.212}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Estima\IeC {\c c}\IeC {\~a}o de Frequ\IeC {\^e}ncias}{50}{subsection.215}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}PLL-Multitaxa}{50}{subsection.221}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.3}simula\IeC {\c c}\IeC {\~a}o e an\IeC {\'a}lise qualitativa}{50}{subsection.222}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Conclus\IeC {\~o}es}{54}{section.231}% 
+\defcounter {refsection}{0}\relax 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\defcounter {refsection}{0}\relax 
+\contentsline {appendix}{\chapternumberline {A}Appendix Title}{56}{appendix.232}% 
+\defcounter {refsection}{0}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{57}{section*.234}% 

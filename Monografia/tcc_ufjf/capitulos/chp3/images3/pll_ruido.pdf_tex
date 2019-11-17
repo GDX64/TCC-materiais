@@ -1,0 +1,94 @@
+%% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'pll_ruido.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{420bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.75)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{pll_ruido.pdf}}%
+    \put(0.46071464,0.38095232){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}tempo (s)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{pll_ruido.pdf}}%
+    \put(0.12321429,0.41726196){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.21785714,0.41726196){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.05\end{tabular}}}}%
+    \put(0.33482143,0.41726196){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.1\end{tabular}}}}%
+    \put(0.43928571,0.41726196){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.15\end{tabular}}}}%
+    \put(0.55625,0.41726196){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.2\end{tabular}}}}%
+    \put(0.66071429,0.41726196){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.25\end{tabular}}}}%
+    \put(0.77767857,0.41726196){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.3\end{tabular}}}}%
+    \put(0.88214286,0.41726196){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.35\end{tabular}}}}%
+    \put(0.07261911,0.47500018){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Amplitude (p.u.)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{pll_ruido.pdf}}%
+    \put(0.10654768,0.44196429){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.08690482,0.54017857){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.5\end{tabular}}}}%
+    \put(0.10654768,0.63839286){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{pll_ruido.pdf}}%
+    \put(0.34017911,0.69955357){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Convergência da Amplitude}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{pll_ruido.pdf}}%
+    \put(0.46071464,0.02559518){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}tempo (s)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{pll_ruido.pdf}}%
+    \put(0.12321429,0.06190482){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.21785714,0.06190482){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.05\end{tabular}}}}%
+    \put(0.33482143,0.06190482){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.1\end{tabular}}}}%
+    \put(0.43928571,0.06190482){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.15\end{tabular}}}}%
+    \put(0.55625,0.06190482){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.2\end{tabular}}}}%
+    \put(0.66071429,0.06190482){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.25\end{tabular}}}}%
+    \put(0.77767857,0.06190482){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.3\end{tabular}}}}%
+    \put(0.88214286,0.06190482){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.35\end{tabular}}}}%
+    \put(0.07976196,0.12232161){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}frequência (Hz)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{pll_ruido.pdf}}%
+    \put(0.09404768,0.08660714){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}55\end{tabular}}}}%
+    \put(0.09404768,0.16517857){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}60\end{tabular}}}}%
+    \put(0.09404768,0.24375){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}65\end{tabular}}}}%
+    \put(0.09404768,0.32232143){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}70\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{pll_ruido.pdf}}%
+    \put(0.33839339,0.34419643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Convergência da frequência}\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

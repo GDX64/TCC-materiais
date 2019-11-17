@@ -1,0 +1,79 @@
+%% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'batimento.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{300bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.5588147)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{batimento.pdf}}%
+    \put(0.21750025,0.01083325){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}tempo (seg)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{batimento.pdf}}%
+    \put(0.17,0.06166675){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.295018,0.06166675){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.5\end{tabular}}}}%
+    \put(0.10916675,0.07625025){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}frequência estimada (Hz)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{batimento.pdf}}%
+    \put(0.12916675,0.1403125){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}56\end{tabular}}}}%
+    \put(0.12916675,0.2284375){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}58\end{tabular}}}}%
+    \put(0.12916675,0.3165625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}60\end{tabular}}}}%
+    \put(0.12916675,0.4046875){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}62\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{batimento.pdf}}%
+    \put(0.65875025,0.01083325){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}tempo (seg)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{batimento.pdf}}%
+    \put(0.61,0.0616665){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.73626825,0.0616665){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.5\end{tabular}}}}%
+    \put(0.52166675,0.07375){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}amplitude estimada (p.u.)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{batimento.pdf}}%
+    \put(0.54166675,0.09625){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.95\end{tabular}}}}%
+    \put(0.58666675,0.2725){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.54166675,0.44874975){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.05\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{batimento.pdf}}%
+  \end{picture}%
+\endgroup%

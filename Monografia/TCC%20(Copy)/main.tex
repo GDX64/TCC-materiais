@@ -1,4 +1,11 @@
-\documentclass[12pt,twoside]{report}
+\documentclass[
+12pt,
+openany, %openright,			
+oneside, %twoside,			%% twoside: para frente e verso ao imprimir
+a4paper,			
+english,			
+brazil			        %% Idioma principal 
+]{abntbibufjf}
 
 %Arrumando as páginas e cabeçalhos
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
@@ -26,6 +33,7 @@
 \usepackage{bigints}
 \usepackage{xcolor}
 \usepackage{float}
+\usepackage{tocloft}
 \usetikzlibrary{shapes,arrows}
 \graphicspath{ {images/}{capitulos/chp3/images3/}{capitulos/chp2/images/} }
 
@@ -33,32 +41,180 @@
 \usepackage[backend=bibtex,style=numeric]{biblatex}
 \addbibresource{sample.bib}
 
+\titulo{Implementação de técnicas adaptativas para análise de harmônicos e inter-harmônicos variantes no tempo} %%Por exemplo, Titulo da tese
+% \subtitulo{: subt\'itulo do trabalho}  %% Retirar o primeiro ``%'' desta linha se for utilizar subtitulo. Deixar os dois pontos antes, em ``: subt\'itulo'' . 
+\autor{Gabriel Eduardo de Lima Machado}
+\autorR{Machado, Gabriel} %%Colocar o sobrenome do autor antes do primeiro nome do autor, separados por
+\local{Juiz de Fora}
+\data{2019} %%Alterar o ano se precisar
+\orientador[Orientador:]{Marcelo Antônio Alves Lima} %%Se precisar, troque [Orientador:] por [Orientadora:]
 
+\instituicao{Universidade Federal de Juiz de Fora}
+\faculdade{Faculdade de Engenharia} %%Alterar, dentro de chaves {}, se precisar.
+\programa{Engenharia Elétrica – Habilitação em Sistemas Eletrônicos} %%Alterar, dentro de chaves {}, se precisar.
+\objeto{Trabalho de Conclusão de Curso}  %%Tese (Doutorado)
+\natureza{Trabalho de Conclusão de Curso apresentado à Faculdade de Engenharia da Universidade Federal de Juiz de Fora, como requisito para obtenção do grau de Engenheiro Eletricista.} %%Trocar Matem\'atica por outro, se precisar.
+
+
+%% Abaixo, prencher com os dados da parte final da ficha catalografica
+
+\finalcatalog{1. Palavra-chave. 2. Palavra-chave. 3. Palavra-chave. I. Sobrenome, Nome do orientador, orient. II. Título.} %% Aqui fica 
+% escrito a palavra ``T\'itulo'' mesmo, nao o do trabalho. Se tiver coorientador, os dados ficam depois dos dados 
+%% do orientador (II. Sobrenome, Nome do coorientador, coorient.) e antes de ``II. T\'itulo'', o qual passa a ``III. T\'itulo''.
+
+%% ---
+
+\setlength{\parindent}{1.3cm}
+
+\setlength{\parskip}{0.2cm}  
+
+\setlength\afterchapskip{12pt}  
+
+
+%% Iniciar o documento
 \begin{document}
-\title{
-	{Thesis Title}\\
-	{\large Institution Name}\\
-}
-\author{Author Name}
-\date{Day Month Year}
+	
+	%% ELEMENTOS PRE-TEXTUAIS
+	
+	%% Capa
+	\inserecapa
+	
+	%% Folha de rosto
+	\inserefolhaderosto
+	
+	
+	%% Ficha catalografica. AO IMPRIMIR, DEIXAR NO VERSO DA FOLHA DE ROSTO.
+	\inserecatalog  
+	
+	
+	%% Folha de aprovacao
+	\begin{folhadeaprovacao}
+		
+		\begin{center}
+			{\chapterfont \bfseries \insereautor}
+			
+			\vfill
+			\begin{center}
+				{\chapterfont\bfseries\inseretitulo \inseresubtitulo}
+			\end{center}
+			\vfill
+			
+			\hspace{.45\textwidth}
+			\begin{minipage}{.5\textwidth}
+				\inserenatureza
+			\end{minipage}%
+			\vfill
+		\end{center}
+		
+		Aprovado em: %%COLOCAR A DATA 
+		
+		\begin{center} BANCA EXAMINADORA \end{center}
+		\assinatura{Prof. \insereorientador \ - Orientador \\ Universidade Federal de Juiz de Fora} 
+		%  \assinatura{Professor Dr. \inserecoorientador \ - Coorientador \\ Universidade Federal de Juiz de Fora}
+		\assinatura{Ex 1 \\  Universidade Federal de Juiz de Fora}
+		\assinatura{Ex 2 \\ Universidade Federal de Juiz de Fora} 
+		%  \assinatura{...} %%RETIRE O % E PREENCHA SE PRECISAR
+		%  \assinatura{...}
+		%  \assinatura{...}
+		
+		% \includepdf{ata.pdf} depois deverá ser substituído pela ata de defesa assinada
+		
+	\end{folhadeaprovacao}
+	
+	
+	%% Dedicatoria. OPCIONAL. Retirar o ``%'' de cada das 4 linhas abaixo, caso queira.
+	% \begin{dedicatoria} \vspace*{\fill} \centering \noindent
+	%   \textit{ Dedico este trabalho ... (opcional)} 
+	%   \vspace*{\fill}
+	% \end{dedicatoria}
+	
+	
+	%% Agradecimentos. OPCIONAL. CASO SEJA BOLSISTA, INSERIR OS DEVIDOS AGRADECIMENTOS.
+	\begin{agradecimentos}
+		
+	Agradeço principalmente a meus pais e minha família, que são os maiores responsáveis por minha formação em qualquer que seja o âmbito e o principal suporte que tive durante todos os anos de estudo. 
+	
+	Agradeço também a meus grandes amigos de faculdade, pelos quais tenho um carinho muito especial, pois foram essenciais na jornada acadêmica além de torná-la muito mais divertida.
+	
+	Agradeço a todos professores, principalmente ao meu Orientador, que são as pessoas que fazem trabalhos como este serem possíveis.
+		
+		
+		
+		
+	\end{agradecimentos}
+	
+	%% Epigrafe. OPCIONAL
+	\begin{epigrafe}
+		\vspace*{\fill}
+		\begin{flushright}
+			``Everything in this world is magic, except to the magician.''\\
+			Hopkins, Anthony.
+		\end{flushright}
+	\end{epigrafe}
+	
+	
+	%% RESUMOS
+	
+	%% Resumo em Portugu^es. OBRIGATORIO.
+	\setlength{\absparsep}{18pt} 
+	\begin{resumo}
+		
+		A estimação espectral não é um novo problema matemático ou de engenharia, há alguns séculos já se tenta escrever sinais como uma composição de diferentes frequências, entretanto este aparece de formas distintas nos mais diversos setores da tecnologia. Podemos citar sua importância em processamento de fala, área biomédica, na análise de eletroencefalogramas, identificação de sistemas, análise de vibrações e qualidade de energia. Este trabalho visa fundamentar teoricamente o problema em questão, implementar e avaliar técnicas já concebidas para sua solução, bem como apresentar variações e aplicações específicas. Serão utilizadas para tanto conhecidas técnicas de filtragem adaptativa com LMS e RLS, os chamados \textit{Phase-Locked-Loops} aliados a estruturas multitaxa e as ferramentas padrão da teoria de análise de sinais discretos no tempo. 
+		
+		
+		
+		
+		Palavras-chave: Estimação Espectral, Filtros Adaptativos, Phase-Locked-Loop, Processamento Multitaxa, Banco de Filtros.
+		%finalizadas por ponto e inicializadas por letra maiuscula.
+		
+	\end{resumo}
 
-\chapter*{Abstract}
-\cite{einstein}
 
-\chapter*{Dedication}
-To mum and dad
 
-\chapter*{Declaration}
-I declare that..
+%% Resumo em Ingle^s
+\begin{resumo}[ABSTRACT]
+	\begin{otherlanguage*}{english}
+		...
+		
+		Key-words: ...
+	\end{otherlanguage*}
+\end{resumo}
 
-\chapter*{Acknowledgements}
-I want to thank...
 
-\tableofcontents
-\listoffigures 
-\listoftables
+%% Lista de ilustracoes. OPCIONAL.
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
 
-\chapter{Revisão bibliográfica}
+
+% Lista de tabelas. OPCIONAL. Retire o ``%'' de cada das 3 linhas seguintes, caso queira.
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+
+% Lista de abreviaturas e siglas. OPCIONAL
+\begin{siglas} %%ALTERAR OS EXEMPLOS ABAIXO, CONFORME A NECESSIDADE
+	\item[RLS] Recursive Least Mean Squares
+	\item[NLMS] Normalized Least Mean Squeres
+	\item[PLL-M] Phase-Locked-Loop Multitaxa
+	\item[DFT] Discrete Fourier Transform
+	\item[DTFT] Discrete Time Fourier Transform
+	\item[STFT] Short Time Fourier Transform
+	\item[TF] Transformada de Fourier
+\end{siglas}
+
+%% Lista de simbolos. OPCIONAL
+\begin{simbolos} %%ALTERAR OS EXEMPLOS ABAIXO, CONFORME A NECESSIDADE
+	\item[$ \forall $] Para todo
+	\item[$ \in $] Pertence
+	\item[$ \nabla $] Gradiente
+	
+\end{simbolos}
+
+\chapter{Introdução}
+\input{capitulos/chp1/chp1}
+
+\chapter{Revisão bibliográfica e Fundamentação Teórica}
 \input{capitulos/chp2/chp2_chp}
 
 \chapter{Estrutura PLL-Multitaxa}
@@ -70,9 +226,9 @@ I want to thank...
 \chapter{Estrutura final}
 \input{capitulos/chp5/chp5}
 
-\appendix
-\chapter{Appendix Title}
-\input{capitulos/appendix}
+%\appendix
+%\chapter{Appendix Title}
+%\input{capitulos/appendix}
 
 \printbibliography
 

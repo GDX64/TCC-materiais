@@ -51,6 +51,28 @@
     \field{year}{2006}
   \endentry
 
+  \entry{baxes1994digital}{book}{}
+    \name{author}{1}{}{%
+      {{hash=BGA}{%
+         family={Baxes},
+         familyi={B\bibinitperiod},
+         given={Gregory\bibnamedelima A},
+         giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley New York}%
+    }
+    \strng{namehash}{BGA1}
+    \strng{fullhash}{BGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Digital image processing: principles and applications}
+    \field{year}{1994}
+  \endentry
+
   \entry{bessegato2012line}{article}{}
     \name{author}{4}{}{%
       {{hash=BLF}{%
@@ -181,6 +203,29 @@
     \field{year}{2008}
   \endentry
 
+  \entry{castanie2013digital}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CF}{%
+         family={Castani{\'e}},
+         familyi={C\bibinitperiod},
+         given={Francis},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons}%
+    }
+    \strng{namehash}{CF1}
+    \strng{fullhash}{CF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Digital spectral analysis: parametric, non-parametric and
+  advanced methods}
+    \field{year}{2013}
+  \endentry
+
   \entry{chang2009two}{article}{}
     \name{author}{3}{}{%
       {{hash=CGW}{%
@@ -242,32 +287,36 @@
     \field{year}{1997}
   \endentry
 
-  \entry{einstein}{article}{}
-    \name{author}{1}{}{%
-      {{hash=EA}{%
-         family={Einstein},
-         familyi={E\bibinitperiod},
-         given={Albert},
-         giveni={A\bibinitperiod},
+  \entry{dugan1996electrical}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DRC}{%
+         family={Dugan},
+         familyi={D\bibinitperiod},
+         given={Roger\bibnamedelima C},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MMF}{%
+         family={McGranaghan},
+         familyi={M\bibinitperiod},
+         given={Mark\bibnamedelima F},
+         giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=BHW}{%
+         family={Beaty},
+         familyi={B\bibinitperiod},
+         given={H\bibnamedelima Wayne},
+         giveni={H\bibinitperiod\bibinitdelim W\bibinitperiod},
       }}%
     }
-    \keyw{physics}
-    \strng{namehash}{EA1}
-    \strng{fullhash}{EA1}
+    \strng{namehash}{DRCMMFBHW1}
+    \strng{fullhash}{DRCMMFBHW1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{E}
-    \field{sortinithash}{E}
-    \verb{doi}
-    \verb http://dx.doi.org/10.1002/andp.19053221004
-    \endverb
-    \field{number}{10}
-    \field{pages}{891\bibrangedash 921}
-    \field{title}{{Zur Elektrodynamik bewegter K{\"o}rper}. ({German}) [{On}
-  the electrodynamics of moving bodies]}
-    \field{volume}{322}
-    \field{journaltitle}{Annalen der Physik}
-    \field{year}{1905}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Electrical power systems quality}
+    \field{journaltitle}{New York, NY: McGraw-Hill,| c1996}
+    \field{year}{1996}
   \endentry
 
   \entry{haykin2005adaptive}{book}{}
@@ -334,6 +383,32 @@
     \field{year}{2001}
   \endentry
 
+  \entry{lago2002digital}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LT}{%
+         family={Lago},
+         familyi={L\bibinitperiod},
+         given={TL},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{LT1}
+    \strng{fullhash}{LT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{2}
+    \field{pages}{20\bibrangedash 22}
+    \field{title}{Digital sampling according to Nyquist and Shannon}
+    \field{volume}{36}
+    \field{journaltitle}{Sound and Vibration}
+    \field{year}{2002}
+  \endentry
+
   \entry{mitra2006digital}{book}{}
     \name{author}{2}{}{%
       {{hash=MSK}{%
@@ -361,6 +436,36 @@
     \field{title}{Digital signal processing: a computer-based approach}
     \field{volume}{2}
     \field{year}{2006}
+  \endentry
+
+  \entry{sornmo2005bioelectrical}{book}{}
+    \name{author}{2}{}{%
+      {{hash=SL}{%
+         family={S{\"o}rnmo},
+         familyi={S\bibinitperiod},
+         given={Leif},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Laguna},
+         familyi={L\bibinitperiod},
+         given={Pablo},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press}%
+    }
+    \strng{namehash}{SLLP1}
+    \strng{fullhash}{SLLP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Bioelectrical signal processing in cardiac and neurological
+  applications}
+    \field{volume}{8}
+    \field{year}{2005}
   \endentry
 
   \entry{stoica2005spectral}{article}{}

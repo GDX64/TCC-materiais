@@ -1,68 +1,58 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {portuguese}{}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces Diagrama de blocos de um filtro adaptativo}}{21}{figure.58}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces legenda aqui}}{16}% 
+\contentsline {figure}{\numberline {2}{\ignorespaces Converg\IeC {\^e}ncia do PLL com a presen\IeC {\c c}a de apenas a fundamental}}{28}{figure.96}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Converg\IeC {\^e}ncia do PLL com a presen\IeC {\c c}a de apenas a fundamental}}{21}% 
+\contentsline {figure}{\numberline {3}{\ignorespaces Downsampling para $f_s=160Hz$, $f_0=10Hz$, $M_k=5$}}{29}{figure.100}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Downsampling para $f_s=160Hz$, $f_0=10Hz$, $M_k=5$}}{23}% 
+\contentsline {figure}{\numberline {4}{\ignorespaces Downsampling para $f_s=160Hz$, $f_0=10Hz$, $M_k=10$}}{30}{figure.103}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Downsampling para $f_s=160Hz$, $f_0=10Hz$, $M_k=10$}}{24}% 
+\contentsline {figure}{\numberline {5}{\ignorespaces Converg\IeC {\^e}ncia na presen\IeC {\c c}a do 3\IeC {\textordmasculine } e 5\IeC {\textordmasculine } harm\IeC {\^o}nicos; SNR=10 dB}}{32}{figure.107}% 
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6}{\ignorespaces Converg\IeC {\^e}ncia na presen\IeC {\c c}a de ru\IeC {\'\i }do; SNR=10 dB}}{33}{figure.109}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Converg\IeC {\^e}ncia na presen\IeC {\c c}a do 3\IeC {\textordmasculine } e 5\IeC {\textordmasculine } harm\IeC {\^o}nicos; SNR=10 dB}}{26}% 
+\contentsline {figure}{\numberline {7}{\ignorespaces Caracter\IeC {\'\i }sticas do filtro com $w_0$=0.25}}{34}{figure.114}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Converg\IeC {\^e}ncia na presen\IeC {\c c}a de ru\IeC {\'\i }do; SNR=10 dB}}{27}% 
+\contentsline {figure}{\numberline {8}{\ignorespaces C\IeC {\'\i }rculo de frequ\IeC {\^e}ncias}}{35}{figure.142}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Caracter\IeC {\'\i }sticas do filtro com $w_0$=0.25}}{28}% 
+\contentsline {figure}{\numberline {9}{\ignorespaces Esquema multitaxa PLL}}{36}{figure.146}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces c\IeC {\'\i }rculo de frequ\IeC {\^e}ncias}}{29}% 
+\contentsline {figure}{\numberline {10}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o m\IeC {\'e}todo de m\IeC {\'e}dia (com 24 amostras) e o de alimenta\IeC {\c c}\IeC {\~a}o direta}}{37}{figure.150}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces esquema multitaxa PLL}}{30}% 
+\contentsline {figure}{\numberline {11}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o m\IeC {\'e}todo de m\IeC {\'e}dia (com 24 amostras) e o geom\IeC {\'e}trico ($\lambda =0.9$)}}{38}{figure.152}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o m\IeC {\'e}todo de m\IeC {\'e}dia (com 24 amostras) e o de alimenta\IeC {\c c}\IeC {\~a}o direta}}{31}% 
+\contentsline {figure}{\numberline {12}{\ignorespaces Converg\IeC {\^e}ncia do 15\IeC {\textordmasculine } harm\IeC {\^o}nico na presen\IeC {\c c}a de ru\IeC {\'\i }do}}{40}{figure.166}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o m\IeC {\'e}todo de m\IeC {\'e}dia (com 24 amostras) e o geom\IeC {\'e}trico ($\lambda =0.9$)}}{32}% 
+\contentsline {figure}{\numberline {13}{\ignorespaces Converg\IeC {\^e}ncia do 15\IeC {\textordmasculine } harm\IeC {\^o}nico com degrau em frequ\IeC {\^e}ncia}}{41}{figure.168}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces converg\IeC {\^e}ncia do 15\IeC {\textordmasculine } harm\IeC {\^o}nico na presen\IeC {\c c}a de ru\IeC {\'\i }do}}{33}% 
+\contentsline {figure}{\numberline {14}{\ignorespaces Batimento observado na fundamental}}{42}{figure.171}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces converg\IeC {\^e}ncia do 15\IeC {\textordmasculine } harm\IeC {\^o}nico com degrau em frequ\IeC {\^e}ncia}}{34}% 
+\contentsline {figure}{\numberline {15}{\ignorespaces Converg\IeC {\^e}ncia do inter-harm\IeC {\^o}nico 6.4}}{42}{figure.173}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.10}{\ignorespaces batimento observado na fundamental}}{34}% 
+\contentsline {figure}{\numberline {16}{\ignorespaces Converg\IeC {\^e}ncia dos coeficientes RLS e NLMS na presen\IeC {\c c}a dos harm\IeC {\^o}nicos 1, 3, 5 e 7; M=16}}{46}{figure.187}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.11}{\ignorespaces converg\IeC {\^e}ncia do inter-harm\IeC {\^o}nico 6.4}}{35}% 
+\contentsline {figure}{\numberline {17}{\ignorespaces Converg\IeC {\^e}ncia do RLS e NLMS vista na estima\IeC {\c c}\IeC {\~a}o das frequ\IeC {\^e}ncias, com um degrau de 10 Hz em 500 amostras}}{47}{figure.189}% 
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {18}{\ignorespaces Converg\IeC {\^e}ncia do RLS e NLMS na presen\IeC {\c c}a dos harm\IeC {\^o}nicos 1, 3, 5 e 7; M=16}}{48}{figure.191}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Converg\IeC {\^e}ncia dos coeficientes RLS e NLMS na presen\IeC {\c c}a dos harm\IeC {\^o}nicos 1, 3, 5 e 7; M=16}}{39}% 
+\contentsline {figure}{\numberline {19}{\ignorespaces Efeito de batimento em frequ\IeC {\^e}ncias muito pr\IeC {\'o}ximas}}{49}{figure.199}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Converg\IeC {\^e}ncia do RLS e NLMS vista na estima\IeC {\c c}\IeC {\~a}o das frequ\IeC {\^e}ncias, com um degrau de 10 Hz em 500 amostras}}{40}% 
+\contentsline {figure}{\numberline {20}{\ignorespaces Imagem com estima\IeC {\c c}\IeC {\~a}o de amplitudes e frequ\IeC {\^e}ncias no tempo usando RLS}}{50}{figure.204}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Converg\IeC {\^e}ncia do RLS e NLMS na presen\IeC {\c c}a dos harm\IeC {\^o}nicos 1, 3, 5 e 7; M=16}}{41}% 
+\contentsline {figure}{\numberline {21}{\ignorespaces Imagem com estima\IeC {\c c}\IeC {\~a}o de amplitudes e frequ\IeC {\^e}ncias no tempo usando NLMS}}{51}{figure.209}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Efeito de batimento em frequ\IeC {\^e}ncias muito pr\IeC {\'o}ximas}}{42}% 
+\contentsline {figure}{\numberline {22}{\ignorespaces Rastreio com teste do artigo utilizando RLS}}{52}{figure.213}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Imagem com estima\IeC {\c c}\IeC {\~a}o de amplitudes e frequ\IeC {\^e}ncias no tempo usando RLS}}{42}% 
+\contentsline {figure}{\numberline {23}{\ignorespaces Rastreio com teste do artigo utilizando RLS, componente fundamental}}{53}{figure.216}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Imagem com estima\IeC {\c c}\IeC {\~a}o de amplitudes e frequ\IeC {\^e}ncias no tempo usando NLMS}}{44}% 
+\contentsline {figure}{\numberline {24}{\ignorespaces Estima\IeC {\c c}\IeC {\~a}o de amplitudes com PLL-M}}{55}{figure.222}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Rastreio com teste do artigo utilizando RLS}}{45}% 
+\contentsline {figure}{\numberline {25}{\ignorespaces Est\IeC {\'a}gio de estima\IeC {\c c}\IeC {\~a}o de frequ\IeC {\^e}ncias e ordem do sistema}}{57}{figure.232}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Rastreio com teste do artigo utilizando RLS, componente fundamental}}{46}% 
+\contentsline {figure}{\numberline {26}{\ignorespaces Rastreio de amplitudes do PLL-M}}{58}{figure.234}% 
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {27}{\ignorespaces Rastreio de frequ\IeC {\^e}ncias do PLL-M}}{59}{figure.236}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Est\IeC {\'a}gio de estima\IeC {\c c}\IeC {\~a}o de frequ\IeC {\^e}ncias e ordem do sistema}}{47}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Est\IeC {\'a}gio de estima\IeC {\c c}\IeC {\~a}o de frequ\IeC {\^e}ncias e ordem do sistema}}{49}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces rastreio de amplitudes do PLL-M}}{50}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Rastreio de frequ\IeC {\^e}ncias do PLL-M}}{51}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Rastreio de frequ\IeC {\^e}ncias do PLL-M}}{52}% 
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {28}{\ignorespaces Rastreio de frequ\IeC {\^e}ncias do PLL-M}}{60}{figure.238}% 
