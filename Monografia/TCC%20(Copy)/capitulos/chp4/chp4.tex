@@ -1,6 +1,6 @@
-Foi visto na seção sobre o PLL-Multitaxa que este é um método com grande eficácia no rastreio de frequências, entretanto é necessário saber onde elas estão, e isto o método não nos diz. Seria possível por exemplo utilizá-lo como um filtro de partículas e largar PLLs aleatoriamente pelo espectro do sinal, entretanto existem algumas formas de obter boas ideias de onde estão as componentes mais relevantes do sinal. Uma delas é a DFT ou a STFT com janelamento para reduzir o espalhamento pelo espectro, desta forma podemos identificar regiões do espectro onde sabemos que há energia relevante, sem saber no entanto a localização exata da componente, ou as componentes as quais pertence esta energia. Outro método visto na revisão foi o de Prony, do qual se fez uso no trabalho \cite{chang2009two}. Neste trabalho utilizou-se da otimização via RLS para resolver o problema da predição linear e calculou-se as raízes do polinômio característico do modelo Auto-Regressivo do sinal, assim foi possível obter as componentes relevantes com certa precisão.
+Foi visto na seção sobre o PLL-Multitaxa que este é um método com grande eficácia no rastreio de frequências, porém é necessário saber onde elas estão, e isto o método não nos diz. Seria possível por exemplo utilizá-lo como um filtro de partículas e largar PLLs aleatoriamente pelo espectro do sinal, entretanto existem algumas formas de obter boas ideias de onde estão as componentes mais relevantes do sinal. Uma delas é a DFT ou a STFT com janelamento para reduzir o espalhamento pelo espectro, desta forma podemos identificar regiões do espectro onde sabemos que há energia relevante, sem saber no entanto a localização exata da componente, ou as componentes as quais pertence esta energia. Outro método visto na revisão foi o de Prony, do qual se fez uso no trabalho \cite{chang2009two}. Neste trabalho utilizou-se da otimização via RLS para resolver o problema da predição linear e calculou-se as raízes do polinômio característico do modelo Auto-Regressivo do sinal, assim foi possível obter as componentes relevantes com certa precisão.
 
-\indent Neste mesmo trabalho, posteriormente se faz uso do RLS novamente para estimar a amplitude e fase de cada uma das componentes, alimentando o RLS com sinais senoidais em quadratura de modo que o filtro estimado fosse a amplitude de senoides e cossenoides [obs: Vou colocar uma diagrama disso depois]. 
+\indent Neste mesmo trabalho, posteriormente se faz uso do RLS novamente para estimar a amplitude e fase de cada uma das componentes, alimentando o RLS com sinais senoidais em quadratura de modo que o filtro estimado fosse a amplitude de senoides e cossenoides.
 
 \indent Nesta seção faremos a exposição de um método baseado no trabalho citado com algumas modificações.
 
@@ -25,13 +25,13 @@ Onde desta vez o sinal de referência $d[k]$ ganha um caráter especial uma vez 
 Como visto anteriormente, o RLS faz uma estimação da matriz $\boldsymbol{R}_{uu}^{-1}$ a cada iteração e geralmente é o método que nos vai dar menor MSEe em menos tempo, entretanto ele tem algumas deficiências:
 
 \begin{itemize}
-	\item Se a matriz $\boldsymbol{R}_{uu}$ é singular ou não é bem ajustada, podemos ter problemas numéricos significativos, como a ordem dos elementos da matriz ser muito desbalanceada ou grande demais. Isso é bastante notável em nosso problema de estudo, pois em geral não se sabe a ordem do sistema que se está analisando, se este sistema tem uma ordem pequena e é estimado com um filtro grande, a matriz $\boldsymbol{R}_{uu}$ certamente será singular. Algo que pode ser feito para minimizar este problema é a adição de ruído.
-	\item Em geral é mais lento para reagir a variações no sistema que o LMS.
-	\item Tem uma complexidade computacional consideravelmente maior.
+	\item Se a matriz $\boldsymbol{R}_{uu}$ é singular ou não é bem ajustada, podemos ter problemas numéricos significativos, como a ordem dos elementos da matriz ser muito desbalanceada ou grande demais. Isso é bastante notável em nosso problema de estudo, pois em geral não se sabe a ordem do sistema que se está analisando, se este sistema tem uma ordem pequena e é estimado com um filtro grande, a matriz $\boldsymbol{R}_{uu}$ certamente será singular. Algo que pode ser feito para minimizar este problema é a adição de ruído;
+	\item Em geral é mais lento para reagir a variações no sistema que o LMS;
+	\item Tem uma complexidade computacional consideravelmente maior;
 	\item Sua convergência é de certa forma caótica, perturbando o cálculo das raízes.
 \end{itemize}
 
-Deve-se também destacar que tanto o RLS quanto o NLMS se beneficiam de ordens de filtro próximas a quantidade de amostras por ciclo da fundamental. Isto se deve ao fato de que quanto menor são as variações dos sinais dentro do buffer $\boldsymbol{U}$ mais singular é a matriz de autocorrelação. 
+Deve-se também destacar que tanto o RLS quanto o NLMS se beneficiam de ordens de filtro próximas à quantidade de amostras por ciclo da fundamental. Isto se deve ao fato de que quanto menor são as variações dos sinais dentro do buffer $\boldsymbol{U}$ mais singular é a matriz de autocorrelação. 
 
 \begin{figure}[h]
 	\centering    
@@ -139,7 +139,7 @@ A tabela mostra o que já era esperado, e o que pode ser confirmado com outras s
 
 \section{Filtragem de valores}
 
-Recuperando alguma equações do capítulo de referências, foi apresentado que o modelo estocástico do sinal Auto-Regressivo era da forma:
+Recuperando algumas equações do capítulo de referências, foi apresentado que o modelo estocástico do sinal Auto-Regressivo era da forma:
 
 \begin{figure}[H]
 	\centering    
@@ -164,7 +164,7 @@ U(z)=\sum_{m=1}^{M}w_m U(z)z^{-m} +\Xi(z)
 \end{equation}
 
 
-A equação \ref{eq:modelo_ar} nos mostra que o a porção $Q(z)=1-\sum_{m=1}^{M}w_m z^{-m}$ determina as características espectrais de $U(w)$ uma vez que $\xi$ é ruído branco e tem densidade de potência constante para todo o espectro. Calculando $Q(w)^{-1}$ pode-se obter uma estimativa da energia naquele ponto. Assim se calcularmos $Q(w_{root})$ para todas  as raízes, é possível observar quais tem maior energia e quais tem menor. Desta forma está permitido até mesmo descartar a análise mais profunda de certas componentes que serão acusadas na estimação de frequências. Este tipo de análise inclusive é usado em processamento de fala para identificar formantes de fonemas, e por si só já um método de estimação espectral paramétrico.
+A equação \ref{eq:modelo_ar} nos mostra que o a porção $Q(z)=1-\sum_{m=1}^{M}w_m z^{-m}$ determina as características espectrais de $U(w)$ uma vez que $\xi$ é ruído branco e tem densidade de potência constante para todo o espectro. Calculando $Q(w)^{-1}$ pode-se obter uma estimativa da energia naquele ponto. Assim se calcularmos $Q(w_{root})$ para todas  as raízes, é possível observar quais têm maior energia e quais têm menor. Desta forma está permitido até mesmo descartar a análise mais profunda de certas componentes que serão acusadas na estimação de frequências. Este tipo de análise inclusive é usado em processamento de fala para identificar formantes de fonemas, e por si só já um método de estimação espectral paramétrico.
 
 Podemos ver nas imagens \ref{fig:im_RLS} e \ref{fig:im_NLMS} que a estimação feita desta forma para o RLS acusa muito mais frequências que não são reais de maneira aparentemente aleatória no decorrer do tempo, entretanto, ele converge muito mais rápido que o NLMS, que apresenta convergência suave e com pouco ruído. Em ambos os casos temos a presença do quinto e terceiro harmônicos que sofrem uma mudança brusca na frequência em t=2s.
 
@@ -190,9 +190,9 @@ Faremos o mesmo teste de rastreio de frequências realizado no artigo citado. Us
 
 Onde $A_1=1$, $A_2=1/3$, $A_3=1/5$, $w_0=f_0 2 \pi$ e $f_0=60 \, Hz$. Para os inter-harmônicos $f_1=152 \, Hz$ e $f_3= 266 \, Hz$. E $\xi(t)$=rand(t). 
 \begin{itemize}
-	\item Em $t=1.0 \,s$ as amplitudes dos harmônicos mudam para 0.8, 0.2 e 0.3 respectivamente. 
-	\item Em $t=2.5 \,s$, $f_0$ vai para 59.8 Hz.
-	\item em $t=4.0 \,s$, $f_0$ vai para 60.3 Hz e os harmônicos voltam a 1.0, 1/3 e 1/5 respectivamente.
+	\item Em $t=1.0 \,s$ as amplitudes dos harmônicos mudam para 0.8, 0.2 e 0.3 respectivamente; 
+	\item Em $t=2.5 \,s$, $f_0$ vai para 59.8 Hz;
+	\item em $t=4.0 \,s$, $f_0$ vai para 60.3 Hz e os harmônicos voltam a 1.0, 1/3 e 1/5 respectivamente;
 	\item seguimos simulando até 5.5 s.
 \end{itemize}
 

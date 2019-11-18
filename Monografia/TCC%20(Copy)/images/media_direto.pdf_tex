@@ -52,6 +52,7 @@
   \makeatother%
   \begin{picture}(1,0.5)%
     \lineheight{1}%
+    \fontsize{9}{5}
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{media_direto.pdf}}%
     \put(0.23166683,0.00722217){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}tempo (seg)\end{tabular}}}}%

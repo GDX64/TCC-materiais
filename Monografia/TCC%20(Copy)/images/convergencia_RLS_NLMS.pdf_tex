@@ -52,6 +52,7 @@
   \makeatother%
   \begin{picture}(1,0.75)%
     \lineheight{1}%
+    \fontsize{9}{5}
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{convergencia_RLS_NLMS.pdf}}%
     \put(0.46250036,0.38095232){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}amostras\end{tabular}}}}%

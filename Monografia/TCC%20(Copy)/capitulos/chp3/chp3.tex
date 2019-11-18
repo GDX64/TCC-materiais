@@ -24,7 +24,7 @@ Nas figuras seguintes pode-se observar como converge o algoritmo em diferentes s
 
 \section{Banco de filtros}
 
-\indent A solução encontrada em \cite{de2009pll} para parte dos problemas anteriormente citados é o uso de um preprocessamento com filtros passa-banda, para melhorar a relação sinal ruído, e posteriormente subamostragem, para diminuir a complexidade computacional, de modo também que não seja necessário mudar as constantes do algoritmo.
+\indent A solução encontrada em \cite{de2009pll} para parte dos problemas anteriormente citados é o uso de um pré-processamento com filtros passa-banda, para melhorar a relação sinal ruído, e posteriormente subamostragem, para diminuir a complexidade computacional, de modo também que não seja necessário mudar as constantes do algoritmo.
 
 \indent O conjunto de filtros utilizado é uma cascata de dois filtros IIR com a seguinte função de transferência:
 
@@ -43,7 +43,7 @@ H_{bp}(z)=\frac{1-\alpha}{2}\frac{1-z^{-2}}{1-\beta (1-\alpha) z^{-1} + \alpha z
 \begin{itemize}
 	\item Ele rechaça completamente a componente DC do sinal.
 	\item Tem atraso de fase nulo na frequência central.
-	\item É paramétrico, suas características dependem dos parâmetros $\alpha$ e $\beta$, os quais modificam propriedades muito específicas do filtro, sendo entAõ muito fácil utilizá-lo e modificá-lo em tempo real.
+	\item É paramétrico, suas características dependem dos parâmetros $\alpha$ e $\beta$, os quais modificam propriedades muito específicas do filtro, sendo então muito fácil utilizá-lo e modificá-lo em tempo real.
 \end{itemize}
 
 \begin{figure}[h]
@@ -74,7 +74,7 @@ A função recebe como argumentos a frequência de amostragem Fs, a frequência 
 
 \indent É possível observar na figura \ref{fig:freq_circ} a localização de duas frequências f1 e f2 no círculo. Suponhamos que a frequência de amostragem é $f_s=240 \:Hz$, $f_2=\frac{240}{2} \frac{3}{4} \: Hz = 90 \: Hz$ e $f_2=\frac{240}{2} \frac{4}{3} \: Hz = 160 \: Hz$, encontramos facilmente suas colocações no círculo utilizando o algoritmo citado. Agora reparemos que diferentes frequências serão mapeadas nas mesmas posições do círculo, por exemplo $f_1=\frac{240}{2} \frac{11}{4} \: Hz = 330 \: Hz$ também é mapeada no mesmo ângulo, então não existe uma função inversa que devolva as frequências mapeadas para seus valores reais. 
 
-\indent Também é importante se atentar ao fato de que quando se aumenta $f_1$ levemente, se está aumentando sua frequência aparente, mas quando se faz o mesmo com $f_2$ se está diminuindo sua frequência aparente. Por isso é importante guardar a variável 'flag', ela diz se acréscimos positivos em frequência aparente condizem à acréscimos ou decréscimos na frequência real, e uma vez que não existe uma função inversa que nos devolva a frequência real dada a aparente, deve-se utilizar da variação na estimação aparente e o valor inicial mapeado para recuperar a estimação real.
+\indent Também é importante se atentar ao fato de que quando se aumenta $f_1$ levemente, se está aumentando sua frequência aparente, mas quando se faz o mesmo com $f_2$ se está diminuindo sua frequência aparente. Por isso é importante guardar a variável 'flag'. Ela diz se acréscimos positivos em frequência aparente condizem à acréscimos ou decréscimos na frequência real, e uma vez que não existe uma função inversa que nos devolva a frequência real dada a aparente, deve-se utilizar da variação na estimação aparente e o valor inicial mapeado para recuperar a estimação real.
 
 \indent Uma coisa que se deve ter em mente é que algumas frequências se localizarão muito próximas a zero, e terão frequência aparente muito pequena. Isso dificulta muito a análise, é desejável testar a localização antes de iniciar o algoritmo e fazer uma mudança no valor de subamostragem caso necessário.
 
@@ -131,10 +131,10 @@ Onde $\lambda$ é uma constante entre 0 e 1. \\
 \section{Síntese da estrutura PLL Multitaxa}
 
 \begin{enumerate}
-	\item Passamos o sinal por um banco de filtros.
-	\item Abaixamos a frequência em $M_k$ amostras.
-	\item Calculamos a frequência aparente $f_a$ da componente a rastrear.
-	\item Inicializamos o PLL com esta $f_a$ e a guardamos para recompor a original.
+	\item Passamos o sinal por um banco de filtros;
+	\item Abaixamos a frequência em $M_k$ amostras;
+	\item Calculamos a frequência aparente $f_a$ da componente a rastrear;
+	\item Inicializamos o PLL com esta $f_a$ e a guardamos para recompor a original;
 	\item Fazemos as estimações de $w$ e $A$, usamos a equação \ref{eq:w0 filtro} e utilizamos a série geométrica para realimentar o banco de filtros com a frequência calculada.
 \end{enumerate}
 
@@ -218,7 +218,7 @@ Os parâmetros da simulação são $f0=60Hz$, 128 pontos por ciclo de $f0$, $Fs=
 
 \subsection{Inter-harmônicos}
 
-Foram simuladas estimações com inter-harmônicos, seguindo as mesmas prescrições do caso anterior. Vemos que os tempos de convergência não são muito afetados, entretanto o erro quadrático médio para a fundamental aumenta um pouco. Isto se deve a um leve batimento que o harmônico 3.2 causa na fundamental, fazendo com que a estimação oscile um pouco. Entretanto se olhamos uma média grande o suficiente destas estimações, podemos nos livrar do batimento.
+Foram simuladas estimações com inter-harmônicos, seguindo as mesmas prescrições do caso anterior. Vemos que os tempos de convergência não são muito afetados, entretanto o erro quadrático médio para a fundamental aumenta um pouco. Isto se deve a um leve batimento que o harmônico 3.2 causa na fundamental, fazendo com que a estimação oscile um pouco. Contudo, se olhamos uma média grande o suficiente destas estimações, podemos nos livrar do batimento.
 
 \begin{figure}[H]
 	\centering    
@@ -264,7 +264,7 @@ Foram simuladas estimações com inter-harmônicos, seguindo as mesmas prescriç
 
 \subsection{PLL}
 
-\indent Cada estrutura PLL como apresentada na equação [só dá pra citar quando juntar os capítulos] representa 11 multiplicações, 5 somas e 4 trigonométricas, que são executadas a cada 16 amostras. 
+\indent Cada estrutura PLL, como apresentada nas equações do capítulo 2, representa 11 multiplicações, 5 somas e 4 trigonométricas, que são executadas a cada 16 amostras. 
 
 \subsection{Atualização de frequência}
 

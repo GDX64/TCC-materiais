@@ -52,6 +52,7 @@
   \makeatother%
   \begin{picture}(1,0.75)%
     \lineheight{1}%
+    \fontsize{9}{5}
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{harm15_ruido.pdf}}%
     \put(0.44553607,0.36666661){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}tempo (seg)\end{tabular}}}}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.3)  17 NOV 2019 23:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.3)  18 NOV 2019 16:26
 entering extended mode
 **./main.tex
 (main.tex
@@ -1519,7 +1519,7 @@ Overfull \hbox (26.73479pt too wide) in paragraph at lines 34--34
 <capitulos/chp2/images/fA.png, id=275, 457.71pt x 320.69812pt>
 File: capitulos/chp2/images/fA.png Graphic file (type png)
 <use capitulos/chp2/images/fA.png>
-Package pdftex.def Info: capitulos/chp2/images/fA.png  used on input line 255.
+Package pdftex.def Info: capitulos/chp2/images/fA.png  used on input line 256.
 (pdftex.def)             Requested size: 384.10959pt x 269.1399pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2085,59 +2085,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--110
 <images/media_direto.pdf, id=541, page=1, 451.6875pt x 225.84375pt>
 File: images/media_direto.pdf Graphic file (type pdf)
 <use images/media_direto.pdf, page 1>
-Package pdftex.def Info: images/media_direto.pdf , page1 used on input line 56.
+Package pdftex.def Info: images/media_direto.pdf , page1 used on input line 57.
 
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 <images/media_direto.pdf, id=542, page=2, 451.6875pt x 225.84375pt>
 File: images/media_direto.pdf Graphic file (type pdf)
 <use images/media_direto.pdf, page 2>
-Package pdftex.def Info: images/media_direto.pdf , page2 used on input line 58.
+Package pdftex.def Info: images/media_direto.pdf , page2 used on input line 59.
 
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 <images/media_direto.pdf, id=543, page=3, 451.6875pt x 225.84375pt>
 File: images/media_direto.pdf Graphic file (type pdf)
 <use images/media_direto.pdf, page 3>
-Package pdftex.def Info: images/media_direto.pdf , page3 used on input line 64.
+Package pdftex.def Info: images/media_direto.pdf , page3 used on input line 65.
 
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 <images/media_direto.pdf, id=544, page=4, 451.6875pt x 225.84375pt>
 File: images/media_direto.pdf Graphic file (type pdf)
 <use images/media_direto.pdf, page 4>
-Package pdftex.def Info: images/media_direto.pdf , page4 used on input line 73.
+Package pdftex.def Info: images/media_direto.pdf , page4 used on input line 74.
 
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 <images/media_direto.pdf, id=545, page=5, 451.6875pt x 225.84375pt>
 File: images/media_direto.pdf Graphic file (type pdf)
 <use images/media_direto.pdf, page 5>
-Package pdftex.def Info: images/media_direto.pdf , page5 used on input line 75.
+Package pdftex.def Info: images/media_direto.pdf , page5 used on input line 76.
 
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 <images/media_direto.pdf, id=546, page=6, 451.6875pt x 225.84375pt>
 File: images/media_direto.pdf Graphic file (type pdf)
 <use images/media_direto.pdf, page 6>
-Package pdftex.def Info: images/media_direto.pdf , page6 used on input line 81.
+Package pdftex.def Info: images/media_direto.pdf , page6 used on input line 82.
 
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 <images/media_direto.pdf, id=547, page=7, 451.6875pt x 225.84375pt>
 File: images/media_direto.pdf Graphic file (type pdf)
 <use images/media_direto.pdf, page 7>
-Package pdftex.def Info: images/media_direto.pdf , page7 used on input line 85.
+Package pdftex.def Info: images/media_direto.pdf , page7 used on input line 86.
 
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 <images/media_direto.pdf, id=548, page=8, 451.6875pt x 225.84375pt>
 File: images/media_direto.pdf Graphic file (type pdf)
 <use images/media_direto.pdf, page 8>
-Package pdftex.def Info: images/media_direto.pdf , page8 used on input line 87.
+Package pdftex.def Info: images/media_direto.pdf , page8 used on input line 88.
 
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 <images/media_direto.pdf, id=549, page=9, 451.6875pt x 225.84375pt>
 File: images/media_direto.pdf Graphic file (type pdf)
 <use images/media_direto.pdf, page 9>
-Package pdftex.def Info: images/media_direto.pdf , page9 used on input line 89.
+Package pdftex.def Info: images/media_direto.pdf , page9 used on input line 90.
 
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 )
-Overfull \hbox (24.89616pt too wide) in paragraph at lines 90--116
+Overfull \hbox (24.89616pt too wide) in paragraph at lines 91--116
  [][] 
  []
 
@@ -2146,58 +2146,58 @@ Overfull \hbox (24.89616pt too wide) in paragraph at lines 90--116
 File: images/geometrico_media.pdf Graphic file (type pdf)
 <use images/geometrico_media.pdf, page 1>
 Package pdftex.def Info: images/geometrico_media.pdf , page1 used on input line
- 56.
+ 57.
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 <images/geometrico_media.pdf, id=551, page=2, 451.6875pt x 225.84375pt>
 File: images/geometrico_media.pdf Graphic file (type pdf)
 <use images/geometrico_media.pdf, page 2>
 Package pdftex.def Info: images/geometrico_media.pdf , page2 used on input line
- 58.
+ 59.
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 <images/geometrico_media.pdf, id=552, page=3, 451.6875pt x 225.84375pt>
 File: images/geometrico_media.pdf Graphic file (type pdf)
 <use images/geometrico_media.pdf, page 3>
 Package pdftex.def Info: images/geometrico_media.pdf , page3 used on input line
- 64.
+ 65.
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 <images/geometrico_media.pdf, id=553, page=4, 451.6875pt x 225.84375pt>
 File: images/geometrico_media.pdf Graphic file (type pdf)
 <use images/geometrico_media.pdf, page 4>
 Package pdftex.def Info: images/geometrico_media.pdf , page4 used on input line
- 73.
+ 74.
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 <images/geometrico_media.pdf, id=554, page=5, 451.6875pt x 225.84375pt>
 File: images/geometrico_media.pdf Graphic file (type pdf)
 <use images/geometrico_media.pdf, page 5>
 Package pdftex.def Info: images/geometrico_media.pdf , page5 used on input line
- 75.
+ 76.
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 <images/geometrico_media.pdf, id=555, page=6, 451.6875pt x 225.84375pt>
 File: images/geometrico_media.pdf Graphic file (type pdf)
 <use images/geometrico_media.pdf, page 6>
 Package pdftex.def Info: images/geometrico_media.pdf , page6 used on input line
- 81.
+ 82.
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 <images/geometrico_media.pdf, id=556, page=7, 451.6875pt x 225.84375pt>
 File: images/geometrico_media.pdf Graphic file (type pdf)
 <use images/geometrico_media.pdf, page 7>
 Package pdftex.def Info: images/geometrico_media.pdf , page7 used on input line
- 85.
+ 86.
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 <images/geometrico_media.pdf, id=557, page=8, 451.6875pt x 225.84375pt>
 File: images/geometrico_media.pdf Graphic file (type pdf)
 <use images/geometrico_media.pdf, page 8>
 Package pdftex.def Info: images/geometrico_media.pdf , page8 used on input line
- 87.
+ 88.
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 <images/geometrico_media.pdf, id=558, page=9, 451.6875pt x 225.84375pt>
 File: images/geometrico_media.pdf Graphic file (type pdf)
 <use images/geometrico_media.pdf, page 9>
 Package pdftex.def Info: images/geometrico_media.pdf , page9 used on input line
- 89.
+ 90.
 (pdftex.def)             Requested size: 451.6875pt x 225.85696pt.
 )
-Overfull \hbox (24.89616pt too wide) in paragraph at lines 90--125
+Overfull \hbox (24.89616pt too wide) in paragraph at lines 91--125
  [][] 
  []
 
@@ -2312,147 +2312,147 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--186
 <images/harm15_ruido.pdf, id=588, page=1, 421.575pt x 316.18124pt>
 File: images/harm15_ruido.pdf Graphic file (type pdf)
 <use images/harm15_ruido.pdf, page 1>
-Package pdftex.def Info: images/harm15_ruido.pdf , page1 used on input line 56.
+Package pdftex.def Info: images/harm15_ruido.pdf , page1 used on input line 57.
 
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_ruido.pdf, id=589, page=2, 421.575pt x 316.18124pt>
 File: images/harm15_ruido.pdf Graphic file (type pdf)
 <use images/harm15_ruido.pdf, page 2>
-Package pdftex.def Info: images/harm15_ruido.pdf , page2 used on input line 58.
+Package pdftex.def Info: images/harm15_ruido.pdf , page2 used on input line 59.
 
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_ruido.pdf, id=590, page=3, 421.575pt x 316.18124pt>
 File: images/harm15_ruido.pdf Graphic file (type pdf)
 <use images/harm15_ruido.pdf, page 3>
-Package pdftex.def Info: images/harm15_ruido.pdf , page3 used on input line 71.
+Package pdftex.def Info: images/harm15_ruido.pdf , page3 used on input line 72.
 
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_ruido.pdf, id=591, page=4, 421.575pt x 316.18124pt>
 File: images/harm15_ruido.pdf Graphic file (type pdf)
 <use images/harm15_ruido.pdf, page 4>
-Package pdftex.def Info: images/harm15_ruido.pdf , page4 used on input line 77.
+Package pdftex.def Info: images/harm15_ruido.pdf , page4 used on input line 78.
 
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_ruido.pdf, id=592, page=5, 421.575pt x 316.18124pt>
 File: images/harm15_ruido.pdf Graphic file (type pdf)
 <use images/harm15_ruido.pdf, page 5>
-Package pdftex.def Info: images/harm15_ruido.pdf , page5 used on input line 79.
+Package pdftex.def Info: images/harm15_ruido.pdf , page5 used on input line 80.
 
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_ruido.pdf, id=593, page=6, 421.575pt x 316.18124pt>
 File: images/harm15_ruido.pdf Graphic file (type pdf)
 <use images/harm15_ruido.pdf, page 6>
-Package pdftex.def Info: images/harm15_ruido.pdf , page6 used on input line 81.
+Package pdftex.def Info: images/harm15_ruido.pdf , page6 used on input line 82.
 
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_ruido.pdf, id=594, page=7, 421.575pt x 316.18124pt>
 File: images/harm15_ruido.pdf Graphic file (type pdf)
 <use images/harm15_ruido.pdf, page 7>
-Package pdftex.def Info: images/harm15_ruido.pdf , page7 used on input line 83.
+Package pdftex.def Info: images/harm15_ruido.pdf , page7 used on input line 84.
 
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_ruido.pdf, id=595, page=8, 421.575pt x 316.18124pt>
 File: images/harm15_ruido.pdf Graphic file (type pdf)
 <use images/harm15_ruido.pdf, page 8>
-Package pdftex.def Info: images/harm15_ruido.pdf , page8 used on input line 85.
+Package pdftex.def Info: images/harm15_ruido.pdf , page8 used on input line 86.
 
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_ruido.pdf, id=596, page=9, 421.575pt x 316.18124pt>
 File: images/harm15_ruido.pdf Graphic file (type pdf)
 <use images/harm15_ruido.pdf, page 9>
-Package pdftex.def Info: images/harm15_ruido.pdf , page9 used on input line 91.
+Package pdftex.def Info: images/harm15_ruido.pdf , page9 used on input line 92.
 
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_ruido.pdf, id=597, page=10, 421.575pt x 316.18124pt>
 File: images/harm15_ruido.pdf Graphic file (type pdf)
 <use images/harm15_ruido.pdf, page 10>
-Package pdftex.def Info: images/harm15_ruido.pdf , page10 used on input line 95
+Package pdftex.def Info: images/harm15_ruido.pdf , page10 used on input line 96
 .
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_ruido.pdf, id=598, page=11, 421.575pt x 316.18124pt>
 File: images/harm15_ruido.pdf Graphic file (type pdf)
 <use images/harm15_ruido.pdf, page 11>
-Package pdftex.def Info: images/harm15_ruido.pdf , page11 used on input line 97
+Package pdftex.def Info: images/harm15_ruido.pdf , page11 used on input line 98
 .
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_ruido.pdf, id=599, page=12, 421.575pt x 316.18124pt>
 File: images/harm15_ruido.pdf Graphic file (type pdf)
 <use images/harm15_ruido.pdf, page 12>
 Package pdftex.def Info: images/harm15_ruido.pdf , page12 used on input line 10
-3.
+4.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_ruido.pdf, id=600, page=13, 421.575pt x 316.18124pt>
 File: images/harm15_ruido.pdf Graphic file (type pdf)
 <use images/harm15_ruido.pdf, page 13>
 Package pdftex.def Info: images/harm15_ruido.pdf , page13 used on input line 10
-7.
+8.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 ) (images/harm15_deg.pdf_tex
 <images/harm15_deg.pdf, id=601, page=1, 421.575pt x 316.18124pt>
 File: images/harm15_deg.pdf Graphic file (type pdf)
 <use images/harm15_deg.pdf, page 1>
-Package pdftex.def Info: images/harm15_deg.pdf , page1 used on input line 56.
+Package pdftex.def Info: images/harm15_deg.pdf , page1 used on input line 57.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_deg.pdf, id=602, page=2, 421.575pt x 316.18124pt>
 File: images/harm15_deg.pdf Graphic file (type pdf)
 <use images/harm15_deg.pdf, page 2>
-Package pdftex.def Info: images/harm15_deg.pdf , page2 used on input line 58.
+Package pdftex.def Info: images/harm15_deg.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_deg.pdf, id=603, page=3, 421.575pt x 316.18124pt>
 File: images/harm15_deg.pdf Graphic file (type pdf)
 <use images/harm15_deg.pdf, page 3>
-Package pdftex.def Info: images/harm15_deg.pdf , page3 used on input line 71.
+Package pdftex.def Info: images/harm15_deg.pdf , page3 used on input line 72.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_deg.pdf, id=604, page=4, 421.575pt x 316.18124pt>
 File: images/harm15_deg.pdf Graphic file (type pdf)
 <use images/harm15_deg.pdf, page 4>
-Package pdftex.def Info: images/harm15_deg.pdf , page4 used on input line 77.
+Package pdftex.def Info: images/harm15_deg.pdf , page4 used on input line 78.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_deg.pdf, id=605, page=5, 421.575pt x 316.18124pt>
 File: images/harm15_deg.pdf Graphic file (type pdf)
 <use images/harm15_deg.pdf, page 5>
-Package pdftex.def Info: images/harm15_deg.pdf , page5 used on input line 79.
+Package pdftex.def Info: images/harm15_deg.pdf , page5 used on input line 80.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_deg.pdf, id=606, page=6, 421.575pt x 316.18124pt>
 File: images/harm15_deg.pdf Graphic file (type pdf)
 <use images/harm15_deg.pdf, page 6>
-Package pdftex.def Info: images/harm15_deg.pdf , page6 used on input line 81.
+Package pdftex.def Info: images/harm15_deg.pdf , page6 used on input line 82.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_deg.pdf, id=607, page=7, 421.575pt x 316.18124pt>
 File: images/harm15_deg.pdf Graphic file (type pdf)
 <use images/harm15_deg.pdf, page 7>
-Package pdftex.def Info: images/harm15_deg.pdf , page7 used on input line 83.
+Package pdftex.def Info: images/harm15_deg.pdf , page7 used on input line 84.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_deg.pdf, id=608, page=8, 421.575pt x 316.18124pt>
 File: images/harm15_deg.pdf Graphic file (type pdf)
 <use images/harm15_deg.pdf, page 8>
-Package pdftex.def Info: images/harm15_deg.pdf , page8 used on input line 85.
+Package pdftex.def Info: images/harm15_deg.pdf , page8 used on input line 86.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_deg.pdf, id=609, page=9, 421.575pt x 316.18124pt>
 File: images/harm15_deg.pdf Graphic file (type pdf)
 <use images/harm15_deg.pdf, page 9>
-Package pdftex.def Info: images/harm15_deg.pdf , page9 used on input line 91.
+Package pdftex.def Info: images/harm15_deg.pdf , page9 used on input line 92.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_deg.pdf, id=610, page=10, 421.575pt x 316.18124pt>
 File: images/harm15_deg.pdf Graphic file (type pdf)
 <use images/harm15_deg.pdf, page 10>
-Package pdftex.def Info: images/harm15_deg.pdf , page10 used on input line 95.
+Package pdftex.def Info: images/harm15_deg.pdf , page10 used on input line 96.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_deg.pdf, id=611, page=11, 421.575pt x 316.18124pt>
 File: images/harm15_deg.pdf Graphic file (type pdf)
 <use images/harm15_deg.pdf, page 11>
-Package pdftex.def Info: images/harm15_deg.pdf , page11 used on input line 97.
+Package pdftex.def Info: images/harm15_deg.pdf , page11 used on input line 98.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_deg.pdf, id=612, page=12, 421.575pt x 316.18124pt>
 File: images/harm15_deg.pdf Graphic file (type pdf)
 <use images/harm15_deg.pdf, page 12>
-Package pdftex.def Info: images/harm15_deg.pdf , page12 used on input line 103.
+Package pdftex.def Info: images/harm15_deg.pdf , page12 used on input line 104.
 
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm15_deg.pdf, id=613, page=13, 421.575pt x 316.18124pt>
 File: images/harm15_deg.pdf Graphic file (type pdf)
 <use images/harm15_deg.pdf, page 13>
-Package pdftex.def Info: images/harm15_deg.pdf , page13 used on input line 108.
+Package pdftex.def Info: images/harm15_deg.pdf , page13 used on input line 109.
 
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 ) [40 <./images/harm15_ruido.pdf> <./images/harm15_ruido.pdf
@@ -2507,37 +2507,37 @@ ultiple pdfs with page group included in a single page
 <images/batimento.pdf, id=622, page=1, 301.125pt x 168.27307pt>
 File: images/batimento.pdf Graphic file (type pdf)
 <use images/batimento.pdf, page 1>
-Package pdftex.def Info: images/batimento.pdf , page1 used on input line 56.
+Package pdftex.def Info: images/batimento.pdf , page1 used on input line 57.
 (pdftex.def)             Requested size: 301.125pt x 168.28806pt.
 <images/batimento.pdf, id=623, page=2, 301.125pt x 168.27307pt>
 File: images/batimento.pdf Graphic file (type pdf)
 <use images/batimento.pdf, page 2>
-Package pdftex.def Info: images/batimento.pdf , page2 used on input line 58.
+Package pdftex.def Info: images/batimento.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 301.125pt x 168.28806pt.
 <images/batimento.pdf, id=624, page=3, 301.125pt x 168.27307pt>
 File: images/batimento.pdf Graphic file (type pdf)
 <use images/batimento.pdf, page 3>
-Package pdftex.def Info: images/batimento.pdf , page3 used on input line 62.
+Package pdftex.def Info: images/batimento.pdf , page3 used on input line 63.
 (pdftex.def)             Requested size: 301.125pt x 168.28806pt.
 <images/batimento.pdf, id=625, page=4, 301.125pt x 168.27307pt>
 File: images/batimento.pdf Graphic file (type pdf)
 <use images/batimento.pdf, page 4>
-Package pdftex.def Info: images/batimento.pdf , page4 used on input line 67.
+Package pdftex.def Info: images/batimento.pdf , page4 used on input line 68.
 (pdftex.def)             Requested size: 301.125pt x 168.28806pt.
 <images/batimento.pdf, id=626, page=5, 301.125pt x 168.27307pt>
 File: images/batimento.pdf Graphic file (type pdf)
 <use images/batimento.pdf, page 5>
-Package pdftex.def Info: images/batimento.pdf , page5 used on input line 69.
+Package pdftex.def Info: images/batimento.pdf , page5 used on input line 70.
 (pdftex.def)             Requested size: 301.125pt x 168.28806pt.
 <images/batimento.pdf, id=627, page=6, 301.125pt x 168.27307pt>
 File: images/batimento.pdf Graphic file (type pdf)
 <use images/batimento.pdf, page 6>
-Package pdftex.def Info: images/batimento.pdf , page6 used on input line 73.
+Package pdftex.def Info: images/batimento.pdf , page6 used on input line 74.
 (pdftex.def)             Requested size: 301.125pt x 168.28806pt.
 <images/batimento.pdf, id=628, page=7, 301.125pt x 168.27307pt>
 File: images/batimento.pdf Graphic file (type pdf)
 <use images/batimento.pdf, page 7>
-Package pdftex.def Info: images/batimento.pdf , page7 used on input line 77.
+Package pdftex.def Info: images/batimento.pdf , page7 used on input line 78.
 (pdftex.def)             Requested size: 301.125pt x 168.28806pt.
 ) [41 <./images/harm15_deg.pdf> <./images/harm15_deg.pdf
 
@@ -2591,67 +2591,67 @@ tiple pdfs with page group included in a single page
 <images/harm64.pdf, id=638, page=1, 421.575pt x 316.18124pt>
 File: images/harm64.pdf Graphic file (type pdf)
 <use images/harm64.pdf, page 1>
-Package pdftex.def Info: images/harm64.pdf , page1 used on input line 56.
+Package pdftex.def Info: images/harm64.pdf , page1 used on input line 57.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm64.pdf, id=639, page=2, 421.575pt x 316.18124pt>
 File: images/harm64.pdf Graphic file (type pdf)
 <use images/harm64.pdf, page 2>
-Package pdftex.def Info: images/harm64.pdf , page2 used on input line 58.
+Package pdftex.def Info: images/harm64.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm64.pdf, id=640, page=3, 421.575pt x 316.18124pt>
 File: images/harm64.pdf Graphic file (type pdf)
 <use images/harm64.pdf, page 3>
-Package pdftex.def Info: images/harm64.pdf , page3 used on input line 71.
+Package pdftex.def Info: images/harm64.pdf , page3 used on input line 72.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm64.pdf, id=641, page=4, 421.575pt x 316.18124pt>
 File: images/harm64.pdf Graphic file (type pdf)
 <use images/harm64.pdf, page 4>
-Package pdftex.def Info: images/harm64.pdf , page4 used on input line 77.
+Package pdftex.def Info: images/harm64.pdf , page4 used on input line 78.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm64.pdf, id=642, page=5, 421.575pt x 316.18124pt>
 File: images/harm64.pdf Graphic file (type pdf)
 <use images/harm64.pdf, page 5>
-Package pdftex.def Info: images/harm64.pdf , page5 used on input line 79.
+Package pdftex.def Info: images/harm64.pdf , page5 used on input line 80.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm64.pdf, id=643, page=6, 421.575pt x 316.18124pt>
 File: images/harm64.pdf Graphic file (type pdf)
 <use images/harm64.pdf, page 6>
-Package pdftex.def Info: images/harm64.pdf , page6 used on input line 81.
+Package pdftex.def Info: images/harm64.pdf , page6 used on input line 82.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm64.pdf, id=644, page=7, 421.575pt x 316.18124pt>
 File: images/harm64.pdf Graphic file (type pdf)
 <use images/harm64.pdf, page 7>
-Package pdftex.def Info: images/harm64.pdf , page7 used on input line 83.
+Package pdftex.def Info: images/harm64.pdf , page7 used on input line 84.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm64.pdf, id=645, page=8, 421.575pt x 316.18124pt>
 File: images/harm64.pdf Graphic file (type pdf)
 <use images/harm64.pdf, page 8>
-Package pdftex.def Info: images/harm64.pdf , page8 used on input line 85.
+Package pdftex.def Info: images/harm64.pdf , page8 used on input line 86.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm64.pdf, id=646, page=9, 421.575pt x 316.18124pt>
 File: images/harm64.pdf Graphic file (type pdf)
 <use images/harm64.pdf, page 9>
-Package pdftex.def Info: images/harm64.pdf , page9 used on input line 92.
+Package pdftex.def Info: images/harm64.pdf , page9 used on input line 93.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm64.pdf, id=647, page=10, 421.575pt x 316.18124pt>
 File: images/harm64.pdf Graphic file (type pdf)
 <use images/harm64.pdf, page 10>
-Package pdftex.def Info: images/harm64.pdf , page10 used on input line 97.
+Package pdftex.def Info: images/harm64.pdf , page10 used on input line 98.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm64.pdf, id=648, page=11, 421.575pt x 316.18124pt>
 File: images/harm64.pdf Graphic file (type pdf)
 <use images/harm64.pdf, page 11>
-Package pdftex.def Info: images/harm64.pdf , page11 used on input line 99.
+Package pdftex.def Info: images/harm64.pdf , page11 used on input line 100.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm64.pdf, id=649, page=12, 421.575pt x 316.18124pt>
 File: images/harm64.pdf Graphic file (type pdf)
 <use images/harm64.pdf, page 12>
-Package pdftex.def Info: images/harm64.pdf , page12 used on input line 106.
+Package pdftex.def Info: images/harm64.pdf , page12 used on input line 107.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 <images/harm64.pdf, id=650, page=13, 421.575pt x 316.18124pt>
 File: images/harm64.pdf Graphic file (type pdf)
 <use images/harm64.pdf, page 13>
-Package pdftex.def Info: images/harm64.pdf , page13 used on input line 111.
+Package pdftex.def Info: images/harm64.pdf , page13 used on input line 112.
 (pdftex.def)             Requested size: 421.575pt x 316.18529pt.
 )
 Underfull \hbox (badness 10000) in paragraph at lines 245--245
@@ -2756,49 +2756,49 @@ e pdfs with page group included in a single page
 File: images/convergencia_RLS_NLMS.pdf Graphic file (type pdf)
 <use images/convergencia_RLS_NLMS.pdf, page 1>
 Package pdftex.def Info: images/convergencia_RLS_NLMS.pdf , page1 used on input
- line 56.
+ line 57.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
 <images/convergencia_RLS_NLMS.pdf, id=684, page=2, 421.575pt x 316.18124pt>
 File: images/convergencia_RLS_NLMS.pdf Graphic file (type pdf)
 <use images/convergencia_RLS_NLMS.pdf, page 2>
 Package pdftex.def Info: images/convergencia_RLS_NLMS.pdf , page2 used on input
- line 58.
+ line 59.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
 <images/convergencia_RLS_NLMS.pdf, id=685, page=3, 421.575pt x 316.18124pt>
 File: images/convergencia_RLS_NLMS.pdf Graphic file (type pdf)
 <use images/convergencia_RLS_NLMS.pdf, page 3>
 Package pdftex.def Info: images/convergencia_RLS_NLMS.pdf , page3 used on input
- line 70.
+ line 71.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
 <images/convergencia_RLS_NLMS.pdf, id=686, page=4, 421.575pt x 316.18124pt>
 File: images/convergencia_RLS_NLMS.pdf Graphic file (type pdf)
 <use images/convergencia_RLS_NLMS.pdf, page 4>
 Package pdftex.def Info: images/convergencia_RLS_NLMS.pdf , page4 used on input
- line 76.
+ line 77.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
 <images/convergencia_RLS_NLMS.pdf, id=687, page=5, 421.575pt x 316.18124pt>
 File: images/convergencia_RLS_NLMS.pdf Graphic file (type pdf)
 <use images/convergencia_RLS_NLMS.pdf, page 5>
 Package pdftex.def Info: images/convergencia_RLS_NLMS.pdf , page5 used on input
- line 78.
+ line 79.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
 <images/convergencia_RLS_NLMS.pdf, id=688, page=6, 421.575pt x 316.18124pt>
 File: images/convergencia_RLS_NLMS.pdf Graphic file (type pdf)
 <use images/convergencia_RLS_NLMS.pdf, page 6>
 Package pdftex.def Info: images/convergencia_RLS_NLMS.pdf , page6 used on input
- line 80.
+ line 81.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
 <images/convergencia_RLS_NLMS.pdf, id=689, page=7, 421.575pt x 316.18124pt>
 File: images/convergencia_RLS_NLMS.pdf Graphic file (type pdf)
 <use images/convergencia_RLS_NLMS.pdf, page 7>
 Package pdftex.def Info: images/convergencia_RLS_NLMS.pdf , page7 used on input
- line 92.
+ line 93.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
 <images/convergencia_RLS_NLMS.pdf, id=690, page=8, 421.575pt x 316.18124pt>
 File: images/convergencia_RLS_NLMS.pdf Graphic file (type pdf)
 <use images/convergencia_RLS_NLMS.pdf, page 8>
 Package pdftex.def Info: images/convergencia_RLS_NLMS.pdf , page8 used on input
- line 98.
+ line 99.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
 )
 
@@ -2992,53 +2992,53 @@ pdfTeX warning: pdflatex.exe (file ./images/conv_comparacao.pdf): PDF inclusion
 pdfTeX warning: pdflatex.exe (file ./images/conv_comparacao.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
 >] (images/zoom_harmonicos.pdf_tex
-<images/zoom_harmonicos.pdf, id=733, page=1, 459.96844pt x 258.21469pt>
+<images/zoom_harmonicos.pdf, id=734, page=1, 459.96844pt x 258.21469pt>
 File: images/zoom_harmonicos.pdf Graphic file (type pdf)
 <use images/zoom_harmonicos.pdf, page 1>
 Package pdftex.def Info: images/zoom_harmonicos.pdf , page1 used on input line 
-56.
+57.
 (pdftex.def)             Requested size: 426.79134pt x 239.60527pt.
-<images/zoom_harmonicos.pdf, id=734, page=2, 459.96844pt x 258.21469pt>
+<images/zoom_harmonicos.pdf, id=735, page=2, 459.96844pt x 258.21469pt>
 File: images/zoom_harmonicos.pdf Graphic file (type pdf)
 <use images/zoom_harmonicos.pdf, page 2>
 Package pdftex.def Info: images/zoom_harmonicos.pdf , page2 used on input line 
-65.
+66.
 (pdftex.def)             Requested size: 426.79134pt x 239.60527pt.
-<images/zoom_harmonicos.pdf, id=735, page=3, 459.96844pt x 258.21469pt>
+<images/zoom_harmonicos.pdf, id=736, page=3, 459.96844pt x 258.21469pt>
 File: images/zoom_harmonicos.pdf Graphic file (type pdf)
 <use images/zoom_harmonicos.pdf, page 3>
 Package pdftex.def Info: images/zoom_harmonicos.pdf , page3 used on input line 
-73.
+74.
 (pdftex.def)             Requested size: 426.79134pt x 239.60527pt.
-<images/zoom_harmonicos.pdf, id=736, page=4, 459.96844pt x 258.21469pt>
+<images/zoom_harmonicos.pdf, id=737, page=4, 459.96844pt x 258.21469pt>
 File: images/zoom_harmonicos.pdf Graphic file (type pdf)
 <use images/zoom_harmonicos.pdf, page 4>
 Package pdftex.def Info: images/zoom_harmonicos.pdf , page4 used on input line 
-75.
+76.
 (pdftex.def)             Requested size: 426.79134pt x 239.60527pt.
-<images/zoom_harmonicos.pdf, id=737, page=5, 459.96844pt x 258.21469pt>
+<images/zoom_harmonicos.pdf, id=738, page=5, 459.96844pt x 258.21469pt>
 File: images/zoom_harmonicos.pdf Graphic file (type pdf)
 <use images/zoom_harmonicos.pdf, page 5>
 Package pdftex.def Info: images/zoom_harmonicos.pdf , page5 used on input line 
-77.
+78.
 (pdftex.def)             Requested size: 426.79134pt x 239.60527pt.
-<images/zoom_harmonicos.pdf, id=738, page=6, 459.96844pt x 258.21469pt>
+<images/zoom_harmonicos.pdf, id=739, page=6, 459.96844pt x 258.21469pt>
 File: images/zoom_harmonicos.pdf Graphic file (type pdf)
 <use images/zoom_harmonicos.pdf, page 6>
 Package pdftex.def Info: images/zoom_harmonicos.pdf , page6 used on input line 
-79.
+80.
 (pdftex.def)             Requested size: 426.79134pt x 239.60527pt.
-<images/zoom_harmonicos.pdf, id=739, page=7, 459.96844pt x 258.21469pt>
+<images/zoom_harmonicos.pdf, id=740, page=7, 459.96844pt x 258.21469pt>
 File: images/zoom_harmonicos.pdf Graphic file (type pdf)
 <use images/zoom_harmonicos.pdf, page 7>
 Package pdftex.def Info: images/zoom_harmonicos.pdf , page7 used on input line 
-81.
+82.
 (pdftex.def)             Requested size: 426.79134pt x 239.60527pt.
-<images/zoom_harmonicos.pdf, id=740, page=8, 459.96844pt x 258.21469pt>
+<images/zoom_harmonicos.pdf, id=741, page=8, 459.96844pt x 258.21469pt>
 File: images/zoom_harmonicos.pdf Graphic file (type pdf)
 <use images/zoom_harmonicos.pdf, page 8>
 Package pdftex.def Info: images/zoom_harmonicos.pdf , page8 used on input line 
-83.
+84.
 (pdftex.def)             Requested size: 426.79134pt x 239.60527pt.
 )
 
@@ -3048,17 +3048,17 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 (images/RLS_image.pdf_tex
-<images/RLS_image.pdf, id=742, page=1, 421.575pt x 316.18124pt>
+<images/RLS_image.pdf, id=743, page=1, 421.575pt x 316.18124pt>
 File: images/RLS_image.pdf Graphic file (type pdf)
 <use images/RLS_image.pdf, page 1>
 Package pdftex.def Info: images/RLS_image.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
-<images/RLS_image.pdf, id=743, page=2, 421.575pt x 316.18124pt>
+<images/RLS_image.pdf, id=744, page=2, 421.575pt x 316.18124pt>
 File: images/RLS_image.pdf Graphic file (type pdf)
 <use images/RLS_image.pdf, page 2>
 Package pdftex.def Info: images/RLS_image.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
-<images/RLS_image.pdf, id=744, page=3, 421.575pt x 316.18124pt>
+<images/RLS_image.pdf, id=745, page=3, 421.575pt x 316.18124pt>
 File: images/RLS_image.pdf Graphic file (type pdf)
 <use images/RLS_image.pdf, page 3>
 Package pdftex.def Info: images/RLS_image.pdf , page3 used on input line 71.
@@ -3144,17 +3144,17 @@ iple pdfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./images/RLS_image.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
 >] (images/NLMS_image.pdf_tex
-<images/NLMS_image.pdf, id=784, page=1, 421.575pt x 316.18124pt>
+<images/NLMS_image.pdf, id=785, page=1, 421.575pt x 316.18124pt>
 File: images/NLMS_image.pdf Graphic file (type pdf)
 <use images/NLMS_image.pdf, page 1>
 Package pdftex.def Info: images/NLMS_image.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
-<images/NLMS_image.pdf, id=785, page=2, 421.575pt x 316.18124pt>
+<images/NLMS_image.pdf, id=786, page=2, 421.575pt x 316.18124pt>
 File: images/NLMS_image.pdf Graphic file (type pdf)
 <use images/NLMS_image.pdf, page 2>
 Package pdftex.def Info: images/NLMS_image.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
-<images/NLMS_image.pdf, id=786, page=3, 421.575pt x 316.18124pt>
+<images/NLMS_image.pdf, id=787, page=3, 421.575pt x 316.18124pt>
 File: images/NLMS_image.pdf Graphic file (type pdf)
 <use images/NLMS_image.pdf, page 3>
 Package pdftex.def Info: images/NLMS_image.pdf , page3 used on input line 71.
@@ -3209,25 +3209,25 @@ tiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./images/NLMS_image.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
 >] (images/rastreio_final.pdf_tex
-<images/rastreio_final.pdf, id=800, page=1, 523.20468pt x 331.2375pt>
+<images/rastreio_final.pdf, id=801, page=1, 523.20468pt x 331.2375pt>
 File: images/rastreio_final.pdf Graphic file (type pdf)
 <use images/rastreio_final.pdf, page 1>
 Package pdftex.def Info: images/rastreio_final.pdf , page1 used on input line 5
 6.
 (pdftex.def)             Requested size: 426.79134pt x 270.20636pt.
-<images/rastreio_final.pdf, id=801, page=2, 523.20468pt x 331.2375pt>
+<images/rastreio_final.pdf, id=802, page=2, 523.20468pt x 331.2375pt>
 File: images/rastreio_final.pdf Graphic file (type pdf)
 <use images/rastreio_final.pdf, page 2>
 Package pdftex.def Info: images/rastreio_final.pdf , page2 used on input line 5
 8.
 (pdftex.def)             Requested size: 426.79134pt x 270.20636pt.
-<images/rastreio_final.pdf, id=802, page=3, 523.20468pt x 331.2375pt>
+<images/rastreio_final.pdf, id=803, page=3, 523.20468pt x 331.2375pt>
 File: images/rastreio_final.pdf Graphic file (type pdf)
 <use images/rastreio_final.pdf, page 3>
 Package pdftex.def Info: images/rastreio_final.pdf , page3 used on input line 6
 7.
 (pdftex.def)             Requested size: 426.79134pt x 270.20636pt.
-<images/rastreio_final.pdf, id=803, page=4, 523.20468pt x 331.2375pt>
+<images/rastreio_final.pdf, id=804, page=4, 523.20468pt x 331.2375pt>
 File: images/rastreio_final.pdf Graphic file (type pdf)
 <use images/rastreio_final.pdf, page 4>
 Package pdftex.def Info: images/rastreio_final.pdf , page4 used on input line 7
@@ -3246,25 +3246,25 @@ pdfTeX warning: pdflatex.exe (file ./images/rastreio_final.pdf): PDF inclusion:
 pdfTeX warning: pdflatex.exe (file ./images/rastreio_final.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >] (images/rastreio_60Hz.pdf_tex
-<images/rastreio_60Hz.pdf, id=815, page=1, 328.97906pt x 185.19188pt>
+<images/rastreio_60Hz.pdf, id=816, page=1, 328.97906pt x 185.19188pt>
 File: images/rastreio_60Hz.pdf Graphic file (type pdf)
 <use images/rastreio_60Hz.pdf, page 1>
 Package pdftex.def Info: images/rastreio_60Hz.pdf , page1 used on input line 56
 .
 (pdftex.def)             Requested size: 426.79134pt x 240.25769pt.
-<images/rastreio_60Hz.pdf, id=816, page=2, 328.97906pt x 185.19188pt>
+<images/rastreio_60Hz.pdf, id=817, page=2, 328.97906pt x 185.19188pt>
 File: images/rastreio_60Hz.pdf Graphic file (type pdf)
 <use images/rastreio_60Hz.pdf, page 2>
 Package pdftex.def Info: images/rastreio_60Hz.pdf , page2 used on input line 58
 .
 (pdftex.def)             Requested size: 426.79134pt x 240.25769pt.
-<images/rastreio_60Hz.pdf, id=817, page=3, 328.97906pt x 185.19188pt>
+<images/rastreio_60Hz.pdf, id=818, page=3, 328.97906pt x 185.19188pt>
 File: images/rastreio_60Hz.pdf Graphic file (type pdf)
 <use images/rastreio_60Hz.pdf, page 3>
 Package pdftex.def Info: images/rastreio_60Hz.pdf , page3 used on input line 65
 .
 (pdftex.def)             Requested size: 426.79134pt x 240.25769pt.
-<images/rastreio_60Hz.pdf, id=818, page=4, 328.97906pt x 185.19188pt>
+<images/rastreio_60Hz.pdf, id=819, page=4, 328.97906pt x 185.19188pt>
 File: images/rastreio_60Hz.pdf Graphic file (type pdf)
 <use images/rastreio_60Hz.pdf, page 4>
 Package pdftex.def Info: images/rastreio_60Hz.pdf , page4 used on input line 72
@@ -3289,37 +3289,37 @@ m si-nal nas mes-mas condic~oes
  []
 
 (images/pll_comp.pdf_tex
-<images/pll_comp.pdf, id=838, page=1, 432.11438pt x 257.46187pt>
+<images/pll_comp.pdf, id=839, page=1, 432.11438pt x 257.46187pt>
 File: images/pll_comp.pdf Graphic file (type pdf)
 <use images/pll_comp.pdf, page 1>
 Package pdftex.def Info: images/pll_comp.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 254.29874pt.
-<images/pll_comp.pdf, id=839, page=2, 432.11438pt x 257.46187pt>
+<images/pll_comp.pdf, id=840, page=2, 432.11438pt x 257.46187pt>
 File: images/pll_comp.pdf Graphic file (type pdf)
 <use images/pll_comp.pdf, page 2>
 Package pdftex.def Info: images/pll_comp.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 426.79134pt x 254.29874pt.
-<images/pll_comp.pdf, id=840, page=3, 432.11438pt x 257.46187pt>
+<images/pll_comp.pdf, id=841, page=3, 432.11438pt x 257.46187pt>
 File: images/pll_comp.pdf Graphic file (type pdf)
 <use images/pll_comp.pdf, page 3>
 Package pdftex.def Info: images/pll_comp.pdf , page3 used on input line 67.
 (pdftex.def)             Requested size: 426.79134pt x 254.29874pt.
-<images/pll_comp.pdf, id=841, page=4, 432.11438pt x 257.46187pt>
+<images/pll_comp.pdf, id=842, page=4, 432.11438pt x 257.46187pt>
 File: images/pll_comp.pdf Graphic file (type pdf)
 <use images/pll_comp.pdf, page 4>
 Package pdftex.def Info: images/pll_comp.pdf , page4 used on input line 75.
 (pdftex.def)             Requested size: 426.79134pt x 254.29874pt.
-<images/pll_comp.pdf, id=842, page=5, 432.11438pt x 257.46187pt>
+<images/pll_comp.pdf, id=843, page=5, 432.11438pt x 257.46187pt>
 File: images/pll_comp.pdf Graphic file (type pdf)
 <use images/pll_comp.pdf, page 5>
 Package pdftex.def Info: images/pll_comp.pdf , page5 used on input line 78.
 (pdftex.def)             Requested size: 426.79134pt x 254.29874pt.
-<images/pll_comp.pdf, id=843, page=6, 432.11438pt x 257.46187pt>
+<images/pll_comp.pdf, id=844, page=6, 432.11438pt x 257.46187pt>
 File: images/pll_comp.pdf Graphic file (type pdf)
 <use images/pll_comp.pdf, page 6>
 Package pdftex.def Info: images/pll_comp.pdf , page6 used on input line 81.
 (pdftex.def)             Requested size: 426.79134pt x 254.29874pt.
-<images/pll_comp.pdf, id=844, page=7, 432.11438pt x 257.46187pt>
+<images/pll_comp.pdf, id=845, page=7, 432.11438pt x 257.46187pt>
 File: images/pll_comp.pdf Graphic file (type pdf)
 <use images/pll_comp.pdf, page 7>
 Package pdftex.def Info: images/pll_comp.pdf , page7 used on input line 84.
@@ -3357,47 +3357,47 @@ Overfull \hbox (15.39157pt too wide) in paragraph at lines 29--30
  []
 
 [56] (images/estagio_1.pdf_tex
-<images/estagio_1.pdf, id=870, page=1, 421.575pt x 316.18124pt>
+<images/estagio_1.pdf, id=872, page=1, 421.575pt x 316.18124pt>
 File: images/estagio_1.pdf Graphic file (type pdf)
 <use images/estagio_1.pdf, page 1>
 Package pdftex.def Info: images/estagio_1.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
-<images/estagio_1.pdf, id=871, page=2, 421.575pt x 316.18124pt>
+<images/estagio_1.pdf, id=873, page=2, 421.575pt x 316.18124pt>
 File: images/estagio_1.pdf Graphic file (type pdf)
 <use images/estagio_1.pdf, page 2>
 Package pdftex.def Info: images/estagio_1.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
-<images/estagio_1.pdf, id=872, page=3, 421.575pt x 316.18124pt>
+<images/estagio_1.pdf, id=874, page=3, 421.575pt x 316.18124pt>
 File: images/estagio_1.pdf Graphic file (type pdf)
 <use images/estagio_1.pdf, page 3>
 Package pdftex.def Info: images/estagio_1.pdf , page3 used on input line 71.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
-<images/estagio_1.pdf, id=873, page=4, 421.575pt x 316.18124pt>
+<images/estagio_1.pdf, id=875, page=4, 421.575pt x 316.18124pt>
 File: images/estagio_1.pdf Graphic file (type pdf)
 <use images/estagio_1.pdf, page 4>
 Package pdftex.def Info: images/estagio_1.pdf , page4 used on input line 80.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
-<images/estagio_1.pdf, id=874, page=5, 421.575pt x 316.18124pt>
+<images/estagio_1.pdf, id=876, page=5, 421.575pt x 316.18124pt>
 File: images/estagio_1.pdf Graphic file (type pdf)
 <use images/estagio_1.pdf, page 5>
 Package pdftex.def Info: images/estagio_1.pdf , page5 used on input line 82.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
-<images/estagio_1.pdf, id=875, page=6, 421.575pt x 316.18124pt>
+<images/estagio_1.pdf, id=877, page=6, 421.575pt x 316.18124pt>
 File: images/estagio_1.pdf Graphic file (type pdf)
 <use images/estagio_1.pdf, page 6>
 Package pdftex.def Info: images/estagio_1.pdf , page6 used on input line 84.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
-<images/estagio_1.pdf, id=876, page=7, 421.575pt x 316.18124pt>
+<images/estagio_1.pdf, id=878, page=7, 421.575pt x 316.18124pt>
 File: images/estagio_1.pdf Graphic file (type pdf)
 <use images/estagio_1.pdf, page 7>
 Package pdftex.def Info: images/estagio_1.pdf , page7 used on input line 86.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
-<images/estagio_1.pdf, id=877, page=8, 421.575pt x 316.18124pt>
+<images/estagio_1.pdf, id=879, page=8, 421.575pt x 316.18124pt>
 File: images/estagio_1.pdf Graphic file (type pdf)
 <use images/estagio_1.pdf, page 8>
 Package pdftex.def Info: images/estagio_1.pdf , page8 used on input line 88.
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
-<images/estagio_1.pdf, id=878, page=9, 421.575pt x 316.18124pt>
+<images/estagio_1.pdf, id=880, page=9, 421.575pt x 316.18124pt>
 File: images/estagio_1.pdf Graphic file (type pdf)
 <use images/estagio_1.pdf, page 9>
 Package pdftex.def Info: images/estagio_1.pdf , page9 used on input line 90.
@@ -3435,117 +3435,117 @@ iple pdfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./images/estagio_1.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
 >] (images/amplitudes.pdf_tex
-<images/amplitudes.pdf, id=887, page=1, 426.84468pt x 316.18124pt>
+<images/amplitudes.pdf, id=889, page=1, 426.84468pt x 316.18124pt>
 File: images/amplitudes.pdf Graphic file (type pdf)
 <use images/amplitudes.pdf, page 1>
-Package pdftex.def Info: images/amplitudes.pdf , page1 used on input line 56.
+Package pdftex.def Info: images/amplitudes.pdf , page1 used on input line 57.
 (pdftex.def)             Requested size: 426.79134pt x 316.16116pt.
-<images/amplitudes.pdf, id=888, page=2, 426.84468pt x 316.18124pt>
+<images/amplitudes.pdf, id=890, page=2, 426.84468pt x 316.18124pt>
 File: images/amplitudes.pdf Graphic file (type pdf)
 <use images/amplitudes.pdf, page 2>
-Package pdftex.def Info: images/amplitudes.pdf , page2 used on input line 58.
+Package pdftex.def Info: images/amplitudes.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 426.79134pt x 316.16116pt.
-<images/amplitudes.pdf, id=889, page=3, 426.84468pt x 316.18124pt>
+<images/amplitudes.pdf, id=891, page=3, 426.84468pt x 316.18124pt>
 File: images/amplitudes.pdf Graphic file (type pdf)
 <use images/amplitudes.pdf, page 3>
-Package pdftex.def Info: images/amplitudes.pdf , page3 used on input line 67.
+Package pdftex.def Info: images/amplitudes.pdf , page3 used on input line 68.
 (pdftex.def)             Requested size: 426.79134pt x 316.16116pt.
-<images/amplitudes.pdf, id=890, page=4, 426.84468pt x 316.18124pt>
+<images/amplitudes.pdf, id=892, page=4, 426.84468pt x 316.18124pt>
 File: images/amplitudes.pdf Graphic file (type pdf)
 <use images/amplitudes.pdf, page 4>
-Package pdftex.def Info: images/amplitudes.pdf , page4 used on input line 76.
+Package pdftex.def Info: images/amplitudes.pdf , page4 used on input line 77.
 (pdftex.def)             Requested size: 426.79134pt x 316.16116pt.
-<images/amplitudes.pdf, id=891, page=5, 426.84468pt x 316.18124pt>
+<images/amplitudes.pdf, id=893, page=5, 426.84468pt x 316.18124pt>
 File: images/amplitudes.pdf Graphic file (type pdf)
 <use images/amplitudes.pdf, page 5>
-Package pdftex.def Info: images/amplitudes.pdf , page5 used on input line 78.
+Package pdftex.def Info: images/amplitudes.pdf , page5 used on input line 79.
 (pdftex.def)             Requested size: 426.79134pt x 316.16116pt.
-<images/amplitudes.pdf, id=892, page=6, 426.84468pt x 316.18124pt>
+<images/amplitudes.pdf, id=894, page=6, 426.84468pt x 316.18124pt>
 File: images/amplitudes.pdf Graphic file (type pdf)
 <use images/amplitudes.pdf, page 6>
-Package pdftex.def Info: images/amplitudes.pdf , page6 used on input line 80.
+Package pdftex.def Info: images/amplitudes.pdf , page6 used on input line 81.
 (pdftex.def)             Requested size: 426.79134pt x 316.16116pt.
-<images/amplitudes.pdf, id=893, page=7, 426.84468pt x 316.18124pt>
+<images/amplitudes.pdf, id=895, page=7, 426.84468pt x 316.18124pt>
 File: images/amplitudes.pdf Graphic file (type pdf)
 <use images/amplitudes.pdf, page 7>
-Package pdftex.def Info: images/amplitudes.pdf , page7 used on input line 82.
+Package pdftex.def Info: images/amplitudes.pdf , page7 used on input line 83.
 (pdftex.def)             Requested size: 426.79134pt x 316.16116pt.
-<images/amplitudes.pdf, id=894, page=8, 426.84468pt x 316.18124pt>
+<images/amplitudes.pdf, id=896, page=8, 426.84468pt x 316.18124pt>
 File: images/amplitudes.pdf Graphic file (type pdf)
 <use images/amplitudes.pdf, page 8>
-Package pdftex.def Info: images/amplitudes.pdf , page8 used on input line 84.
+Package pdftex.def Info: images/amplitudes.pdf , page8 used on input line 85.
 (pdftex.def)             Requested size: 426.79134pt x 316.16116pt.
-<images/amplitudes.pdf, id=895, page=9, 426.84468pt x 316.18124pt>
+<images/amplitudes.pdf, id=897, page=9, 426.84468pt x 316.18124pt>
 File: images/amplitudes.pdf Graphic file (type pdf)
 <use images/amplitudes.pdf, page 9>
-Package pdftex.def Info: images/amplitudes.pdf , page9 used on input line 86.
+Package pdftex.def Info: images/amplitudes.pdf , page9 used on input line 87.
 (pdftex.def)             Requested size: 426.79134pt x 316.16116pt.
 ) (images/freq_grande.pdf_tex
-<images/freq_grande.pdf, id=896, page=1, 390.70969pt x 430.60875pt>
+<images/freq_grande.pdf, id=898, page=1, 390.70969pt x 430.60875pt>
 File: images/freq_grande.pdf Graphic file (type pdf)
 <use images/freq_grande.pdf, page 1>
 Package pdftex.def Info: images/freq_grande.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 470.39894pt.
-<images/freq_grande.pdf, id=897, page=2, 390.70969pt x 430.60875pt>
+<images/freq_grande.pdf, id=899, page=2, 390.70969pt x 430.60875pt>
 File: images/freq_grande.pdf Graphic file (type pdf)
 <use images/freq_grande.pdf, page 2>
 Package pdftex.def Info: images/freq_grande.pdf , page2 used on input line 64.
 (pdftex.def)             Requested size: 426.79134pt x 470.39894pt.
-<images/freq_grande.pdf, id=898, page=3, 390.70969pt x 430.60875pt>
+<images/freq_grande.pdf, id=900, page=3, 390.70969pt x 430.60875pt>
 File: images/freq_grande.pdf Graphic file (type pdf)
 <use images/freq_grande.pdf, page 3>
 Package pdftex.def Info: images/freq_grande.pdf , page3 used on input line 68.
 (pdftex.def)             Requested size: 426.79134pt x 470.39894pt.
-<images/freq_grande.pdf, id=899, page=4, 390.70969pt x 430.60875pt>
+<images/freq_grande.pdf, id=901, page=4, 390.70969pt x 430.60875pt>
 File: images/freq_grande.pdf Graphic file (type pdf)
 <use images/freq_grande.pdf, page 4>
 Package pdftex.def Info: images/freq_grande.pdf , page4 used on input line 70.
 (pdftex.def)             Requested size: 426.79134pt x 470.39894pt.
-<images/freq_grande.pdf, id=900, page=5, 390.70969pt x 430.60875pt>
+<images/freq_grande.pdf, id=902, page=5, 390.70969pt x 430.60875pt>
 File: images/freq_grande.pdf Graphic file (type pdf)
 <use images/freq_grande.pdf, page 5>
 Package pdftex.def Info: images/freq_grande.pdf , page5 used on input line 78.
 (pdftex.def)             Requested size: 426.79134pt x 470.39894pt.
-<images/freq_grande.pdf, id=901, page=6, 390.70969pt x 430.60875pt>
+<images/freq_grande.pdf, id=903, page=6, 390.70969pt x 430.60875pt>
 File: images/freq_grande.pdf Graphic file (type pdf)
 <use images/freq_grande.pdf, page 6>
 Package pdftex.def Info: images/freq_grande.pdf , page6 used on input line 82.
 (pdftex.def)             Requested size: 426.79134pt x 470.39894pt.
-<images/freq_grande.pdf, id=902, page=7, 390.70969pt x 430.60875pt>
+<images/freq_grande.pdf, id=904, page=7, 390.70969pt x 430.60875pt>
 File: images/freq_grande.pdf Graphic file (type pdf)
 <use images/freq_grande.pdf, page 7>
 Package pdftex.def Info: images/freq_grande.pdf , page7 used on input line 90.
 (pdftex.def)             Requested size: 426.79134pt x 470.39894pt.
-<images/freq_grande.pdf, id=903, page=8, 390.70969pt x 430.60875pt>
+<images/freq_grande.pdf, id=905, page=8, 390.70969pt x 430.60875pt>
 File: images/freq_grande.pdf Graphic file (type pdf)
 <use images/freq_grande.pdf, page 8>
 Package pdftex.def Info: images/freq_grande.pdf , page8 used on input line 94.
 (pdftex.def)             Requested size: 426.79134pt x 470.39894pt.
-<images/freq_grande.pdf, id=904, page=9, 390.70969pt x 430.60875pt>
+<images/freq_grande.pdf, id=906, page=9, 390.70969pt x 430.60875pt>
 File: images/freq_grande.pdf Graphic file (type pdf)
 <use images/freq_grande.pdf, page 9>
 Package pdftex.def Info: images/freq_grande.pdf , page9 used on input line 102.
 
 (pdftex.def)             Requested size: 426.79134pt x 470.39894pt.
-<images/freq_grande.pdf, id=905, page=10, 390.70969pt x 430.60875pt>
+<images/freq_grande.pdf, id=907, page=10, 390.70969pt x 430.60875pt>
 File: images/freq_grande.pdf Graphic file (type pdf)
 <use images/freq_grande.pdf, page 10>
 Package pdftex.def Info: images/freq_grande.pdf , page10 used on input line 106
 .
 (pdftex.def)             Requested size: 426.79134pt x 470.39894pt.
-<images/freq_grande.pdf, id=906, page=11, 390.70969pt x 430.60875pt>
+<images/freq_grande.pdf, id=908, page=11, 390.70969pt x 430.60875pt>
 File: images/freq_grande.pdf Graphic file (type pdf)
 <use images/freq_grande.pdf, page 11>
 Package pdftex.def Info: images/freq_grande.pdf , page11 used on input line 108
 .
 (pdftex.def)             Requested size: 426.79134pt x 470.39894pt.
-<images/freq_grande.pdf, id=907, page=12, 390.70969pt x 430.60875pt>
+<images/freq_grande.pdf, id=909, page=12, 390.70969pt x 430.60875pt>
 File: images/freq_grande.pdf Graphic file (type pdf)
 <use images/freq_grande.pdf, page 12>
 Package pdftex.def Info: images/freq_grande.pdf , page12 used on input line 117
 .
 (pdftex.def)             Requested size: 426.79134pt x 470.39894pt.
-<images/freq_grande.pdf, id=908, page=13, 390.70969pt x 430.60875pt>
+<images/freq_grande.pdf, id=910, page=13, 390.70969pt x 430.60875pt>
 File: images/freq_grande.pdf Graphic file (type pdf)
 <use images/freq_grande.pdf, page 13>
 Package pdftex.def Info: images/freq_grande.pdf , page13 used on input line 121
@@ -3553,70 +3553,70 @@ Package pdftex.def Info: images/freq_grande.pdf , page13 used on input line 121
 (pdftex.def)             Requested size: 426.79134pt x 470.39894pt.
 )
 (images/amp_grande.pdf_tex
-<images/amp_grande.pdf, id=909, page=1, 395.22656pt x 429.10312pt>
+<images/amp_grande.pdf, id=911, page=1, 395.22656pt x 429.10312pt>
 File: images/amp_grande.pdf Graphic file (type pdf)
 <use images/amp_grande.pdf, page 1>
 Package pdftex.def Info: images/amp_grande.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 463.37863pt.
-<images/amp_grande.pdf, id=910, page=2, 395.22656pt x 429.10312pt>
+<images/amp_grande.pdf, id=912, page=2, 395.22656pt x 429.10312pt>
 File: images/amp_grande.pdf Graphic file (type pdf)
 <use images/amp_grande.pdf, page 2>
 Package pdftex.def Info: images/amp_grande.pdf , page2 used on input line 64.
 (pdftex.def)             Requested size: 426.79134pt x 463.37863pt.
-<images/amp_grande.pdf, id=911, page=3, 395.22656pt x 429.10312pt>
+<images/amp_grande.pdf, id=913, page=3, 395.22656pt x 429.10312pt>
 File: images/amp_grande.pdf Graphic file (type pdf)
 <use images/amp_grande.pdf, page 3>
 Package pdftex.def Info: images/amp_grande.pdf , page3 used on input line 68.
 (pdftex.def)             Requested size: 426.79134pt x 463.37863pt.
-<images/amp_grande.pdf, id=912, page=4, 395.22656pt x 429.10312pt>
+<images/amp_grande.pdf, id=914, page=4, 395.22656pt x 429.10312pt>
 File: images/amp_grande.pdf Graphic file (type pdf)
 <use images/amp_grande.pdf, page 4>
 Package pdftex.def Info: images/amp_grande.pdf , page4 used on input line 70.
 (pdftex.def)             Requested size: 426.79134pt x 463.37863pt.
-<images/amp_grande.pdf, id=913, page=5, 395.22656pt x 429.10312pt>
+<images/amp_grande.pdf, id=915, page=5, 395.22656pt x 429.10312pt>
 File: images/amp_grande.pdf Graphic file (type pdf)
 <use images/amp_grande.pdf, page 5>
 Package pdftex.def Info: images/amp_grande.pdf , page5 used on input line 78.
 (pdftex.def)             Requested size: 426.79134pt x 463.37863pt.
-<images/amp_grande.pdf, id=914, page=6, 395.22656pt x 429.10312pt>
+<images/amp_grande.pdf, id=916, page=6, 395.22656pt x 429.10312pt>
 File: images/amp_grande.pdf Graphic file (type pdf)
 <use images/amp_grande.pdf, page 6>
 Package pdftex.def Info: images/amp_grande.pdf , page6 used on input line 82.
 (pdftex.def)             Requested size: 426.79134pt x 463.37863pt.
-<images/amp_grande.pdf, id=915, page=7, 395.22656pt x 429.10312pt>
+<images/amp_grande.pdf, id=917, page=7, 395.22656pt x 429.10312pt>
 File: images/amp_grande.pdf Graphic file (type pdf)
 <use images/amp_grande.pdf, page 7>
 Package pdftex.def Info: images/amp_grande.pdf , page7 used on input line 90.
 (pdftex.def)             Requested size: 426.79134pt x 463.37863pt.
-<images/amp_grande.pdf, id=916, page=8, 395.22656pt x 429.10312pt>
+<images/amp_grande.pdf, id=918, page=8, 395.22656pt x 429.10312pt>
 File: images/amp_grande.pdf Graphic file (type pdf)
 <use images/amp_grande.pdf, page 8>
 Package pdftex.def Info: images/amp_grande.pdf , page8 used on input line 94.
 (pdftex.def)             Requested size: 426.79134pt x 463.37863pt.
-<images/amp_grande.pdf, id=917, page=9, 395.22656pt x 429.10312pt>
+<images/amp_grande.pdf, id=919, page=9, 395.22656pt x 429.10312pt>
 File: images/amp_grande.pdf Graphic file (type pdf)
 <use images/amp_grande.pdf, page 9>
 Package pdftex.def Info: images/amp_grande.pdf , page9 used on input line 102.
 (pdftex.def)             Requested size: 426.79134pt x 463.37863pt.
-<images/amp_grande.pdf, id=918, page=10, 395.22656pt x 429.10312pt>
+<images/amp_grande.pdf, id=920, page=10, 395.22656pt x 429.10312pt>
 File: images/amp_grande.pdf Graphic file (type pdf)
 <use images/amp_grande.pdf, page 10>
 Package pdftex.def Info: images/amp_grande.pdf , page10 used on input line 106.
 
 (pdftex.def)             Requested size: 426.79134pt x 463.37863pt.
-<images/amp_grande.pdf, id=919, page=11, 395.22656pt x 429.10312pt>
+<images/amp_grande.pdf, id=921, page=11, 395.22656pt x 429.10312pt>
 File: images/amp_grande.pdf Graphic file (type pdf)
 <use images/amp_grande.pdf, page 11>
 Package pdftex.def Info: images/amp_grande.pdf , page11 used on input line 108.
 
 (pdftex.def)             Requested size: 426.79134pt x 463.37863pt.
-<images/amp_grande.pdf, id=920, page=12, 395.22656pt x 429.10312pt>
+<images/amp_grande.pdf, id=922, page=12, 395.22656pt x 429.10312pt>
 File: images/amp_grande.pdf Graphic file (type pdf)
 <use images/amp_grande.pdf, page 12>
 Package pdftex.def Info: images/amp_grande.pdf , page12 used on input line 117.
 
 (pdftex.def)             Requested size: 426.79134pt x 463.37863pt.
-<images/amp_grande.pdf, id=921, page=13, 395.22656pt x 429.10312pt>
+<images/amp_grande.pdf, id=923, page=13, 395.22656pt x 429.10312pt>
 File: images/amp_grande.pdf Graphic file (type pdf)
 <use images/amp_grande.pdf, page 13>
 Package pdftex.def Info: images/amp_grande.pdf , page13 used on input line 121.
@@ -3753,13 +3753,13 @@ tiple pdfs with page group included in a single page
 >] (capitulos/conclusao.tex [61
 
 ]) [62]
-Overfull \hbox (1.88062pt too wide) in paragraph at lines 242--242
+Overfull \hbox (1.88062pt too wide) in paragraph at lines 243--243
 \OT1/cmr/m/n/12 Em: \OT1/cmr/m/it/12 Com-mu-ni-ca-ti-ons in Statistics-Theory a
 nd Methods \OT1/cmr/m/n/12 41.10 (2012), pp. 1813{
  []
 
 
-Overfull \hbox (14.32024pt too wide) in paragraph at lines 242--242
+Overfull \hbox (14.32024pt too wide) in paragraph at lines 243--243
 []\OT1/cmr/m/n/12 Janison Ro-dri-gues de Car-va-lho et al. ``Es-timac~ao de ha
 rm^onicos/interharm^onicos:
  []
@@ -3773,11 +3773,11 @@ rm^onicos/interharm^onicos:
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 243.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 243.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 243.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 243.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 244.
 
 
 LaTeX Warning: There were undefined references.
@@ -3788,32 +3788,33 @@ LaTeX Warning: There were multiply-defined labels.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 243.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
  ) 
 Here is how much of TeX's memory you used:
- 34024 strings out of 492895
- 641904 string characters out of 3142328
- 1158590 words of memory out of 3000000
- 36998 multiletter control sequences out of 15000+200000
- 15957 words of font info for 56 fonts, out of 3000000 for 9000
+ 34027 strings out of 492895
+ 641939 string characters out of 3142328
+ 1158636 words of memory out of 3000000
+ 37000 multiletter control sequences out of 15000+200000
+ 16265 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,22n,67p,1615b,1947s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,22n,67p,1610b,1947s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/LaTex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/LaTex/fonts/type1/pub
-lic/amsfonts/cm/cmbx12.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-<D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/LaTex/fonts/type1/publi
-c/amsfonts/cm/cmmi12.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:
-/LaTex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/LaTex/fonts/type1/public/am
-sfonts/cm/cmmib10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb>
-<D:/LaTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/LaTex/fonts/type1/public
-/amsfonts/cm/cmr12.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/L
-aTex/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/LaTex/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/LaTex/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm
-/cmsy6.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/LaTex/fonts/t
-ype1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (65 pages, 2243503 bytes).
+lic/amsfonts/cm/cmbx12.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
+D:/LaTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/LaTex/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:
+/LaTex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/LaTex/fonts/type1/public/am
+sfonts/cm/cmmi8.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmmib10.pfb><D:/La
+Tex/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><D:/LaTex/fonts/type1/public
+/amsfonts/cm/cmr10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/L
+aTex/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/LaTex/fonts/type1/public/amsf
+onts/cm/cmr6.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/LaTex/fo
+nts/type1/public/amsfonts/cm/cmr9.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/LaTex/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmti
+12.pfb>
+Output written on main.pdf (65 pages, 2258555 bytes).
 PDF statistics:
- 1291 PDF objects out of 1440 (max. 8388607)
+ 1296 PDF objects out of 1440 (max. 8388607)
  335 named destinations out of 1000 (max. 500000)
  1632 words of extra memory for PDF output out of 10000 (max. 10000000)
 

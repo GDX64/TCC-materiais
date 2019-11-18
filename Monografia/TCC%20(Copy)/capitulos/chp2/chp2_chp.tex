@@ -2,9 +2,9 @@
 Neste capítulo serão abordadas as técnicas anteriormente mencionadas, que são o foco deste trabalho, PLL (Phase-Locked Loop), análise de prony, ADALINE e RLS (Recursive Least Mean Squares), bem como as convencionais DFT e STFT. É importante ressaltar que esta será apenas uma abordagem superficial, não entrando, portanto, com profundidade nos assuntos tratados.
 
 \section{Análise espectral}
-Análise espectral considera o problema de encontrar a energia de um sinal, finito, distribuída em função de frequência, o que pode ser feito com métodos paramétricos ou não paramétricos. Métodos paramétricos assumem conhecimento do modelo com o qual se gerou o sinal em análise. Por exemplo, em alguns capítulos, como o de análise de Prony, é assumido que o sinal é composto unicamente por un número conhecido de exponenciais complexas amortecidas. Para solucionar um problema de estimação paramétrica, o que se deve fazer é encontrar os parâmetros supostos. Por outro lado, métodos não paramétricos se baseiam unicamente em transformações do domínio temporal para o domínio da frequência, utilizando filtros que nos dão a energia do sinal contida em uma determinada faixa do espectro, caso da DFT. Quando temos uma boa estimação de nosso modelo, os métodos paramétricos tendem a dar melhores resultados, enquanto que quando pouco se sabe sobre o sinal analisado, ou se o mesmo não está bem modelado, os não paramétricos podem ser a melhor opção.
+Análise espectral considera o problema de encontrar a energia de um sinal, finito, distribuída em função de frequência, o que pode ser feito com métodos paramétricos ou não paramétricos. Métodos paramétricos assumem conhecimento do modelo com o qual se gerou o sinal em análise. Por exemplo, em alguns capítulos, como o de análise de Prony, é assumido que o sinal é composto unicamente por um número conhecido de exponenciais complexas amortecidas. Para solucionar um problema de estimação paramétrica, o que se deve fazer é encontrar os parâmetros supostos. Por outro lado, métodos não paramétricos se baseiam unicamente em transformações do domínio temporal para o domínio da frequência, utilizando filtros que nos dão a energia do sinal contida em uma determinada faixa do espectro, caso da DFT. Quando temos uma boa estimação de nosso modelo, os métodos paramétricos tendem a dar melhores resultados, enquanto que quando pouco se sabe sobre o sinal analisado, ou se o mesmo não está bem modelado, os não paramétricos podem ser a melhor opção.
 
-\indent Algumas vezes é conveniente tratar os sinais de maneira determinística, e o será feito neste trabalho, entretanto, como abordagem mais geral, se pode tratá-los com enfoque probabilístico, isto é: admitir que não se pode de maneira alguma prever os valores assumidos por um sinal ao longo do tempo, mas se pode estimar suas características por meios estatísticos.
+\indent Algumas vezes é conveniente tratar os sinais de maneira determinística, e o será feito neste trabalho. Entretanto, como abordagem mais geral, se pode tratá-los com enfoque probabilístico, isto é: admitir que não se pode de maneira alguma prever os valores assumidos por um sinal ao longo do tempo, mas se pode estimar suas características por meios estatísticos.
 
 \indent É de se notar também que embora sinais reais sejam o caso mais comum na maioria das aplicações e em nosso caso são praticamente regra, não necessariamente o tratamento de sinais complexos é muito mais complicado. Apenas por uma questão de praticidade e para deixar o trabalho mais conciso, não serão demonstrados os teoremas utilizados para entradas complexas quando não for necessário.\cite{stoica2005spectral}
 
@@ -115,7 +115,7 @@ R_s=\frac{1}{T_sN}
 \begin{equation}
 f_k=R_s k\;,\;k=0, 1, 2,...,N/2
 \end{equation}
-\indent Percebe-se que a DFT age como uma série de Fourier, onde valores absolutos de X[k] são vistos como a amplitude de uma determinada frequência múltipla da componente fundamental f1, que é igual a resolução Rs. Para um sinal contendo apenas harmônicos de f1, e eventualmente algum valor médio, é possível extrair perfeitamente seus valores de amplitude e fase. Entretanto, para um sinal que possui componentes inter-harmônicos, não é se pode fazer o mesmo. Neste caso ocorre o chamado \textit{espalhamento}. Já se pode notar algumas deficiências da DFT. Esta também apresenta problemas caso não seja amostrado um período exato do sinal analisado, ou um múltiplo inteiro de um período, podendo a DFT levar a crer, por exemplo, que existe um valor médio no sinal, e outros conteúdos equivocados. Este fenômeno é denominado \textit{spectral leackage}[5]. 
+\indent Percebe-se que a DFT age como uma série de Fourier, onde valores absolutos de X[k] são vistos como a amplitude de uma determinada frequência múltipla da componente fundamental f1, que é igual a resolução Rs. Para um sinal contendo apenas harmônicos de f1, e eventualmente algum valor médio, é possível extrair perfeitamente seus valores de amplitude e fase. Entretanto, para um sinal que possui componentes inter-harmônicos, não se pode fazer o mesmo. Neste caso ocorre o chamado \textit{espalhamento}. Já se pode notar algumas deficiências da DFT. Esta também apresenta problemas caso não seja amostrado um período exato do sinal analisado, ou um múltiplo inteiro de um período, podendo a DFT levar a crer, por exemplo, que existe um valor médio no sinal, e outros conteúdos equivocados. Este fenômeno é denominado \textit{spectral leackage}[5]. 
 
 \indent Como a DFT pressupõe um sinal estacionário, ela não é adequada para análise de sinais variantes no tempo. Para tanto é possível utilizar de uma DFT de janela deslizante. Para uma janela de tamanho N:
 
@@ -149,7 +149,7 @@ X[k,m]=\sum_{n=0}^{n=N-1} x[m-n]*w(n)*e^{(-2jnk\pi/N)}\;,\;k=0,1,2,...,N-1
 \end{equation}
 
 \section{Análise de Prony}
-A análise de Prony foi desenvolvida em 1795 de modo a explicar a espanção de gases. Ela se assemelha em parte a DFT, entretanto se propõe a ajustar uma soma de exponenciais complexas amortecidas a uma sequência de dados igualmente espaçados, ao passo de que a DFT apenas estima as exponeciais complexas e em subdivisões predeterminadas da frequência de amostragem. A análise de prony não é somente uma técnica de análise de sinais, mas também de indentificação de sistemas amplamente utilizada em sistemas de potência, área biomédica, processamento de fala, decaimento radioativo entre outas. 
+A análise de Prony foi desenvolvida em 1795 de modo a explicar a expansão de gases. Ela se assemelha em parte a DFT, entretanto se propõe a ajustar uma soma de exponenciais complexas amortecidas a uma sequência de dados igualmente espaçados, ao passo de que a DFT apenas estima as exponeciais complexas e em subdivisões predeterminadas da frequência de amostragem. A análise de prony não é somente uma técnica de análise de sinais, mas também de identificação de sistemas amplamente utilizada em sistemas de potência, área biomédica, processamento de fala, decaimento radioativo, entre outas. 
 A análise de Prony é conhecida por não se comportar muito bem quando um sinal contém ruído, a técnica não faz distinção entre sinal e ruído, e também ajusta as exponenciais às pertubações presentes.
 Seguindo o proposto em [3], tem-se o seguinte para um sinal $y[k]$ imaginando M exponenciais para se ajustarem a 2M amostras, respeitando o teorema da amostragem:
 
@@ -173,12 +173,13 @@ P(z)=z^M-a_1z^{M-1}-...-a_Mz^0
 \indent Como os coeficientes $a$  são reais, as raízes complexas estão em pares complexos conjugados, desta maneira cada par complexo representa uma possível senoide já que $cos(wt)=\frac{e^{jwt}+e^{-jwt}}{2}$:
 \begin{equation}
 f_m=atan(Im\{z_m\}/Re\{z_m\})2\pi fs
+\label{eq:frequencias}
 \end{equation}
 
 \indent Onde $_zm$ é uma das raízes e $fs$ é a frequência de amostragem.
 \indent As frequências $f_m$ são possíveis soluções do sistema, não necessariamente elas estarão presentes. Qualquer combinação linear dessas senoides também é solução do sistema AR planteado. Para encontrar a forma da solução real, é  necessário fazer uso das condições iniciais conhecidas de nosso sistema. No caso, as próprias amostras $y[k]$.
 
-\indent Os coeficientes de amortecimento $\alpha_m$ são o módulo das raízes complexas que foram encontradas. E se alguma raíz não é complexa, isto somente significa que uma exponencial é solução para a equação.
+\indent Os coeficientes de amortecimento $\alpha_m$ são o módulo das raízes complexas que foram encontradas. E se alguma raiz não é complexa, isto somente significa que uma exponencial é solução para a equação.
 \begin{equation}
 \alpha_m=|zm|
 \end{equation}
@@ -224,7 +225,7 @@ A forma mais simples de resolver este sistema é inverter a matriz $\boldsymbol{
 \boldsymbol{a}=\boldsymbol{Y_k}^{-1}\boldsymbol{y_k}
 \end{equation}
 
-Um dos problemas com esta solução é que ela é computacionalmente custosa, já  que não está implementada de maneira recursiva, mas pior que isso é o fato de que normalmente há ruído no sistema, e desta maneira se ajusta os valores de $\boldsymbol{a}$ ao ruído também, o que em geral não é o desejado, e neste caso específico, certamente não é. Desta forma, cada vez que calculamos o vetor $\boldsymbol{a}$, ele pode sair completamente diferente do anterior, levando à estimações equivocadas. Modelando $y[k]$ como:
+Um dos problemas com esta solução é que ela é computacionalmente custosa, já  que não está implementada de maneira recursiva, ainda pior que isso é o fato de que normalmente há ruído no sistema, e desta maneira se ajusta os valores de $\boldsymbol{a}$ ao ruído também, o que em geral não é o desejado, e neste caso específico, certamente não é. Desta forma, cada vez que calculamos o vetor $\boldsymbol{a}$, ele pode sair completamente diferente do anterior, levando à estimações equivocadas. Modelando $y[k]$ como:
 \begin{equation}
 y[k]=\sum_{m=1}^{M}a_m y[k-m]+\xi_k
 \end{equation}
@@ -259,17 +260,17 @@ w_{n}
 
 \indent Filtros adaptativos são considerados sistemas não lineares, portanto a análise de seu comportamento é mais complexa que de a filtros com coeficientes fixos. Por outro lado, pelo fato de serem auto-projetados, por um ponto de vista mais prático, eles podem ser considerados menos complicados que os convencionais em termos de projeto[6].
 
-\indent O desenho usual de um filtro adaptativo pode ser visto na figura \ref{fig:filtroAdaptativo}, onde $k$ é o número da iteração, $x(k)$ é a entrada do filtro, $y(k)$ é o sinal de saída, $d(k)$ é o valor de referência e $e(k)=d(k)-y(k)$ é o valor de erro, necessário para o algoritmo de adaptação do filtro. O algoritmo de adaptação é o prcesso usado para ajustar os coeficientes do filtro de modo a minimizar o erro de acordo com os critétios preestabelecidos. A escolha do algoritmo determina muitos aspectos do processo de adaptação, como a existência de soluções subótimas e complexidade computacional.
+\indent O desenho usual de um filtro adaptativo pode ser visto na figura \ref{fig:filtroAdaptativo}, onde $k$ é o número da iteração, $x(k)$ é a entrada do filtro, $y(k)$ é o sinal de saída, $d(k)$ é o valor de referência e $e(k)=d(k)-y(k)$ é o valor de erro, necessário para o algoritmo de adaptação do filtro. O algoritmo de adaptação é o processo usado para ajustar os coeficientes do filtro de modo a minimizar o erro de acordo com os critétios preestabelecidos. A escolha do algoritmo determina muitos aspectos do processo de adaptação, como a existência de soluções subótimas e complexidade computacional.
 
 \subsection{Adaptação via gradiente descendente}
 
-Uma das formas mais antigas e consagradas de otimizar uma função dentro dos métodos clássicos é seguir a direção do gradiente desta função, com relação as variáveis de interesse, para atualizar os valores destas variáveis de forma iterativa.
+Uma das formas mais antigas e consagradas de otimizar uma função dentro dos métodos clássicos é seguir a direção do gradiente desta função, com relação às variáveis de interesse, para atualizar os valores destas variáveis de forma iterativa.
 
 Seja um sistema descrito pela série temporal $u[n] \; n=0,1,2..$ e um filtro de resposta impulsiva real $w_0, w_1 ... w_{M-1}$:
 \begin{equation}
 y[n]=\sum_{k=0}^{M-1}u[n-k]w_k
 \end{equation}
-Todo este desenvolvimento pode ser feito de maneira bastante similar considerando entradas complexas e filtros com coeficientes complexos, mas por questões de simplicidade será focado o caso em que ambos são reais.Supondo que se deseja que a saída deste filtro seja uma outra série temporal igualmente real $d[n]$, assim o erro seria:
+Todo este desenvolvimento pode ser feito de maneira bastante similar considerando entradas complexas e filtros com coeficientes complexos, mas por questões de simplicidade será focado o caso em que ambos são reais. Supondo que se deseja que a saída deste filtro seja uma outra série temporal igualmente real $d[n]$, assim o erro seria:
 \begin{equation}
 e[n]=d[n]-y[n]    
 \end{equation}
@@ -320,7 +321,7 @@ De onde se conclui que o vetor coeficientes ótimos $\boldsymbol{w}_{opt}$ é:
 
 Se $u$ é um processo estacionário em sentido amplo, então é possível coletar amostras suficientes para fazer uma boa estimação das matrizes acima, encontrando assim um filtro muito mais apropriado para os propósitos deste trabalho. Desta maneira, se estima o conteúdo espectral de $u$ com precisão. Reparemos que este método não é propriamente um gradiente descendente já que encontramos a solução em um passo apenas.
 
-\indent A solução acima tem sua utilidade, entretanto, se a natureza do sinal mudar, não teremos mais uma boa aproximação do mesmo, neste caso, é melhor resolver estas equações de forma recursiva, de modo que o filtro possa se adaptar constantemente à mudanças ocorridas.  
+\indent A solução acima tem sua utilidade. Porém, se a natureza do sinal mudar, não teremos mais uma boa aproximação do mesmo. Neste caso, é melhor resolver estas equações de forma recursiva, de modo que o filtro possa se adaptar constantemente à mudanças ocorridas.  
 
 \subsection{O algoritmo LMS}
 
@@ -353,7 +354,7 @@ Uma melhoria no algoritmo anterior pode ser proposta. Multiplicando a parte que 
 \boldsymbol{w}_{n}=\boldsymbol{w}_{n-1} + \mu \boldsymbol{R}_{uu}^{-1}(\boldsymbol{r}_{du}-\boldsymbol{R}_{uu} \boldsymbol{w}_{n+1}) = \boldsymbol{w}_{n-1} + \mu(\boldsymbol{w}_{opt} - I \boldsymbol{w}_{n-1}) = \boldsymbol{w}_{opt}
 \end{equation}
 
-Em teoria, este algoritmo convergiria em apenas uma iteração. Resta o empecilho de estimar tal matriz. Com estimador anterior isto não é possível, porque a matriz estimada $\boldsymbol{\hat{R}}_{uu}$ não é inversível por ser o produto de dois vetores. Mas podemos fazer uma aproximação da forma $\boldsymbol{\hat{R}}_{uu} + \boldsymbol{I} \epsilon$. Que certamente é inversível e confere uma inversa útil, para valores pequenos de $\epsilon$. E após alguma álgebra \cite{bessegato2012line}, que pode ser encontrada em \cite{haykin2005adaptive}, chegamos ao seguinte:
+Em teoria, este algoritmo convergiria em apenas uma iteração. Resta o empecilho de estimar tal matriz. Com estimador anterior isto não é possível, porque a matriz estimada $\boldsymbol{\hat{R}}_{uu}$ não é inversível por ser o produto de dois vetores. Mas podemos fazer uma aproximação da forma $\boldsymbol{\hat{R}}_{uu} + \boldsymbol{I} \epsilon$, que certamente é inversível e confere uma inversa útil, para valores pequenos de $\epsilon$. E após alguma álgebra \cite{bessegato2012line}, que pode ser encontrada em \cite{haykin2005adaptive}, chegamos ao seguinte:
 
 \begin{equation}
 \boldsymbol{w}_{n}=\boldsymbol{w}_{n-1} + \mu \frac{\boldsymbol{u}_{n}}{|\boldsymbol{u}_{n}|^2 + \epsilon }(d[n]-\boldsymbol{u}_{n} \boldsymbol{w}_{n-1}) =\boldsymbol{w}_{n-1} + \mu \frac{\boldsymbol{u}_{n}}{|\boldsymbol{u}_{n}|^2 + \epsilon }e[n]
@@ -365,7 +366,7 @@ A este algoritmo se chama LMS normalizado, ou NLMS. Há ainda o estudo de conver
 
 \indent O método RLS (\textit{Recursive Least Squares}), ou mínimos quadrados recursivo, é um método de adaptação que visa a minimização da soma dos quadrados da diferença entre o sinal de referência e o sinal de saída do filtro em questão (o erro), assim como os anteriormente mencionados. O RLS pode ser obtido a partir do LMS (\textit{Least Mean Squares}), e é conhecido por possuir rápida convergência, tendo boa performance em sistemas variantes no tempo, como o caso de nosso interesse. Isto vem ao custo de certa complexidade computacional aliada a problemas de estabilidade \cite{diniz1997adaptive}.
 
-\indent Voltando ao modelo do filtro adaptativo da seção anterior, havia sido feita uma estimação bastante simplória de $\boldsymbol{R}_{uu}$ para o LMS, e um pouco mais desenvolvida no NLMS, agora se pode imaginar uma outra: nos casos anteriores somente se aproveitava as M últimas amostras de nosso sinal para cada iteração, mas se por exemplo faz-se uma média das $\boldsymbol{R}_{uu}^{(k)}$ nos aproximamos mais da matriz verdadeira de autocorrelação. Podemos escolher então um novo estimador para $\boldsymbol{R}_{uu}$:
+\indent Voltando ao modelo do filtro adaptativo da seção anterior, havia sido feita uma estimação bastante simplória de $\boldsymbol{R}_{uu}$ para o LMS, e um pouco mais desenvolvida no NLMS. Agora se pode imaginar uma outra: nos casos anteriores somente se aproveitava as M últimas amostras de nosso sinal para cada iteração, mas se por exemplo faz-se uma média das $\boldsymbol{R}_{uu}^{(k)}$ nos aproximamos mais da matriz verdadeira de autocorrelação. Podemos escolher então um novo estimador para $\boldsymbol{R}_{uu}$:
 
 \begin{equation}
 \boldsymbol{S}_{d}^{-1}=\boldsymbol{\hat{R}}_{uu}=\frac{1}{k+1}\sum_{i=0}^{k}\lambda^{k-i}\boldsymbol{U}_i\boldsymbol{U}_i^*
@@ -502,7 +503,7 @@ Está definido o conjunto de equações discretas que serão utilizadas para ras
 
 \section{Processamento Multitaxa}
 
-Em determinadas situações, é desejável alterar a taxa de amostragem de um sinal para realizar certos tipos de processamento. Por exemplo, veremos em alguns resultados nas próximas sessões que o algoritmo PLL descrito anteriormente é sensível a taxa de amostragem em relação a frequência rastreada, portanto é conveniente mantê-la mais ou menos constante. Também veremos que processar sinais na taxa necessária para abranger todo o espectro que se quer analisar é extremamente custoso computacionalmente e não é garantia de melhores resultados. Por isso deve-se considerar o uso de uma estrutura multitaxa que diminua a frequência base.
+Em determinadas situações, é desejável alterar a taxa de amostragem de um sinal para realizar certos tipos de processamento. Por exemplo, veremos em alguns resultados nas próximas sessões que o algoritmo PLL descrito anteriormente é sensível à taxa de amostragem em relação à frequência rastreada, portanto é conveniente mantê-la mais ou menos constante. Também veremos que processar sinais na taxa necessária para abranger todo o espectro que se quer analisar é extremamente custoso computacionalmente e não é garantia de melhores resultados. Por isso deve-se considerar o uso de uma estrutura multitaxa que diminua a frequência base.
 
 \indent Serão analisadas a seguir as implicações de um abaixamento na frequência de amostragem:
 
@@ -525,9 +526,9 @@ Uma estrutura downsampling tem a forma seguinte:
 \end{center}
 
 
-Representamos a estrutura como um sistema que reproduz em sua saída apenas amostras onde $k$ é múltiplo de $M_k$. Podemos escrever $y[n]=x[nM_k] \; n=1,2,3...$ Considerando que $x[k]$ foi amostrado com a frequência de Nyquist $fs$, o efeito final é o mesmo que se tivéssemos amostrado $x$ com $fs/M_k$, podemos dizer que vamos observar aliasing em nosso resultado final. Haverá portanto sobreposição no espectro de frequência referente a $X(w)$ quando analisarmos $Y(w)$. Entretanto, é possível prever onde estarão localizadas as componentes espectrais presentes no sinal completo que estamos subamostrando, e embora não possamos saber exatamente qual é o valor correspondente as frequências originais, podemos saber no mínimo qual é sua soma.
+Representamos a estrutura como um sistema que reproduz em sua saída apenas amostras onde $k$ é múltiplo de $M_k$. Podemos escrever $y[n]=x[nM_k] \; n=1,2,3...$ Considerando que $x[k]$ foi amostrado com a frequência de Nyquist $fs$, o efeito final é o mesmo que se tivéssemos amostrado $x$ com $fs/M_k$, podemos dizer que vamos observar aliasing em nosso resultado final. Haverá portanto sobreposição no espectro de frequência referente a $X(w)$ quando analisarmos $Y(w)$. Entretanto, é possível prever onde estarão localizadas as componentes espectrais presentes no sinal completo que estamos subamostrando, e embora não possamos saber exatamente qual é o valor correspondente às frequências originais, podemos saber no mínimo qual é sua soma.
 
-\indent Uma demonstração formal dos efeitos observados pode ser encontrada em \cite{mitra2006digital}, aqui faremos uma abordagem mais intuitiva. Dada uma componente espectral de $x[k]$ referente a $w_0$. Supõe-se que é feita uma subamostragem neste sinal, e agora sua frequência de amostragem que era $f_s$ se torna $f_s/M_k$. Agora, se $w_0<f_s/(2Mk)$ essa as componentes dessa frequência não saem do lugar, elas continuam onde estavam anteriormente. Isso não significa que seu espectro não seja alterado nas frequências mais baixas que a nova taxa de amostragem, somente quer dizer que elas sofrem interferência no mesmo lugar onde estavam antes. Agora, se a frequência de interesse é maior que a nova frequência de amostragem dividida por 2, então ela não poderá de forma alguma ser encontrada no mesmo local, pois simplesmente não há como visualizá-la com DFT ou DTFT. Mas então onde vão parar essas frequências? Bom, onde pararia qualquer uma que sofre aliasing. Ela dá voltas no círculo de frequências. O circulo de frequências sempre vai de 0 a $2\pi$, e as frequências sempre caminham nele no sentido anti-horário. Para cada vez que a frequência de interesse (a qual chamaremos $f_i$) for maior que $fs$, a frequência em questão dá uma volta no círculo. Um algoritmo simples será apresentado quando expusermos o método do PLL multitaxa, mas por hora podemos saber que o ângulo referente à nova frequência será o resto da divisão $f_i/f_s$ e multiplicamos por $2\pi$. 
+\indent Uma demonstração formal dos efeitos observados pode ser encontrada em \cite{mitra2006digital}, aqui faremos uma abordagem mais intuitiva. Dada uma componente espectral de $x[k]$ referente a $w_0$. Supõe-se que é feita uma subamostragem neste sinal, e agora sua frequência de amostragem que era $f_s$ se torna $f_s/M_k$. Agora, se $w_0<f_s/(2Mk)$ as componentes dessa frequência não saem do lugar, elas continuam onde estavam anteriormente. Isso não significa que seu espectro não seja alterado nas frequências mais baixas que a nova taxa de amostragem, somente quer dizer que elas sofrem interferência no mesmo lugar onde estavam antes. Agora, se a frequência de interesse é maior que a nova frequência de amostragem dividida por 2, então ela não poderá de forma alguma ser encontrada no mesmo local, pois simplesmente não há como visualizá-la com DFT ou DTFT. Mas então onde vão parar essas frequências? Bom, onde pararia qualquer uma que sofre aliasing. Ela dá voltas no círculo de frequências. O círculo de frequências sempre vai de 0 a $2\pi$, e as frequências sempre caminham nele no sentido anti-horário. Para cada vez que a frequência de interesse (a qual chamaremos $f_i$) for maior que $fs$, a frequência em questão dá uma volta no círculo. Um algoritmo simples será apresentado quando expusermos o método do PLL multitaxa, mas por ora podemos saber que o ângulo referente à nova frequência será o resto da divisão $f_i/f_s$ e multiplicamos por $2\pi$. 
 
 \begin{figure}[H]
 	\centering
@@ -551,4 +552,4 @@ w_i=rest(f_i \: M_k, \: f_s)2\pi
 	\label{fig:aliasing}
 \end{figure}
 
-Como resultado tem-se $\frac{5}{4}\pi$ que é maior que é ligeiramente maior que $\pi$ portanto já se pode saber que esta componente sofre aliasing, como se nota na figura \ref{fig:aliasing}.
+Como resultado tem-se $\frac{5}{4}\pi$ que é ligeiramente maior que $\pi$; portanto já se pode saber que esta componente sofre aliasing, como se nota na figura \ref{fig:aliasing}.
