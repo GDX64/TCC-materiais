@@ -33,7 +33,7 @@ Passos para estimar as frequências:
 \subsection{PLL-Multitaxa}
 A estrutura usada será idêntica à vista no final do capítulo 3. Tendo como única alteração as constantes, que serão $\mu=\{100, 5000, 400\}$.
 
-\subsection{simulação e análise qualitativa}
+\subsection{Simulação e análise qualitativa}
 Será realizada a mesma simulação do artigo \cite{chang2009two}, entretanto com algumas alterações para forçar mais a estabilidade do algoritmo, em $t=2.5 \, s$ se aplica um degrau de 1 Hz na frequência fundamental, ao invés de 0.2 Hz, e o ruído presente será de variância $\sigma=0.05$ ao invés de 0.01. Tem-se M=64, e $fs=128f_0$, entretanto a frequência de amostragem será abaixada em 2 vezes para a estimação das frequências para diminuir o tempo de computação, uma vez que neste problema em geral não se investiga frequências acima do 15º harmônico. Se usará coeficiente de esquecimento igual a 0.92 para o RLS. Também se rastrearão as componentes julgadas mais energéticas pelo estimador. Para o classificador será utilizado $\lambda=0.1$ na classificação de frequências e umbral da variância igual a 5, ou seja, somente serão rastreadas as componentes cuja variância das últimas 100 amostras for menor que 5. 
 
 Se executa o RLS por meio segundo de sinal, onde devemos admitir que este mantém suas características estatísticas.
@@ -76,8 +76,4 @@ Observa-se na figura \ref{fig:estagio_1} o estágio de estimação de frequênci
 \end{figure}
 
 
-\section{Conclusões}
 
-Neste trabalho apresentamos o que é e o problema que representa hoje a estimação espectral, bem como a fundamentação teórica matemática por trás do tema. Discorremos sobre métodos paramétricos e não paramétricos. Nos focamos principalmente em simular e apresentar alternativas para duas metodologias relativamente recentes, publicadas nos últimos 10 anos. 
-
-Apresentamos as virtudes e pontos fracos de cada um dos métodos, ao final do trabalho é proposto um método capaz de unir os pontos fortes de cada um. Aproveitando a robustez e simplicidade computacional no rastreio do PLL-M e o poder de identificação global dos métodos baseados em modelos AR. Entretanto, mesmo dentro da metodologia aplicada ao capítulo final, há muito o que se desenvolver. Um método mais robusto seria capaz de identificar o surgimento de novas componentes e o desaparecimento de outras, fazendo uma administração inteligente dos recursos computacionais. 

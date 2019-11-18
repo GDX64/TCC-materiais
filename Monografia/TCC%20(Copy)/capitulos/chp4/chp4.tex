@@ -107,7 +107,7 @@ A tabela mostra o que já era esperado, e o que pode ser confirmado com outras s
 \caption{Simulação com amplitude variável, resultados em \%}
 \end{table}
 
-\section{frequências próximas}
+\section{Frequências próximas}
 
 \begin{figure}[h]
 	\centering    
@@ -178,7 +178,7 @@ Podemos ver nas imagens \ref{fig:im_RLS} e \ref{fig:im_NLMS} que a estimação f
 \end{figure}
 
 
-\section{teste de rastreio de frequências}
+\section{Teste de rastreio de frequências}
 
 Faremos o mesmo teste de rastreio de frequências realizado no artigo citado. Usamos M=64, e $fs=64f_0$. Este teste consiste em um sinal com cinco componentes senoidais, três harmônicos da fundamental e dois inter-harmônicos na seguinte forma:
 
@@ -221,7 +221,7 @@ Para o cálculo das raízes foi utilizada a função roots do MATLAB. Esta funç
 	\label{fig:rastreio_final}
 \end{figure}
 
-\section{complexidade computacional}
+\section{Complexidade computacional}
 
 A complexidade computacional do RLS é de cerca de $3M^2 + 4M$ somas e multiplicações por iteração[14], enquanto que a do NLMS é de cerca de $4M$ somas e multiplicações. Apesar de a ordem de complexidade do NLMS ser bem menor, entre as operações do RLS há uma série de multiplicações e somas de matrizes, que podem ser otimizadas com computação em paralelo para determinados dispositivos. Então é de se rever onde vai ser aplicado o algoritmo, dependendo do hardware usado, o custo do RLS pode não ser tão mais alto que o do NLMS.
 

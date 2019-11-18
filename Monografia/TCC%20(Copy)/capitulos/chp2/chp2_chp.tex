@@ -5,6 +5,7 @@ Neste capítulo serão abordadas as técnicas anteriormente mencionadas, que sã
 Análise espectral considera o problema de encontrar a energia de um sinal, finito, distribuída em função de frequência, o que pode ser feito com métodos paramétricos ou não paramétricos. Métodos paramétricos assumem conhecimento do modelo com o qual se gerou o sinal em análise. Por exemplo, em alguns capítulos, como o de análise de Prony, é assumido que o sinal é composto unicamente por un número conhecido de exponenciais complexas amortecidas. Para solucionar um problema de estimação paramétrica, o que se deve fazer é encontrar os parâmetros supostos. Por outro lado, métodos não paramétricos se baseiam unicamente em transformações do domínio temporal para o domínio da frequência, utilizando filtros que nos dão a energia do sinal contida em uma determinada faixa do espectro, caso da DFT. Quando temos uma boa estimação de nosso modelo, os métodos paramétricos tendem a dar melhores resultados, enquanto que quando pouco se sabe sobre o sinal analisado, ou se o mesmo não está bem modelado, os não paramétricos podem ser a melhor opção.
 
 \indent Algumas vezes é conveniente tratar os sinais de maneira determinística, e o será feito neste trabalho, entretanto, como abordagem mais geral, se pode tratá-los com enfoque probabilístico, isto é: admitir que não se pode de maneira alguma prever os valores assumidos por um sinal ao longo do tempo, mas se pode estimar suas características por meios estatísticos.
+
 \indent É de se notar também que embora sinais reais sejam o caso mais comum na maioria das aplicações e em nosso caso são praticamente regra, não necessariamente o tratamento de sinais complexos é muito mais complicado. Apenas por uma questão de praticidade e para deixar o trabalho mais conciso, não serão demonstrados os teoremas utilizados para entradas complexas quando não for necessário.\cite{stoica2005spectral}
 
 \section{Densidade espectral de energia de um sinal determinístico}
@@ -152,11 +153,11 @@ A análise de Prony foi desenvolvida em 1795 de modo a explicar a espanção de 
 A análise de Prony é conhecida por não se comportar muito bem quando um sinal contém ruído, a técnica não faz distinção entre sinal e ruído, e também ajusta as exponenciais às pertubações presentes.
 Seguindo o proposto em [3], tem-se o seguinte para um sinal $y[k]$ imaginando M exponenciais para se ajustarem a 2M amostras, respeitando o teorema da amostragem:
 
-\Large
+
 \begin{equation}
 y[k]=\sum_{m=1}^{M}A_me^{(\alpha_m+j2\pi f_m)(k-1)\Delta t +j\sigma_m}\;,\;k=1,2,...,2M
 \end{equation}
-\normalsize
+
 
 \indent Onde $fm$ é a frequência das exponenciais, $\Delta t$ é o tempo de amostragem, $\alpha _m$ é o coeficiente de amortecimento, e $\sigma _m$ é o ângulo de defasagem. Para o método proposto, estamos apenas interessados em saber quais são as frequências presentes no sinal. Se imaginamos nosso sistema sendo auto regressivo (AR) de ordem M, em qualquer instante de $k$ é possível prever o valor $y[k]$ considerando apenas as M amostras anteriores deste mesmo sinal. Pode-se então montar uma equação de diferenças, que neste caso também é um modelo de predição linear \cite{huang2001spoken}:
 

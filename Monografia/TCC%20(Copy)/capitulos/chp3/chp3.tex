@@ -22,7 +22,7 @@ Nas figuras seguintes pode-se observar como converge o algoritmo em diferentes s
 	\label{fig:PLL_conv2}
 \end{figure}
 
-\section{banco de filtros}
+\section{Banco de filtros}
 
 \indent A solução encontrada em \cite{de2009pll} para parte dos problemas anteriormente citados é o uso de um preprocessamento com filtros passa-banda, para melhorar a relação sinal ruído, e posteriormente subamostragem, para diminuir a complexidade computacional, de modo também que não seja necessário mudar as constantes do algoritmo.
 
@@ -82,7 +82,7 @@ A função recebe como argumentos a frequência de amostragem Fs, a frequência 
 \hat{f}=f_{init}+\Delta f_{aparente}\, flag
 \end{equation}
 
-\section{variação da frequência central do banco de filtros}
+\section{Variação da frequência central do banco de filtros}
 
 \begin{figure}[h]
 	\centering    
@@ -138,7 +138,7 @@ Onde $\lambda$ é uma constante entre 0 e 1. \\
 	\item Fazemos as estimações de $w$ e $A$, usamos a equação \ref{eq:w0 filtro} e utilizamos a série geométrica para realimentar o banco de filtros com a frequência calculada.
 \end{enumerate}
 
-\section{simulações}
+\section{Simulações}
 
 Para as simulações computacionais foram seguidos determinados critérios:
 
@@ -150,7 +150,7 @@ Para as simulações computacionais foram seguidos determinados critérios:
 
 Os parâmetros da simulação são $f0=60Hz$, 128 pontos por ciclo de $f0$, $Fs=7380 \,Hz$, $\alpha=0.975$ e dois filtros em cascata no banco. A constante de subamostragem é 16, para todos os harmônicos e inter-harmônicos. A amplitude da fundamental é 180 V, e para todos os harmônicos suas amplitudes são a da fundamental dividido pela ordem do respectivo harmônico. Foi passado um filtro média móvel de ordem 16 em todas as estimações de modo a suavizar a visualização dos resultados.
 
-\subsection{harmônicos ímpares}
+\subsection{Harmônicos ímpares}
 
 \indent Abaixo estão os resultados para a simulação com os harmônicos ímpares de 1 a 15. Verificamos algumas coisas:
 \begin{itemize}
@@ -216,7 +216,7 @@ Os parâmetros da simulação são $f0=60Hz$, 128 pontos por ciclo de $f0$, $Fs=
 	\label{fig:esquema_pll}
 \end{figure}
 
-\subsection{inter-harmônicos}
+\subsection{Inter-harmônicos}
 
 Foram simuladas estimações com inter-harmônicos, seguindo as mesmas prescrições do caso anterior. Vemos que os tempos de convergência não são muito afetados, entretanto o erro quadrático médio para a fundamental aumenta um pouco. Isto se deve a um leve batimento que o harmônico 3.2 causa na fundamental, fazendo com que a estimação oscile um pouco. Entretanto se olhamos uma média grande o suficiente destas estimações, podemos nos livrar do batimento.
 
@@ -254,7 +254,7 @@ Foram simuladas estimações com inter-harmônicos, seguindo as mesmas prescriç
 \end{table}
 
 
-\section{esforço computacional}
+\section{Esforço computacional}
 
 \indent Considerando um sinal amostrado em 7380  Hz e uma subamostragem de 16 amostras, será feita a estimativa do esforço computacional considerando operações realizadas a cada iteração de soma, multiplicação e funções trigonométricas, sem considerar deslocamentos de buffers e alocação de memória:
 

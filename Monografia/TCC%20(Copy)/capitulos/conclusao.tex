@@ -1,0 +1,30 @@
+\section{Conclusões}
+Neste trabalho apresentamos o que é e o problema que representa hoje a estimação espectral, bem como a fundamentação teórica matemática por trás do tema. Discorremos sobre métodos paramétricos e não paramétricos. Nos focamos principalmente em simular e apresentar alternativas para duas metodologias relativamente recentes, publicadas nos últimos 10 anos. 
+
+Apresentamos as virtudes e pontos fracos de cada um dos métodos, ao final do trabalho é proposto um método capaz de unir os pontos fortes de cada um. Aproveitando a robustez e simplicidade computacional no rastreio do PLL-M e o poder de identificação global dos métodos baseados em modelos AR. Entretanto, mesmo dentro da metodologia aplicada ao capítulo final, há muito o que se desenvolver. Um método mais robusto seria capaz de identificar o surgimento de novas componentes e o desaparecimento de outras, fazendo uma administração inteligente dos recursos computacionais.
+
+Mesmo a estimação baseada em modelos Auto Regressivo tem fortes limitações, como já foi discutido. Se consideramos um sinal determinístico que está altamente poluído por ruído, não é possível fazer uma boa estimação com este modelo. 
+
+De um modo geral podemos listar as boas condições de trabalho do método proposto:
+
+\begin{itemize}
+	\item Soma de sinais senoidais finitos menores que M. 
+	\item Relação sinal ruído maior que 20 dB.
+	\item A ordem do modelo em si não é um agravante, mas a forma como estão distribuídas as senoides, sim pode ser. Os testes mostram que temos pouquíssimos erros para frequências separadas em no mínimo 0.04 radianos por segundo.
+\end{itemize}
+
+Por Parte do PLL temos as seguintes condições:
+\begin{itemize}
+	\item O algoritmo é capaz de rastrear componentes mesmo em relações sinal ruído de 0 dB.
+	\item Degraus em frequência por volta de 5 Hz em qualquer componente. 
+	\item Sinais dentro de certas amplitudes as quais as constantes setadas são capazes de seguir.
+\end{itemize}
+
+\section{Trabalhos futuros}
+
+Para futuras melhorias estão:
+\begin{itemize}
+	\item Determinar quando o primeiro estágio convergiu e já estimou corretamente as frequências e ordem do modelo. O que não é trivial, uma vez que pode ser difícil saber quando o algoritmo atingiu o erro mínimo. O RLS por exemplo é um método de mínima variância, capaz de convergir para o menor erro possível, que seria o de ruído. Entretanto como não se sabe o ruído, isto não é tão simples. E tampouco é trivial determinar as frequências corretas e as falsas.
+	\item Estudar métodos paramétricos baseados em sinais determinísticos poluídos por ruído. Assim não teremos as limitações de uma aproximação por modelos AR ou ARMA. 
+	\item Encontrar um método sistemático de obtenção das constantes do PLL e outras formas de analisar sua convergência e dinâmica. Uma vez que é um método altamente não linear e complexo de se analisar. Nos trabalhos analisados foram usadas diversas soluções heurísticas que carecem de mais fundamento matemático, como a junção do PLL com um filtro IIR.
+\end{itemize}
