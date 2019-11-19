@@ -53,6 +53,7 @@
   \begin{picture}(1,0.75)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
+    \fontsize{9}{5}
     \put(0,0){\includegraphics[width=\unitlength,page=1]{erro_RLS_NLMS.pdf}}%
     \put(0.46071464,0.02559518){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Amostras\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{erro_RLS_NLMS.pdf}}%
